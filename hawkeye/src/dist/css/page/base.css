@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/**
+ * 搜索指数
+ */
+.index-base .fr-br-m-left {
+  display: inline-block;
+  vertical-align: top;
+  height: 35px;
+  line-height: 33px; }
+  .index-base .fr-br-m-left .titlebox {
+    color: #444;
+    vertical-align: middle; }
+  .index-base .fr-br-m-left.w1 {
+    width: 90px; }
+  .index-base .fr-br-m-left.w2 {
+    width: 24%;
+    min-width: 250px; }
+.index-base .fr-br-m-right {
+  display: inline-block;
+  vertical-align: middle;
+  width: 85.5%;
+  padding: 0 5px 0 15px;
+  min-height: 35px;
+  line-height: 33px; }
+  .index-base .fr-br-m-right.w1 {
+    width: 85.5%; }
+  .index-base .fr-br-m-right.w2 {
+    width: 46%; }
+.index-base .index-base-info .haskey {
+  text-align: center;
+  padding: 40px;
+  color: #999; }
+  .index-base .index-base-info .haskey .add {
+    color: #3a99db;
+    cursor: pointer; }
+    .index-base .index-base-info .haskey .add:hover {
+      text-decoration: underline; }
+.index-base .index-base-info .key {
+  position: relative;
+  margin-right: 5px;
+  min-width: 95px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 28px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  color: #969696;
+  background-color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer; }
+  .index-base .index-base-info .key.act {
+    background-color: #f4f4f4; }
+    .index-base .index-base-info .key.act .col {
+      position: absolute;
+      left: 12px;
+      top: 8px;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-right: 5px; }
+  .index-base .index-base-info .key span {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 25px; }
+.index-base .index-base-info .content .chartsbox {
+  height: 325px;
+  width: auto;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px; }
+.index-base .index-base-info .content ul li:last-child .chartsbox {
+  margin-bottom: 0; }
+.index-base .index-base-info .editbox {
+  float: right;
+  margin-right: 22px; }
+.index-base .index-base-setting .form-control {
+  height: 42px; }
+.index-base .index-base-setting .keybox {
+  margin-right: -6px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none; }
+  .index-base .index-base-setting .keybox .key {
+    position: relative;
+    margin-right: 6px;
+    min-width: 127px;
+    max-width: 10em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    color: #999;
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10px; }
+    .index-base .index-base-setting .keybox .key .iconfont {
+      position: absolute;
+      right: 5px;
+      color: #999;
+      top: 0px; }
+      .index-base .index-base-setting .keybox .key .iconfont:hover {
+        color: #2c97de; }
+    .index-base .index-base-setting .keybox .key:hover {
+      cursor: pointer; }
+    .index-base .index-base-setting .keybox .key.active {
+      border: 1px solid #3a99d8;
+      background-color: #3a99d8;
+      color: #fff; }
+      .index-base .index-base-setting .keybox .key.active .iconfont {
+        display: none; }
+      .index-base .index-base-setting .keybox .key.active span {
+        padding: 0 10px; }
+    .index-base .index-base-setting .keybox .key span {
+      position: relative;
+      left: 0;
+      display: inline-block;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-left: 10px;
+      padding-right: 26px; }
+.index-base .testMain {
+  width: 813px;
+  height: 325px; }
+
+/*# sourceMappingURL=base.css.map */

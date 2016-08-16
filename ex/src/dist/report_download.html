@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>报表下载</title>
+	<link rel="stylesheet" href="/rocket/css/style.css">
+</head>
+<body class="pr">
+	<div id="app">
+		<div class="advices-base-report download">
+			<div class="edit-container view">
+				<div class="hd">
+					<div class="title">
+						<span id="reportTitle"></span>
+					</div>
+					<div class="date">
+						<span id="reportDate"></span>
+					</div>
+				</div>
+				<div class="bd">
+					<div class="summarize-view-part">
+						<div class="left" id="event-chart"></div>
+						<div class="right">
+							<p class="title">综述</p>
+							<p id="summary-content" class="content"></p>
+						</div>
+					</div>
+					<div class="index-part" id="index-chart">
+						<div class="index" id="chart_art_trend_container">
+							<div class="title">
+								<span>今日趋势图</span>
+							</div>
+							<div id="chart_art_trend"></div>
+						</div>
+						<div class="index dn">
+							<div class="title">
+								<span>百度指数</span>
+								<input type="checkbox" target="#baidu_keywords_container" name="baidu_index" id="baidu_index" data-index-checkbox class="dn" />
+							</div>
+							<div id="chart_index_baidu"></div>
+						</div>
+						<div class="index dn">
+							<div class="title">
+								<span>新浪指数</span>
+								<input type="checkbox" target="#sina_keywords_container" name="sina_index" data-index-checkbox id="sina_index" class="dn" />
+							</div>
+							<div id="chart_index_sina"></div>
+						</div>
+						<div class="index dn">
+							<div class="title">
+								<span>好搜指数</span>
+								<input type="checkbox" target="#haosou_keywords_container" name="360_index" id="360_index" data-index-checkbox class="dn" />
+							</div>
+							<div id="chart_index_360"></div>
+						</div>
+					</div>
+					<div class="statistic-part">
+						<div class="title">
+							<label>
+								分布统计图表
+							</label>
+						</div>
+						<div class="chart-statis-container">
+							<div class="item">
+								<div id="negative_statistic"></div>
+								<div class="tc f18" style={{color: '#ccc'}}>负面报道</div>
+							</div>
+							<div class="item">
+								<div id="neutral_statistic"></div>
+								<div class="tc f18" style={{color: "#ccc"}}>中性报道</div>
+							</div>
+							<div class="item">
+								<div id="positive_statistic"></div>
+								<div class="tc f18" style={{color: "#ccc"}}>正面报道</div>
+							</div>
+						</div>
+					</div>
+					<div class="art-part">
+						<div class="title">
+							<span>文章列表</span>
+						</div>
+						<div>
+							<table class="c-table">
+								<colgroup width="6%"></colgroup>
+								<colgroup width="57%"></colgroup>
+								<colgroup width="11%"></colgroup>
+								<colgroup width="9%"></colgroup>
+								<colgroup width="17%"></colgroup>
+								<thead>
+									<tr>
+										<th>序号</th>
+										<th>标题</th>
+										<th>文章类型</th>
+										<th>作者</th>
+										<th>分布时间</th>
+									</tr>
+								</thead>
+								<tbody id="article_focus_container">
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="/rocket/js/paths.conf.js?rel=1465354180935"></script>
+<script type="text/javascript" src="/rocket/js/lib/jquery.js?rel=1465354180935"></script>
+<script type="text/javascript" src="/rocket/js/plu/highcharts.js?rel=1465354180935"></script>
+<script type="text/javascript" src="/ex/js/page/advices/base/report/download/index2.js?rel=1465354180935"></script>
+</html>

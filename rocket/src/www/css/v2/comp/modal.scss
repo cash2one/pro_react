@@ -1,0 +1,25 @@
+/**
+ * create by lxt
+ * 2016/7/13
+ * 弹窗v2样式
+ */
+@import '../var';
+.modal {
+	.modal-body {
+		// 弹窗里的温馨提示
+		.m-tip {
+			text-align: center;
+			label {
+				color: $gray-light;
+			}
+		}
+		.m-msg {
+			margin: 20px 0;
+			text-align: center;
+			font-size: 18px;
+		}
+		.m-warn {
+			color: $red-light;
+		}
+	}
+}

@@ -1,0 +1,131 @@
+@import 'var';
+@import '../mixins/flex';
+@import '../mixins/trans';
+.advices-analy-media{
+	max-width: 1094px;
+	margin-left: auto;
+	margin-right: auto;
+	&.loading{
+		-webkit-filter: blur(20px);
+		filter: blur(20px);
+	}
+	&>.head{
+		height: 48px;
+		line-height: 40px;
+		border-top: 8px #6c86a4 solid;
+		background-color: #fff;
+		.tit{
+			padding-left: 20px;
+			font-size: 14px;
+		}
+	}
+	.data-part{
+		@include flexbox();
+		margin-left: -15px;
+		margin-right: -15px;
+		.item{
+			@include flex();
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+	}
+	.media-container{
+		height: 250px;
+		background: #f6f6f6 url(#{$imgDir}/media-data-bg.png) 0 0 no-repeat;
+		background-size: contain;
+		text-align: center;
+		.key{
+			font-size: 23px;
+			color: #f6f6f6;
+			line-height: 90px;
+		}
+		.val{
+			font-size: 46px;
+			color: #27303b;
+			line-height: 164px;
+			font-family: sans-serif;
+			&.warn{
+				color: #ff000c;
+			}
+		}
+	}
+	.grid2{
+		@include flexbox();
+		margin-left: -15px;
+		margin-right: -15px;
+		.item{
+			@include flex();
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+	}
+	.media-chart-container{
+		@include flexbox();
+		@include directionVertical();
+		.hd{
+			background: #6c86a4 url(#{$imgDir}/media-hd.png) left center no-repeat;
+			height: 35px;
+			line-height: 35px;
+			padding-left: 37px;
+			.tit{
+				font-size: 14px;
+				color: #fff;
+				font-family: arial;
+			}
+		}
+		.bd{
+			background-color: #f5f5f5;
+			@include flex();
+			@include flexbox();
+			@include directionVertical();
+			.chart{
+				@include flex();
+			}
+		}
+	}
+	.emot-charts{
+		.navis{
+			overflow: hidden;
+			.item{
+				float: left;
+				width: 90px;
+				height: 34px;
+				border: 1px #eee solid;
+				line-height: 34px;
+				text-align: center;
+				background: #fff;
+				position: relative;
+				overflow: hidden;
+				margin-right: -1px;
+				cursor: pointer;
+				@include transition(background,.1s);
+				&:after{
+					content: "";
+					position: absolute;
+					width: 100%;
+					bottom: -2px;
+					left: 0;
+					height: 2px;
+					background-color: #ffcc67;
+					@include transition(bottom,.4s);
+				}
+				.txt{
+					color: #7f7f7f;
+					font-size: 16px;
+				}
+				&:hover,&.active{
+					background-color: #6c86a4;
+					.txt{
+						color: #fff;
+					}
+					&:after{
+						bottom: 0;
+					}
+				}
+			}
+		}
+		.chart{
+			background-color: #f5f5f5;
+		}
+	}
+}

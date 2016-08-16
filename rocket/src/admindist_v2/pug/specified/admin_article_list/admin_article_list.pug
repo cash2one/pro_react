@@ -1,0 +1,31 @@
+section.content
+  .row
+    .col-md-8
+      .box.box-primary
+        .box-body.no-padding
+            +article_search()
+            +sort()
+            +date_range_search()
+            .col-md-12.col-sm-12.col-xs-12.article#target_list
+              +article_list()
+      include ../../common_partials/pagination.pug
+    .col-md-4
+      .box.box-solid
+        .box-header.with-border
+          h3.box-title 筛选条件
+          .box-tools
+            button.btn.btn-box-tool(type='button', data-widget='collapse')
+              i.fa.fa-minus
+        .box-body.no-padding
+          ul.nav.nav-pills.nav-stacked#target_tags
+           +removable_tags()
+      .box.box-solid
+        .box-header.with-border
+          h3.box-title 所有分类
+          .box-tools
+            button.btn.btn-box-tool(type='button', data-widget='collapse')
+              i.fa.fa-minus
+        .box-body.no-padding
+          ul.nav.nav-pills.nav-stacked#target_aggs
+            +agg_cats()
+          //script(type='text/x-tmpl-mustache',id='template_cats')

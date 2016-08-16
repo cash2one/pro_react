@@ -1,0 +1,8 @@
+extends ../../settings/const_strings.pug
+
+block variables
+  - var modal_title = "新建集团"
+  - var modal_edit_title = "编辑集团"
+  - var con_header_title = "集团管理"
+  - var con_header_subtitle = "集团列表"
+  - var menu_data = {syn: [{"url":"admin_syn_list.html","name":syn_management,rule:"rule_sys_manager_syndicate",active:"active"}],per: [{"url":"admin_admin_list.html","name":admin_management,rule:"rule_sys_manager_adminer",active:""},{"url":"admin_spr_mgr_list.html","name":spr_mgr_management,rule:"rule_sys_manager_super",active:""},{"url":"admin_online_users_list.html","name":users_online_list,rule:"rule_sys_list_login",active:""},{"url":"admin_new_add_list.html","name":new_add_list,rule:"rule_sys_list_newly_added",active:""}],article: [{"url":"admin_article_list.html","name":article_list,rule:"rule_sys_manager_article",active:""}],media:[{"url":"admin_media_manage.html","name":media_management,rule:"rule_sys_media_audit",active:""}]}

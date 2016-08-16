@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/**
+ * create by lxt
+ * edit on 2016/07/22åå
+ * 用户反馈v2样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.feedback-page .problem-form .pf-title {
+  height: 30px;
+  line-height: 28px;
+  text-align: left; }
+  .feedback-page .problem-form .pf-title .iconfont {
+    font-size: 28px;
+    vertical-align: middle;
+    color: #2c97de; }
+  .feedback-page .problem-form .pf-title .ic-txt {
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 8px; }
+.feedback-page .c-rd {
+  vertical-align: middle; }
+.feedback-page label > i {
+  color: #e9573f;
+  margin-right: 2px; }
+.feedback-page .dropdown-v2.idx4 {
+  z-index: 4; }
+.feedback-page .dropdown-v2.idx3 {
+  z-index: 3; }
+.feedback-page .dropdown-v2.idx2 {
+  z-index: 2; }
+.feedback-page .dropdown-v2.idx1 {
+  z-index: 1; }
+
+.feedback-page .gridbox .content form .btn-group {
+  width: 435px;
+  text-align: center; }
+  .feedback-page .gridbox .content form .btn-group .c-button {
+    display: inline-block;
+    width: 138px;
+    height: 35px;
+    line-height: 33px; }
+.feedback-page .gridbox .content form .picbox {
+  width: 425px; }
+  .feedback-page .gridbox .content form .picbox .addbtn {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    vertical-align: middle;
+    color: #dedede;
+    border: 1px solid #dedede;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 22px; }
+    .feedback-page .gridbox .content form .picbox .addbtn:hover {
+      color: #3492e9; }
+    .feedback-page .gridbox .content form .picbox .addbtn .iconfont {
+      display: block;
+      font-size: 26px;
+      text-align: center;
+      margin-top: 6px;
+      margin-bottom: 6px; }
+    .feedback-page .gridbox .content form .picbox .addbtn span {
+      display: block;
+      text-align: center; }
+  .feedback-page .gridbox .content form .picbox .pics {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    vertical-align: middle;
+    border: 1px solid #dedede;
+    margin-right: 10px;
+    text-align: center; }
+    .feedback-page .gridbox .content form .picbox .pics:hover {
+      cursor: pointer; }
+    .feedback-page .gridbox .content form .picbox .pics img {
+      display: block;
+      margin: 3px auto 1px; }
+    .feedback-page .gridbox .content form .picbox .pics span {
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      color: #fff; }
+      .feedback-page .gridbox .content form .picbox .pics span:hover {
+        color: #3492e9; }
+.feedback-page .gridbox .content form.fb-container p.tip {
+  text-align: left;
+  margin-left: 90px;
+  margin-top: -15px;
+  font-size: 14px;
+  color: #8c8c8c; }
+.feedback-page .gridbox .content form.fb-container .group {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  .feedback-page .gridbox .content form.fb-container .group label {
+    font-size: 14px;
+    width: 80px;
+    height: 40px;
+    line-height: 38px;
+    color: #212121;
+    margin-right: 16px; }
+    .feedback-page .gridbox .content form.fb-container .group label.vt {
+      line-height: 18px; }
+    .feedback-page .gridbox .content form.fb-container .group label.label-type {
+      line-height: 22px;
+      vertical-align: top; }
+  .feedback-page .gridbox .content form.fb-container .group input[type="text"] {
+    font-size: 14px;
+    text-indent: 10px;
+    width: 350px;
+    height: 40px;
+    border: 1px solid #dedede; }
+  .feedback-page .gridbox .content form.fb-container .group input[type="radio"] {
+    font-size: 14px;
+    color: #212121;
+    margin-right: 5px;
+    margin-bottom: 18px; }
+  .feedback-page .gridbox .content form.fb-container .group .radio-group {
+    width: 350px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    padding-left: 6px; }
+    .feedback-page .gridbox .content form.fb-container .group .radio-group label.radiobox {
+      display: inline-block;
+      margin-right: 0;
+      width: 68px;
+      cursor: pointer; }
+.feedback-page .gridbox .content form.fb-container .btn-group {
+  margin-left: 77px;
+  width: 350px;
+  text-align: center; }
+  .feedback-page .gridbox .content form.fb-container .btn-group .c-button {
+    display: inline-block;
+    width: 138px;
+    height: 35px;
+    line-height: 33px; }
+.feedback-page .gridbox .content form.fb-container.nav-fb {
+  width: 460px; }
+  .feedback-page .gridbox .content form.fb-container.nav-fb .group input[type="text"] {
+    width: 380px; }
+  .feedback-page .gridbox .content form.fb-container.nav-fb .btn-group {
+    width: 380px; }
+.feedback-page .gridbox .warn {
+  display: block;
+  min-height: 20px;
+  line-height: 18px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #ff0000; }
+  .feedback-page .gridbox .warn label {
+    display: block; }
+  .feedback-page .gridbox .warn.none {
+    display: none; }
+
+/*# sourceMappingURL=feedback.css.map */

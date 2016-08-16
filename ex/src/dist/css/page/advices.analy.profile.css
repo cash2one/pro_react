@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.advices-analy-profile2 .c-panel-hd {
+  color: #3e4957;
+  border-bottom: 1px #eee solid; }
+
+.advices-analy-profile2 .data-part {
+  display: -webkit-box;
+  display: flex;
+  margin-left: -11px;
+  margin-right: -11px;
+  margin-bottom: 22px; }
+  .advices-analy-profile2 .data-part .item {
+    -webkit-box-flex: 1;
+    flex: 1;
+    height: 151px;
+    margin-left: 11px;
+    margin-right: 11px;
+    border: 1px #dcdcdc solid;
+    border-radius: 3px;
+    background-color: #fff; }
+    .advices-analy-profile2 .data-part .item:hover {
+      background-color: #f4f4f4; }
+    .advices-analy-profile2 .data-part .item > a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      height: 100%; }
+    .advices-analy-profile2 .data-part .item .num {
+      font-size: 36px;
+      color: #434a50;
+      padding-top: 36px;
+      text-align: center; }
+    .advices-analy-profile2 .data-part .item .desc {
+      text-align: center;
+      font-size: 16px; }
+      .advices-analy-profile2 .data-part .item .desc:before {
+        content: ""; }
+    .advices-analy-profile2 .data-part .item.data-all {
+      background-image: url(/img/profile-art-all.png);
+      background-position: right 26px bottom -28px;
+      background-repeat: no-repeat; }
+      .advices-analy-profile2 .data-part .item.data-all .num {
+        color: #5babdf; }
+      .advices-analy-profile2 .data-part .item.data-all:hover {
+        background-image: url(/img/profile-art-all-hover.png); }
+    .advices-analy-profile2 .data-part .item.data-today {
+      background-image: url(/img/profile-art-today.png);
+      background-position: right 26px bottom -28px;
+      background-repeat: no-repeat; }
+      .advices-analy-profile2 .data-part .item.data-today .num {
+        color: #F7C870; }
+      .advices-analy-profile2 .data-part .item.data-today:hover {
+        background-image: url(/img/profile-art-today-hover.png); }
+    .advices-analy-profile2 .data-part .item.data-warn {
+      background-image: url(/img/profile-art-warn.png);
+      background-position: right 26px bottom -28px;
+      background-repeat: no-repeat; }
+      .advices-analy-profile2 .data-part .item.data-warn .num {
+        color: #E37566; }
+      .advices-analy-profile2 .data-part .item.data-warn:hover {
+        background-image: url(/img/profile-art-warn-hover.png); }
+
+.advices-analy-profile2 .line-part {
+  border: 1px #dcdcdc solid;
+  margin-bottom: 20px; }
+  .advices-analy-profile2 .line-part .hd {
+    height: 49px;
+    background-color: #fafafa;
+    border-bottom: 1px #dcdcdc solid; }
+    .advices-analy-profile2 .line-part .hd:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .advices-analy-profile2 .line-part .hd .tabs {
+      float: left;
+      height: 49px; }
+      .advices-analy-profile2 .line-part .hd .tabs .tab {
+        line-height: 46px;
+        float: left;
+        width: 146px;
+        border-right: 1px #dcdcdc solid;
+        color: #999;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+        border-top: 2px transparent solid; }
+        .advices-analy-profile2 .line-part .hd .tabs .tab:hover {
+          background-color: #f4f4f4; }
+        .advices-analy-profile2 .line-part .hd .tabs .tab.active {
+          background-color: #fff;
+          border-top: 2px #06a2ff solid;
+          border-bottom: 1px #fff solid;
+          color: #444; }
+        .advices-analy-profile2 .line-part .hd .tabs .tab.disabled {
+          color: #bbb;
+          border-top-color: transparent;
+          background-color: transparent;
+          cursor: not-allowed; }
+  .advices-analy-profile2 .line-part .bd {
+    background-color: #fff; }
+
+.advices-analy-profile2 .blocks-part {
+  margin-left: -11px;
+  margin-right: -11px; }
+  .advices-analy-profile2 .blocks-part:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .advices-analy-profile2 .blocks-part .blocks-left {
+    float: left;
+    width: 66.6%;
+    padding-left: 11px;
+    padding-right: 11px; }
+  .advices-analy-profile2 .blocks-part .blocks-right {
+    float: left;
+    width: 33.4%;
+    padding-left: 11px;
+    padding-right: 11px; }
+  .advices-analy-profile2 .blocks-part .pie-chart .item {
+    float: left;
+    width: 33.3%; }
+    .advices-analy-profile2 .blocks-part .pie-chart .item .title {
+      font-size: 14px;
+      width: 116px;
+      height: 30px;
+      border-radius: 15px;
+      line-height: 30px;
+      text-align: center;
+      color: #fff;
+      background-color: #3a99d8;
+      margin-left: auto;
+      margin-right: auto; }
+      .advices-analy-profile2 .blocks-part .pie-chart .item .title.neu {
+        background-color: #f6bb42; }
+      .advices-analy-profile2 .blocks-part .pie-chart .item .title.neg {
+        background-color: #e9573f; }
+  .advices-analy-profile2 .blocks-part .pie-chart .list-blank-holder {
+    margin-top: 50px;
+    margin-bottom: 107px; }
+
+.advices-analy-profile2 .latest-art .desc {
+  font-size: 12px;
+  color: #8c8c8c;
+  margin-left: 15px; }
+
+.advices-analy-profile2 .profile-lists > li {
+  border-bottom: 1px #eee solid;
+  padding: 15px 22px; }
+  .advices-analy-profile2 .profile-lists > li:nth-of-type(2n) {
+    background-color: #f9f9f9; }
+  .advices-analy-profile2 .profile-lists > li:nth-of-type(2n+1) {
+    background-color: #fff; }
+  .advices-analy-profile2 .profile-lists > li:last-child {
+    border-bottom: none; }
+  .advices-analy-profile2 .profile-lists > li:hover {
+    background-color: #f4f4f4; }
+  .advices-analy-profile2 .profile-lists > li .title {
+    margin-bottom: 5px; }
+    .advices-analy-profile2 .profile-lists > li .title a {
+      font-size: 14px;
+      text-decoration: none;
+      vertical-align: middle;
+      display: inline-block;
+      max-width: 80%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .advices-analy-profile2 .profile-lists > li .title .rank {
+      font-size: 12px;
+      border-radius: 5px;
+      vertical-align: middle;
+      padding: 0 2px;
+      margin-left: 5px; }
+      .advices-analy-profile2 .profile-lists > li .title .rank.rank1 {
+        border: 1px #e9573f solid;
+        color: #e9573f; }
+      .advices-analy-profile2 .profile-lists > li .title .rank.rank2 {
+        border: 1px #e9733f solid;
+        color: #e9733f; }
+      .advices-analy-profile2 .profile-lists > li .title .rank.rank3 {
+        border: 1px #f6bb42 solid;
+        color: #f6bb42; }
+      .advices-analy-profile2 .profile-lists > li .title .rank.rank4 {
+        border: 1px #3a99d8 solid;
+        color: #3a99d8; }
+  .advices-analy-profile2 .profile-lists > li .infos {
+    color: #999;
+    font-size: 12px; }
+    .advices-analy-profile2 .profile-lists > li .infos span {
+      margin-right: 40px; }
+
+.advices-analy-profile2 .content-blank {
+  height: 310px; }

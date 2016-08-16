@@ -1,0 +1,30 @@
+// 按钮组
+@import './mixins/flex';
+.c-button-g{
+	@include flexbox();
+	border: 1px #dedede solid;
+	line-height: 26px;
+	-webkit-user-select: none;
+	overflow: hidden;
+	font-size: 14px;
+	border-radius: 2px;
+	&.c-button-g-r{
+		border-radius: 13px;
+	}
+	.c-button-g-cell{
+		@include flex();
+		min-width: 60px;
+		text-align: center;
+		border-right: 1px #dedede solid;
+		&:last-child{
+			border-right: none;
+		}
+		cursor: pointer;
+		background-color: #fff;
+		color: #8c8c8c;
+		&.active, &:hover{
+			background-color: #2abcb9;
+			color: #fff !important;
+		}
+	}
+}

@@ -1,0 +1,138 @@
+.advices-base-article {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px; }
+  .advices-base-article:before, .advices-base-article:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #dedede;
+    left: 50%;
+    top: 0; }
+  .advices-base-article:before {
+    margin-left: -600px; }
+  .advices-base-article:after {
+    margin-left: 600px; }
+  .advices-base-article .title {
+    font-size: 18px;
+    color: #212121;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 15px; }
+    .advices-base-article .title em {
+      color: #f00; }
+  .advices-base-article .info {
+    border-bottom: 1px #dedede solid;
+    color: #6c6c6c;
+    line-height: 1.8;
+    padding: 0 20px;
+    font-size: 14px; }
+    .advices-base-article .info div {
+      margin-right: 35px;
+      display: inline-block; }
+    .advices-base-article .info .positive {
+      color: #00a0e9; }
+    .advices-base-article .info .neutral {
+      color: #de4f00; }
+    .advices-base-article .info .negative {
+      color: #e60012; }
+    .advices-base-article .info .ori-link {
+      color: #8fb9dc;
+      text-decoration: none; }
+      .advices-base-article .info .ori-link:hover {
+        text-decoration: underline; }
+    .advices-base-article .info .kw {
+      color: #e60012; }
+    .advices-base-article .info .tag {
+      color: #00a0e9; }
+  .advices-base-article .tags > span {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+    line-height: 22px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 12px; }
+  .advices-base-article .tags .event {
+    background-color: #7cdbf2; }
+  .advices-base-article .tags .report {
+    background-color: #ac97eb; }
+  .advices-base-article .tags .warn {
+    background-color: #eb5353; }
+  .advices-base-article .opers {
+    padding: 10px 20px;
+    border-bottom: 1px #dedede solid; }
+    .advices-base-article .opers .oper-sele {
+      font-size: 12px;
+      cursor: pointer;
+      text-align: left;
+      position: relative; }
+      .advices-base-article .opers .oper-sele .oper-sele-holder {
+        display: block;
+        border: 1px #dedede solid;
+        padding: 0 5px;
+        line-height: 26px; }
+        .advices-base-article .opers .oper-sele .oper-sele-holder .iconfont {
+          display: inline-block; }
+      .advices-base-article .opers .oper-sele .oper-sele-items {
+        display: none;
+        background-color: #fff;
+        border: 1px #dedede solid;
+        position: absolute;
+        left: 0;
+        top: calc(100% - 1px);
+        min-width: 100%;
+        z-index: 10;
+        white-space: nowrap;
+        max-width: 120px; }
+        .advices-base-article .opers .oper-sele .oper-sele-items li {
+          padding: 0 5px;
+          line-height: 20px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden; }
+          .advices-base-article .opers .oper-sele .oper-sele-items li:hover {
+            background-color: #f5f4f4; }
+          .advices-base-article .opers .oper-sele .oper-sele-items li .iconfont {
+            display: inline-block;
+            width: 1em;
+            font-size: 12px;
+            vertical-align: middle;
+            margin-right: 5px; }
+      .advices-base-article .opers .oper-sele.opened .oper-sele-holder .iconfont {
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg); }
+      .advices-base-article .opers .oper-sele.opened .oper-sele-items {
+        display: block; }
+    .advices-base-article .opers .warnbtn {
+      font-size: 12px;
+      height: 29px;
+      border: 1px #dedede solid;
+      padding: 0 5px;
+      line-height: 29px;
+      cursor: pointer; }
+      .advices-base-article .opers .warnbtn:hover {
+        background-color: #2abcb9;
+        color: #fff; }
+      .advices-base-article .opers .warnbtn:active {
+        background-color: #25a7a4; }
+  .advices-base-article .content {
+    padding: 25px 100px; }
+    .advices-base-article .content em.search {
+      color: #ff5555; }
+    .advices-base-article .content em.tag {
+      background-color: #d6e8ff;
+      display: inline-block;
+      line-height: 24px; }
+    .advices-base-article .content p {
+      line-height: 1.8; }
+  .advices-base-article .c-modal .dialog .cont .body {
+    position: static; }
+
+/*# sourceMappingURL=advices.base.article.css.map */

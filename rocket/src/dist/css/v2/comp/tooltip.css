@@ -1,0 +1,20 @@
+/* 
+created by: Andy
+date:	2016-07-25
+ */
+.c-tooltip-holder {
+  border: 1px #3a99d8 solid;
+  color: #3a99d8;
+  font-size: 14px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 100%;
+  cursor: default; }
+  .c-tooltip-holder:hover {
+    background-color: #3a99d8;
+    color: #fff; }
+
+/*# sourceMappingURL=tooltip.css.map */

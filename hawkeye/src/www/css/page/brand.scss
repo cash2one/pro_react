@@ -1,0 +1,208 @@
+/**
+ * create by lxt
+ * 2016/7/26
+ * 品牌风云榜样式
+ */
+
+@import 'var';
+
+.brand-page {
+	.key-relation-chart-title {
+		position: absolute;
+		top: 4px;
+		left: 32px;
+		font-weight: 500;
+		font-size: 18px;
+		color: $gray-darker;
+	}
+	.one-brand-chart {
+		padding: 0px 0 10px;
+	}
+	.key-relation-chart {
+		padding: 30px 0 10px;
+		background: url(#{$imgDir}/brand_relatedbg.jpg) center center no-repeat;
+	}
+	.key-relation-chart, .one-brand-chart {
+		min-height: 600px;
+		text-align: center;
+	}
+	.table {
+		margin-bottom: 0;
+		tbody tr {
+			td:nth-child(2){
+				cursor: pointer;
+				&:hover {
+					// color: #fff;
+				}
+			}
+		}
+	}
+	.b-title {
+		padding-left: 22px;
+		margin-top: 25px;
+		font-size: 22px;
+	}
+	.b-nav {
+		position: relative;
+		height: 52px;
+		margin: 25px 0 30px;
+		ul {
+			clear: both;
+			width: 100%;
+			height: 100%;
+			background-color: $blue-light2;
+			li {
+				position: relative;
+				display: inline-block;
+				float: left;
+				height: 52px;
+				line-height: 50px;
+				width: 130px;
+				text-align: center;
+				color: #fff;
+				border-right: 1px solid #fff;
+				&:hover {
+					background-color: $blue-dark;
+					cursor: pointer;
+				}
+				&.active {
+					background-color: $blue-dark;
+					&:after {
+						content: "";
+						position: absolute;
+						top: 35px;
+						right: 56px;
+						border: 9px transparent solid;
+						border-bottom: 8px #fff solid;
+					}
+				}
+			}
+		}
+	}
+	.b-one-nav {
+		border-top: 1px solid $border-color-light;
+		border-right: 1px solid $border-color-light;
+		border-bottom: 1px solid $border-color-light;
+		background-color: $white-dark;
+		margin-bottom: 30px;
+		ul li{
+			border-bottom: 1px solid $border-color-light;
+			height: 38px;
+			line-height: 36px;
+			text-align: center;
+			color: $gray-darker;
+			cursor: pointer;
+			&:hover {
+				background-color: $gray-lighter;
+			}
+			&.active {
+				background-color: $blue-light3;
+				color: #fff;
+			}
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+	.b-one-main {
+		border: 1px solid $border-color-light;
+		border-top: none;
+	}
+	.panel {
+		border: 1px solid $border-color-light;
+		&.panel-default {
+			.panel-heading {
+				color: #fff;
+			    background-color: #3a99d8;
+			    .panel-title {
+			    	color: #fff;
+			    }
+			    .b-more {
+			    	color: #fff;
+		    	    padding-top: 3px;
+			    }
+			}
+		}
+		.tab {
+			border-top: 1px solid $border-color-light;
+			border-bottom: 1px solid $border-color-light;
+			ul li {
+				border-right: 1px solid $border-color-light;
+			}
+		}
+		.tab-content {
+			// padding: 30px 22px 0;
+			padding: 0 22px 0;
+			.b-mod {
+				border-bottom: 1px solid $border-color-light;
+				padding-bottom: 10px;
+				margin-bottom: 30px;
+				&:last-child {
+					border-bottom: none;
+					margin-bottom: 0px;
+				}
+				.rank-top-10 {
+					color: $blue-light;
+					&.fb {
+						font-weight: bold;
+					}
+				}
+				.rank-top-3 {
+					display: inline-block;
+					width: 18px;
+					height: 16px;
+					background-color: #eb5638;
+					border-radius: 2px;
+					color: #fff;
+					font-weight: 400;
+				}
+			}
+		}
+		.b-more {
+			color: $blue-light;
+			cursor: pointer;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.b-panel-footer {
+			height: 40px;
+			line-height: 40px;
+			.link {
+				color: $blue-light;
+				cursor: pointer;
+				padding-right: 22px;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.detail {
+			color: #fff;
+			background-color: $blue-light2;
+			border-radius: 2px;
+			font-size: 12px;
+			padding: 1px 3px;
+			cursor: pointer;
+			width: 18px;
+		}
+		.iconfont {
+			cursor: default;
+			&.icon-shangsheng {
+				color: $red-light;
+			}
+			&.icon-xiajiang {
+				color: $blue-light2;
+			}
+			&.icon-wu {
+				display: inline-block;
+				width: 15px;
+				height: 10px;
+				text-align: center;
+			}
+		}
+	}
+	.panel-default {
+		border-color: $border-color-light;
+	}
+}

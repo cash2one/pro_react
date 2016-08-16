@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/**
+ * 特殊输入框v2样式
+ * 表单错误信息提示v2样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.input-icon-form {
+  position: relative; }
+  .input-icon-form input.form-control {
+    padding: 9px 42px 9px 12px; }
+  .input-icon-form .iconfont.addbtn {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    font-size: 24px;
+    color: #999;
+    cursor: pointer; }
+    .input-icon-form .iconfont.addbtn:hover {
+      color: #3a99d8; }
+
+label.error {
+  position: relative;
+  top: 5px; }
+
+.c-time-range {
+  border: 1px #eee solid;
+  background: #fff url(/img/c-time-range.png) left center no-repeat;
+  padding-left: 20px;
+  border-radius: 2px;
+  line-height: 1;
+  color: #444;
+  font-size: 12px;
+  width: 180px;
+  height: 22px;
+  line-height: 22px; }
+  .c-time-range:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #999; }
+  .c-time-range::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #999; }
+  .c-time-range:-ms-input-placeholder {
+    color: #999; }
+  .c-time-range::-webkit-input-placeholder {
+    color: #999; }
+
+/*# sourceMappingURL=form.css.map */

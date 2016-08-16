@@ -1,0 +1,352 @@
+@import '../mixins/flex';
+@import '../mixins/trans';
+@import 'var';
+.advices-analy-profile{
+	padding: 0 14px;
+	.art-part{
+		padding-top: 30px;
+		@include flexbox();
+		.left{
+			@include flex();
+			overflow: hidden;
+		}
+		.art-number{
+			border: 1px #dedede solid;
+			height: 208px;
+			float: left;
+			width: 160px;
+			margin-right: 10px;
+			@include flexbox();
+			@include directionVertical();
+			.top{
+				@include flexbox();
+				@include flex();
+				@include directionVertical();
+				&>div{
+					@include flex();
+					&:hover{
+						background-color: #eef6fc;
+					}
+				}
+				a{
+					color: inherit;
+					text-decoration: none;
+					display: block;
+					padding: 15px 0 15px 20px;
+				}
+				.label{
+					font-size: 14px;
+					color: #212121;
+					margin-bottom: 15px;
+					display: block;
+				}
+				.num{
+					font-size: 26px;
+				}
+				.total{
+					color: #00b7ee;
+				}
+				.warn{
+					color: #ff0000;
+				}
+			}
+			.bottom{
+				@include flex();
+				background-color: #eef6fc;
+				font-size: 14px;
+				padding: 15px 20px;
+				line-height: 2;
+			}
+		}
+		.art-list{
+			margin-right: 10px;
+			border: 1px #dedede solid;
+			height: 208px;
+			overflow: hidden;
+			.title{
+				color: #212121;
+				line-height: 2;
+				padding-left: 1em;
+			}
+			.c-table{
+				border: none;
+			}
+		}
+		.art-chart{
+			border: 1px #dedede solid;
+			overflow: hidden;
+			height: 208px;
+			width: 230px;
+			.title{
+				border-bottom: 1px #dedede solid;
+				font-size: 14px;
+				line-height: 2;
+				color: #212121;
+				padding: 0 10px;
+			}
+		}
+	}
+	.grid{
+		margin-top: 10px;
+		overflow: hidden;
+		padding-bottom: 10px;
+		.left{
+			overflow: hidden;
+			padding-right: 10px;
+		}
+		.right{
+			width: 230px;
+			float: right;
+		}
+	}
+	.art-index{
+		border: 1px #dedede solid;
+		height: 376px;
+		.tab{
+			height: 30px;
+			border-bottom: 1px #dedede solid;
+			&:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.inner{
+				float: left;
+			}
+			.item{
+				float: left;
+				width: 90px;
+				border-right: 1px #dedede solid;
+				line-height: 30px;
+				color: #212121;
+				font-size: 12px;
+				text-align: center;
+				cursor: pointer;
+				&:hover,&.active{
+					background-color: #8fb9dc;
+					color: #fff;
+				}
+				&:last-child{
+					// border-right: 0;
+				}
+				&[data-disable="true"]{
+					color: #ccc;
+					&:hover{
+						background-color: #fff;
+						cursor: not-allowed;
+					}
+				}
+			}
+		}
+		.content{
+			.chart{
+				height: 346px;
+			}
+			.selectors{
+				border-top: 1px #dedede solid;
+				line-height: 32px;
+				padding: 0 0 0 30px;
+				label{
+					margin-right: 20px;
+					font-size: 12px;
+					color: #212121;
+				}
+			}
+		}
+	}
+	.art-news{
+		border: 1px #dedede solid;
+		.title{
+			line-height: 35px;
+			border-bottom: 1px #dedede solid;
+			font-size: 14px;
+			padding: 0 10px;
+			a{
+				color: #0055ac;
+				text-decoration: none;
+				font-size: 12px;
+			}
+			em{
+				margin-left: 6px;
+				color: #8c8c8c;
+				font-size: 12px;
+			}
+		}
+		.list{
+			font-size: 14px;
+			table{
+				td{
+					height: 35px;
+					color: #212121;
+					padding: 0 10px;
+				}
+				tr{
+					// &:hover{
+					// 	td{
+					// 		background-color: #eef6fc;
+					// 	}
+					// }
+					&:nth-of-type(2n){
+						background-color: #f1f5f9;
+					}
+				}
+				.link{
+					color: #212121;
+					text-decoration: none;
+					&:hover{
+						color: #0055ac;
+						text-decoration: underline;
+					}
+					&:visited{
+						color: #8c8c8c;
+					}
+				}
+				.time{
+					color: #8c8c8c;
+				}
+			}
+		}
+	}
+	.art-hot{
+		border: 1px #dedede solid;
+		height: 376px;
+		// border-top: 5px #79a1c2 solid;
+		.title{
+			line-height: 28px;
+			border-bottom: 1px #dedede solid;
+			padding: 0 10px;
+			font-size: 14px;
+			a{
+				float: right;
+				color: #0055ac;
+				font-size: 12px;
+				text-decoration: none;
+			}
+			em{
+				margin-left: 6px;
+				color: #8c8c8c;
+				font-size: 12px;
+			}
+		}
+		.list{
+			padding: 1px 10px;
+			.item{
+				padding-left: 10px;
+				line-height: 32px;
+				border-bottom: 1px #dedede dashed;
+				font-size: 12px;
+				.tit{
+					a{
+						color: #333;
+						width: 80%;
+						text-decoration: none;
+						&:hover{
+							color: #0055ac;
+							text-decoration: underline;
+						}
+						&:visited{
+							color: #8c8c8c;
+						}
+					}
+				}
+				.date{
+					color: #8c8c8c;
+					float: right;
+					padding-left: 5px;
+				}
+				&:hover{
+					.date{
+						color: #505050;
+					}
+				}
+				&:last-child{
+					border-bottom: 0;
+				}
+			}
+			.list-blank-holder{
+				a{
+					color: #0055ac;
+				}
+			}
+		}
+	}
+	.guide-mask{
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255,255,255,.4);
+		z-index: 500;
+		overflow: auto;
+		.wrap{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 100%;
+			max-width: 971px;
+			@include transform(translate(-50%,-50%));
+			text-align: center;
+			.c-button{
+				position: relative;
+				top: -46px;
+			}
+			.pagin{
+				margin-top: -10px;
+				.swiper-pagination-bullet{
+					display: inline-block;
+					width: 8px;
+					height: 8px;
+					border: 2px #fff solid;
+					border-radius: 100%;
+					background-color: #aeaeae;
+					box-sizing: content-box;
+					margin: 0 4px;
+					@include transition();
+				}
+				.swiper-pagination-bullet-active{
+					background-color: #fff;
+					border-color: #15ced1;
+				}
+			}
+			.arr{
+				div{
+					width: 50px;
+					height: 265px;
+					background: rgba(0,0,0,.3) center center no-repeat;
+					cursor: pointer;
+					position: absolute;
+					top: 136px;
+					z-index: 1;
+					&:hover{
+						background-color: rgba(0,0,0,.6);
+					}
+				}
+				.l{
+					background-image: url(#{$imgDir}/guide-left.png);
+					left: -12px;
+				}
+				.r{
+					background-image: url(#{$imgDir}/guide-right.png);
+					right: -32px;
+				}
+			}
+		}
+	}
+}
+@-webkit-keyframes spin {
+	0%{
+		@include transform(rotate(0));
+	}
+	100%{
+		@include transform(rotate(-360deg));
+	}
+}
+@keyframes spin {
+	0%{
+		@include transform(rotate(0));
+	}
+	100%{
+		@include transform(rotate(-360deg));
+	}
+}

@@ -1,0 +1,43 @@
+/*----------- 表格 ------------ */
+.c-table{
+	margin: 0 auto;
+	width: 100%;
+	border: 1px solid #dedede;
+	text-align: center;
+	font-size: 14px;
+	thead{
+		background-color: #79a1c2;
+		color: #fff;
+		th{
+			height: 34px;
+			text-align: center;
+			border-right: 1px solid #dedede;
+			&:last-child{
+				border-right: 0;
+			}
+		}
+	}
+	tbody{
+		tr{
+			height: 35px;
+			color: #212121;
+			&:nth-child(2n){
+				background-color: #f8fafc;
+			}
+			&:hover{
+				background-color: #d7e3ed;
+			}
+			td:nth-child(1){
+				color: #818181;
+			}
+		}
+	}
+	.iconfont{
+		color: #818181;
+		cursor: pointer;
+		font-weight: normal;
+		&:hover{
+			color: #1fbba6;
+		}
+	}
+}

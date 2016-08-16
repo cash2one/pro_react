@@ -1,0 +1,230 @@
+/**
+ * create by lxt
+ * edit on 2016/07/22åå
+ * 用户反馈v2样式
+ */
+@import '../var';
+
+.feedback-page {
+	.problem-form {
+		.pf-title {
+			height: 30px;
+			line-height: 28px;
+			text-align: left;
+			.iconfont {
+				font-size: 28px;
+				vertical-align: middle;
+				color: $blue-light;
+			}
+			.ic-txt {
+				vertical-align: middle;
+				font-size: 16px;
+				margin-left: 8px;
+			}
+		}
+	}
+	.media-form {
+
+	}
+	.nav-form {
+
+	}
+	.c-rd {
+		vertical-align: middle;
+	}
+	label>i {
+		color: $red-light;
+		margin-right: 2px;
+	}
+	.dropdown-v2 {
+		&.idx4 {
+			z-index: 4;
+		}
+		&.idx3 {
+			z-index: 3;
+		}
+		&.idx2 {
+			z-index: 2;
+		}
+		&.idx1 {
+			z-index: 1;
+		}
+	}
+}
+
+.feedback-page {
+	.gridbox {
+		.content {
+			form {
+				.btn-group {
+					width: 435px;
+					text-align: center;
+					.c-button {
+						display: inline-block;
+						width: 138px;
+						height: 35px;
+						line-height: 33px;
+						&:first-child {
+							
+						}
+						&:last-child {
+							
+						}
+					}
+				}
+				.picbox {
+					width: 425px;
+					.addbtn {
+						display: inline-block;
+						width: 68px;
+						height: 68px;
+						vertical-align: middle;
+
+						color: #dedede;
+						border: 1px solid #dedede;
+						font-size: 14px;
+						cursor: pointer;
+						margin-right: 22px;
+						&:hover {
+							color: #3492e9;
+						}
+						.iconfont {
+							display: block;
+							font-size: 26px;
+							text-align: center;
+							margin-top: 6px;
+							margin-bottom: 6px;
+						}
+						span {
+							display: block;
+							text-align: center;
+						}
+					}
+					.pics {
+						display: inline-block;
+						width: 68px;
+						height: 68px;
+						vertical-align: middle;
+
+						border: 1px solid #dedede;
+						margin-right: 10px;
+						text-align: center;
+						&:hover {
+							cursor: pointer;
+						}
+
+						img {
+							display: block;
+							margin: 3px auto 1px;
+						}
+						span {
+							display: block;
+							text-align: center;
+							font-size: 14px;
+							color: #fff;
+							&:hover {
+								color: #3492e9;
+							}
+						}
+					}
+				}
+				&.fb-container {
+					p.tip {
+						text-align: left;
+						margin-left: 90px;
+						margin-top: -15px;
+						font-size: 14px;
+						color: #8c8c8c;
+					}
+					.group {
+						margin-top: 25px;
+						margin-bottom: 25px;
+						label {
+							font-size: 14px;
+							width: 80px;
+							height: 40px;
+							line-height: 38px;
+							color: #212121;
+							margin-right: 16px;
+							&.vt {
+								line-height: 18px;
+							}
+							&.label-type {
+								line-height: 22px;
+								vertical-align: top;
+							}
+						}
+						input[type = "text"] {
+							font-size: 14px;
+							text-indent: 10px;
+							width: 350px;
+							height: 40px;
+							border: 1px solid #dedede;
+						}
+						input[type = "radio"] {
+							font-size: 14px;
+							color: #212121;
+							margin-right: 5px;
+							margin-bottom: 18px;
+						}
+						.radio-group {
+							width: 350px;
+							display: inline-block;
+							vertical-align: top;
+							font-size: 14px;
+							padding-left: 6px;
+							label.radiobox {
+								display: inline-block;
+								margin-right: 0;
+								width: 68px;
+								cursor: pointer;
+							}
+						}
+					}
+					.btn-group {
+						margin-left: 77px;
+						width: 350px;
+						text-align: center;
+						.c-button {
+							display: inline-block;
+							width: 138px;
+							height: 35px;
+							line-height: 33px;
+							&:first-child {
+								
+							}
+							&:last-child {
+								
+							}
+						}
+					}
+					&.nav-fb {
+						width: 460px;
+						.group {
+							input[type = "text"] {
+								width: 380px;
+							}
+						}
+						.btn-group {
+							width: 380px;
+						}
+					}
+				}
+			}
+		}
+		.warn {
+			display: block;
+			min-height: 20px;
+			line-height: 18px;
+			margin-bottom: 15px;
+			font-size: 12px;
+			color: #ff0000;
+			label {
+				display: block;
+			}
+			&.none {
+				display: none;
+			}
+		}
+	}
+}

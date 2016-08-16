@@ -1,0 +1,134 @@
+@import '../mixins/flex';
+.advices-manager-media{
+	.c-search{
+		.s-input{
+			height: 40px;
+			font-size: 14px;
+		}
+		.s-btn{
+			background-color: #fff;
+			color: #000;
+			&:before{
+				top: 10px;
+			}
+		}
+	}
+	.amm-search{
+		padding: 43px 27px 0;
+		margin-bottom: 15px;
+	}
+	.amm-s-btn{
+		background-color: #2abcb9;
+		border-radius: 2px;
+		text-align: center;
+		line-height: 42px;
+		color: #fff;
+		width: 100px;
+		cursor: pointer;
+		-webkit-user-select: none;
+		&:active{
+			background-color: darken(#2abcb9, 5%);
+		}
+		&.disabled{
+			background-color: #dedede;
+		}
+	}
+	.amm-rt{
+		color: #8c8c8c;
+		font-size: 12px;
+		border-top: 1px #dedede solid;
+		border-bottom: 1px #dedede solid;
+		padding: 5px 27px;
+		.link{
+			color: rgb(72,154,205);
+			text-decoration: none;
+		}
+	}
+	.amm-blank{
+		padding-top: 90px;
+		color: #8c8c8c;
+		font-size: 14px;
+		text-align: center;
+	}
+	.amm-list{
+		padding: 0 1px;
+		&>.item{
+			padding: 30px 27px;
+			@include flexbox();
+			@include alignCenter();
+			position: relative;
+			&:nth-of-type(2n){
+				background-color: #fcfcfc;
+			}
+			&:nth-of-type(2n+1){
+				background-color: #fff;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				left: 28px;
+				right: 28px;
+				bottom: 0;
+				height: 1px;
+				background-color: #dedede;
+				margin: 0 auto;
+			}
+			.mid{
+				@include flex();
+			}
+			.name{
+				color: #2a2a2a;
+				font-size: 18px;
+				text-decoration: none;
+				em{
+					color: #e60012;
+				}
+				&:hover{
+					text-decoration: underline;
+				}
+				max-width: 10em;
+				display: inline-block;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			.type{
+				color: #8c8c8c;
+				font-size: 12px;
+				max-width: 20em;
+				display: inline-block;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				vertical-align: 2px;
+			}
+			.desc{
+				font-size: 16px;
+				color: #2a2a2a;
+				em{
+					color: #e60012;
+				}
+			}
+			.cate{
+				max-width: 600px;
+				&>.item{
+					display: inline-block;
+					border: 1px #dedede solid;
+					border-radius: 4px;
+					padding: 0 8px;
+					margin-right: 10px;
+					margin-bottom: 5px;
+					font-size: 14px;
+					line-height: 20px;
+					color: #8c8c8c;
+					&.active{
+						color: #e60012;
+					}
+				}
+			}
+			.right{
+				color: #8c8c8c;
+			}
+		}
+	}
+}

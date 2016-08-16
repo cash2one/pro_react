@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>日报分享</title>
+	<link rel="stylesheet" href="http://home.puzhizhuhai.com/rt/rr/css/style-report-share.css">
+	<link rel="stylesheet" href="http://home.puzhizhuhai.com/rt/ex/css/page/advices.base.report.detail.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+	<style>
+		.summary-part2 .wrap{
+			background: url(http://home.puzhizhuhai.com/rt/rr/img/report-crisis-index.png) center center no-repeat !important;
+		}
+		.summary-part2 .wrap.c1 .img{
+			background: url(http://home.puzhizhuhai.com/rt/rr/img/report-crisis-1.png) center center no-repeat !important;
+		}
+		.summary-part2 .wrap.c2 .img{
+			background: url(http://home.puzhizhuhai.com/rt/rr/img/report-crisis-2.png) center center no-repeat !important;
+		}
+		.summary-part2 .wrap.c3 .img{
+			background: url(http://home.puzhizhuhai.com/rt/rr/img/report-crisis-3.png) center center no-repeat !important;
+		}
+		.summary-part2 .wrap.c4 .img{
+			background: url(http://home.puzhizhuhai.com/rt/rr/img/report-crisis-4.png) center center no-repeat !important;
+		}
+	</style>
+</head>
+<body>
+	<div style='margin:0 auto;width:0px;height:0px;overflow:hidden;'>
+	<img src="http://home.puzhizhuhai.com/rt/rr/img/rbfxt.png" width='700'>
+	</div>
+	<div id="main"></div>
+</body>
+<script type="text/javascript">
+	;(function(){
+
+		var rcn = 'http://home.puzhizhuhai.com/rt/rr',
+			ex = 'http://home.puzhizhuhai.com/rt/ex',
+			index = 'http://home.puzhizhuhai.com/rt/hawkeye',//http://c.puzhizhuhai.com',
+			domain = 'puzhizhuhai.com',
+
+			rcn_web = "";
+
+		window.paths = {
+			rcn: {
+				web:rcn_web,
+				domain: domain,
+				api: rcn,
+				base: rcn,
+				comps: rcn + '/js/comps',
+				lib: rcn + '/js/lib',
+				util: rcn + '/js/util',
+				plu: rcn + '/js/plu',
+				page: rcn + '/js/page',
+				img: rcn + '/img'
+			},
+			ex: {
+				domain: domain,
+				api: ex,
+				base: '.',
+				page: ex + '/js/page',
+				comps: ex + '/js/comps',
+				plu: ex + '/js/plu',
+				util: ex + '/js/util',
+				lib: ex + '/js/lib',
+				advices: {
+					base: {
+						event: ex + '/js/page/advices/base/event',
+						news: ex + '/js/page/advices/base/news',
+						warn: ex + '/js/page/advices/base/warn'
+					}
+				},
+				// 媒体搜索的图片
+				eximg: '/eximg/'
+			},
+			index: {
+				web:rcn_web,
+				domain: domain,
+				api: index,
+				base: index,
+				comps: index + '/js/comps',
+				page: index + '/js/page'
+			},
+			// 重定向链接
+			relink: {
+				login: rcn_web + '/login',
+				company: rcn_web + '/manager#/company'
+			}
+		}
+	})();
+</script>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://home.puzhizhuhai.com/rt/rr/js/lib/jquery_rest.js?rel=1465354180899"></script>
+<script type="text/javascript" src="http://home.puzhizhuhai.com/rt/rr/js/plu/jquery.cookie.js?rel=1465354180899"></script>
+<script type="text/javascript" src="http://home.puzhizhuhai.com/rt/rr/js/require.js?rel=1465354180899" data-main="http://home.puzhizhuhai.com/rt/ex/js/page/advices/base/report/share"></script>
+<script type="text/javascript" src="http://home.puzhizhuhai.com/rt/rr/js/init.js?rel=1465354180899"></script>
+</html>

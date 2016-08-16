@@ -1,0 +1,177 @@
+/**
+ * 搜索指数
+ */
+
+.index-base {
+	.fr-br-m-left {
+		display: inline-block;
+		vertical-align: top;
+		height: 35px;
+		line-height: 33px;
+		.titlebox {
+			color: #444;
+			vertical-align: middle;
+		}
+		&.w1 {
+			width: 90px;
+		}
+		&.w2 {
+			width: 24%;
+			min-width: 250px;
+		}
+	}
+	.fr-br-m-right {
+		display: inline-block;
+		vertical-align: middle;
+		width: 85.5%;
+		padding: 0 5px 0 15px;
+		min-height: 35px;
+		line-height: 33px;
+		&.w1 {
+			width: 85.5%;
+		}
+		&.w2 {	
+			width: 46%;
+		}
+	}
+	.index-base-info {
+		.haskey {
+			text-align: center;
+			padding: 40px;
+			color: #999;
+			.add {
+				color: #3a99db;
+				cursor: pointer;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.key {
+			position: relative;
+			margin-right: 5px;
+			min-width: 95px;	
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow: ellipsis;
+			height: 28px;
+			line-height: 26px;
+			text-align: center;
+			border: 1px solid #dedede;
+			border-radius: 2px;
+			color: #969696;
+			background-color: #fff;
+			display: inline-block;
+			vertical-align: middle;
+			cursor: pointer;
+			&.act {
+				background-color: #f4f4f4;
+				.col{
+					position: absolute;
+					left: 12px;
+					top: 8px;
+					width: 10px;
+					height: 10px;
+					border-radius: 5px;
+					display: inline-block;
+					margin-right: 5px;
+				}
+			}
+			span {
+				display: inline-block;
+				width: 100%;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				padding: 0 25px;
+			}
+		}
+		.content {
+			.chartsbox {
+				height: 325px;
+				width: auto;
+				border-bottom: 1px solid #eee;
+				margin-bottom: 30px;
+			}
+			ul li:last-child {
+				.chartsbox {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.editbox {
+			float: right;
+			margin-right: 22px;
+		}
+
+	}
+	.index-base-setting {
+		.form-control {
+			height: 42px;
+		}
+		.keybox{
+			margin-right: -6px;
+			user-select: none;
+			-ms-user-select: none;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			.key {
+				position: relative;
+				margin-right: 6px;
+				min-width: 127px;
+				max-width: 10em;
+				white-space:nowrap;
+				overflow:hidden;
+				text-overflow: ellipsis;
+				height: 30px;
+				line-height: 28px;
+				text-align: center;
+				border: 1px solid #dedede;
+				border-radius: 2px;
+				color: #999;
+				background-color: #fff;
+				display: inline-block;
+				vertical-align: middle;
+				margin-bottom: 10px;
+				.iconfont {
+					position: absolute;
+					right: 5px;
+					color: #999;
+					top: 0px;
+					&:hover {
+						color: #2c97de;
+					}
+				}
+				&:hover {
+					cursor: pointer;
+				}
+				&.active {
+					border: 1px solid #3a99d8;
+					background-color: #3a99d8;
+					color: #fff;
+					.iconfont {
+						display: none;
+					}
+					span {
+						padding: 0 10px;
+					}
+				}
+				span {
+					position: relative;
+					left: 0;
+					display: inline-block;
+					width: 100%;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					padding-left: 10px;
+					padding-right: 26px;
+				}
+			}
+		}
+	}
+	.testMain{
+		width: 813px;
+		height: 325px;
+	}
+}

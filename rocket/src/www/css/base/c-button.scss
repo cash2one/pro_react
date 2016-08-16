@@ -1,0 +1,21 @@
+/*----------- 按钮 ------------ */
+.c-button{
+    width: 84px;
+    height: 28px;
+    line-height: 26px;
+    padding-top: 1px;
+    background-color: #1fbba6;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    text-align: center;
+    &:active{
+        background-color: darken(#2abcb9, 5%);
+    }
+}
+.c-button.disable{
+    background-color: #dedede;
+}

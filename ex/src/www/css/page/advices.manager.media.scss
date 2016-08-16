@@ -1,0 +1,222 @@
+@import '../mixins/flex';
+@import '../mixins/trans';
+@import '../var';
+.advices-manager-media-v2{
+	.con{
+		max-width: 1080px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #fff;
+		border: 1px #dedede solid;
+		border-radius: 2px;
+	}
+	.search-part{
+		background-color: #fafafa;
+		border-radius: 4px;
+		padding: 11px 22px;
+		border-bottom: 1px #eee solid;
+		-webkit-box-sizing: content-box;
+		box-sizing: content-box;
+		.search-wrap{
+			display: table;
+			width: 100%;
+			border: 1px #eee solid;
+			border-radius: 2px;
+			height: 38px;
+			.search-cell{
+				display: table-cell;
+				height: 38px;
+				width: 1%;
+				background-color: #fff;
+				white-space: nowrap;
+				vertical-align: middle;
+				&:first-child{
+					border-right: 1px #eee solid;
+				}
+			}
+			.search-input{
+				width: 100%;
+				display: table-cell;
+				background-color: #fff;
+				input{
+					border: none;
+					height: 38px;
+					width: 100%;
+					padding: 6px 10px;
+					line-height: 1.4;
+					font-size: 15px;
+				}
+			}
+			.search-toggle{
+				position: relative;
+				.holder{
+					padding: 6px 14px 6px 10px;
+					font-size: 16px;
+					color: #3e4957;
+					cursor: pointer;
+					letter-spacing: 0.2em;
+					position: relative;
+					.txt{
+						&:after{
+							content: "";
+							border: 3px transparent solid;
+							border-top: 8px #3e4957 solid;
+							position: absolute;
+							top: calc(50% - 3px);
+							right: 6px;
+							color: #818181;
+						}
+					}
+				}
+				.list{
+					position: absolute;
+					left: -1px;
+					right: -1px;
+					top: 100%;
+					letter-spacing: 0.2em;
+					text-align: center;
+					background-color: #fff;
+					border: 1px #eee solid;
+					border-top: none;
+					border-bottom-left-radius: 2px;
+					border-bottom-right-radius: 2px;
+					li{
+						padding: 2px 14px 2px 10px;
+						color: #3e4957;
+						cursor: pointer;
+					}
+				}
+				.dropdown-list{
+					display: none;
+					position: absolute;
+					top: 36px;
+					z-index: 1;
+				}
+				&.active{
+					.dropdown-list{
+						display: block;
+					}
+				}
+			}
+			.search-button{
+				background-color: $gray-lighter;
+				padding: 6px 10px;
+				height: 38px;
+				line-height: 25px;
+				border-top-right-radius: 2px;
+				border-bottom-right-radius: 2px;
+				.iconfont{
+					font-size: 20px;
+				}
+				.icon-sousuo{
+					color: $gray-light;
+				}
+				&:hover{
+					background-color: $blue-light2;
+					.iconfont{
+						color: #fff;
+					}
+				}
+			}
+		}
+		.search-toggle{
+
+		}
+	}
+	.info-part{
+		padding-left: 22px;
+		padding-right: 22px;
+		line-height: 55px;
+		font-size: 14px;
+		color: $gray-light;
+		overflow: hidden;
+		position: relative;
+		.count{
+			color: $red-light;
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			height: 1px;
+			background-color: #eee;
+			bottom: 0;
+			left: 22px;
+			right: 22px;
+		}
+	}
+	.list-part{
+		.list-item{
+			padding: 20px 22px;
+			position: relative;
+			&:hover{
+				background-color: $gray-lighter;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				height: 1px;
+				background-color: #eee;
+				bottom: 0;
+				left: 22px;
+				right: 22px;
+			}
+			table{
+				width: 100%;
+				td{
+					vertical-align: middle;
+					width: 1%;
+					&.content{
+						width: 99%;
+						padding-left: 20px;
+						padding-right: 20px;
+					}
+				}
+			}
+			.img{
+				width: 82px;
+				height: 82px;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center center;
+			}
+			.title{
+				font-size: 16px;
+				margin-right: 10px;
+				vertical-align: bottom;
+			}
+			.subtitle{
+				color: $gray-light;
+				font-size: 12px;
+				vertical-align: bottom;
+			}
+			.desc{
+				font-size: 14px;
+				color: $gray-darker;
+				line-height: 1.8;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				em{
+					color: $red-light;
+				}
+			}
+			.cate{
+				.item{
+					float: left;
+					padding: 0 5px;
+					border: 1px #dedede solid;
+					border-radius: 2px;
+					margin-right: 10px;
+					margin-bottom: 10px;
+					font-size: 12px;
+					color: $gray-light;
+					&.active{
+						color: $red-light;
+					}
+				}
+			}
+			.ranks{
+				color: $gray-light;
+			}
+		}
+	}
+}

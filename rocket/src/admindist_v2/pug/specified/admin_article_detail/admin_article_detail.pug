@@ -1,0 +1,72 @@
+section.content
+  .row
+    .col-md-9
+      .box.box-primary
+        .box-header.with-border
+          h3.box-title 文章详情
+          .box-tools.pull-right
+            a.btn.btn-box-tool(href='#', data-toggle='tooltip', title='Previous')
+              i.fa.fa-chevron-left
+            a.btn.btn-box-tool(href='#', data-toggle='tooltip', title='Next')
+              i.fa.fa-chevron-right
+        .box-body.no-padding#target_detail
+          script(type='text/x-tmpl-mustache',id='template_detail')
+              .mailbox-read-info
+                h3 {{_source.link_title}}
+                h5.subtitle
+                  span.mailbox-read-time {{_source.from.media}}
+                    a(target="_blank",href="{{_source.url}}") (原文链接)
+                  span.mailbox-read-time {{_source.publish_at}}
+                  span.mailbox-read-time 文章类型:{{_source.emotion}}
+                  span.mailbox-read-time 关键字:
+                      | {{#_source.from.tags}}
+                      | {{.}}
+                      | {{/_source.from.tags}}
+                  span.mailbox-read-time 自动标签:
+                      | {{#_source.tags}}
+                      | {{.}}
+                      | {{/_source.tags}}
+              .mailbox-controls.with-border.text-center
+                .btn-group
+                  button.btn.btn-default.btn-sm(type='button', data-toggle='tooltip', data-container='body', title='修改情感面')
+                    i.fa.fa-frown-o
+                  button.btn.btn-default.btn-sm(type='button', data-toggle='tooltip', data-container='body', title='添加日报')
+                    i.fa.fa-file-text-o
+                  button.btn.btn-default.btn-sm(type='button', data-toggle='tooltip', data-container='body', title='纷纷反对')
+                    i.fa.fa-thumbs-down
+                button.btn.btn-default.btn-sm(type='button', data-toggle='tooltip', title='添加预警')
+                  i.fa.fa-exclamation-triangle
+              .mailbox-read-message
+                .related_coms
+                  span.mailbox-read-time 相关公司:
+                  | {{#related_coms}}
+                  span.com_item {{.}}
+                  | {{/related_coms}}
+                span.mailbox-read-time 文章摘要:
+                  | {{_source.slug}}
+                p(style="width:100%;float:left")
+                 | {{{_source.content}}}
+    .col-md-3
+      a.btn.btn-primary.btn-block.margin-bottom(href='#') 其他属性
+      .box.box-solid
+        .box-header.with-border
+          h3.box-title 属性
+          .box-tools
+            button.btn.btn-box-tool(type='button', data-widget='collapse')
+              i.fa.fa-minus
+        .box-body.no-padding
+          ul.nav.nav-pills.nav-stacked#target_attrs
+          script(type='text/x-tmpl-mustache',id='template_attrs')
+            +attr(true,"origin","",true)
+            +attr(false,"url","{{_source.origin.url}}",false)
+            +attr(true,"domain","{{_source.domain}}",false)
+            +attr(true,"from","{{_source.origin.url}}",true)
+            +attr(false,"media","{{_source.from.media}}",false)
+            +attr(false,"mid","{{_source.from.mid}}",false)
+            +attr(true,"uuid","{{_source.uuid}}",false)
+            +attr(true,"author","{{_source.author}}",false)
+            +attr(true,"hostname","{{_source.hostname}}",false)
+            +attr(true,"result_tags","{{_source.result_tags}}",false)
+            +attr(true,"title_sign","{{_source.title_sign}}",false)
+            +attr(true,"crawler_at","{{_source.crawler_at}}",false)
+            +attr(true,"publish_at","{{_source.publish_at}}",false)

@@ -1,0 +1,43 @@
+// Main Header
+header.main-header
+  // Logo
+  a.logo(href='index2.html')
+    // mini logo for sidebar mini 50x50 pixels
+    span.logo-mini
+      b 普
+      | 智
+    // logo for regular state and mobile devices
+    span.logo-lg
+      b 深圳
+      | 普智
+  // Header Navbar
+  nav.navbar.navbar-static-top(role='navigation')
+    // Sidebar toggle button
+    a.sidebar-toggle(href='#', data-toggle='offcanvas', role='button')
+      span.sr-only Toggle navigation
+    .navbar-custom-menu
+      ul.nav.navbar-nav
+        li.dropdown.user.user-menu#target_user_info_header
+          a.dropdown-toggle(href='#')
+            img.user-image(src='http://localhost:63342/RB_YYP/src/admindist_v2/pages/avatar/touxiang.jpg', alt='User Image')
+            span.hidden-xs 管理员
+          script(type='text/x-tmpl-mustache',id='template_user_info_header')
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                img.user-image(src='http://localhost:63342/RB_YYP/src/admindist_v2/pages{{avatar}}', alt='User Image')
+                span.hidden-xs {{name}}
+              ul.dropdown-menu
+                // The user image in the menu
+                li.user-header
+                  img.img-circle(src='http://localhost:63342/RB_YYP/src/admindist_v2/pages{{avatar}}', alt='User Image')
+                  p
+                    | {{name}} - {{role_group}}
+                    small 2012-08-05 注册
+                // Menu Body
+                li.user-body
+                  // /.row
+                // Menu Footer
+                li.user-footer
+                  .pull-left
+                    a.btn.btn-default.btn-flat#setting(href='#') #{personal_setting}
+                  .pull-right
+                    a.btn.btn-default.btn-flat#logout(href='#') #{logout}

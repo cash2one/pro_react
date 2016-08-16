@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/**
+ * 常用的兼容各浏览器的特殊样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  　　color: #999; }
+
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  　　color: #999; }
+
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  　　color: #999; }
+
+input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  　　color: #999; }
+
+textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  　　color: #999; }
+
+textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  　　color: #999; }
+
+textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  　　color: #999; }
+
+textarea:-ms-textarea-placeholder {
+  /* Internet Explorer 10+ */
+  　　color: #999; }
+
+/*# sourceMappingURL=common.css.map */

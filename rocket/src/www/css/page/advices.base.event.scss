@@ -1,0 +1,71 @@
+.advices-base-event{
+	&>.hd{
+		height: 78px;
+		.inner{
+			border-bottom: 1px #cacaca solid;
+			padding: 24px 10px;
+			&:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+		}
+	}
+	&>.bd{
+		padding: 10px 10px 20px;
+		.c-table{
+			td{
+				padding: 10px;
+			}
+			.desc{
+				font-size: 12px;
+				color: #8c8c8c;
+				word-break: break-all;
+			}
+			.to{
+				color: #8c8c8c;
+			}
+			.link{
+				color: #0d3a56;
+				text-decoration: none;
+				word-break: break-all;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+			.opers{
+				.iconfont{
+					margin: 0 10px;
+				}
+			}
+		}
+	}
+	.dropdown-wrap{
+        margin-bottom: 12px;
+        .c-dropdown{
+            width: 100%;
+            .select{
+                height: 30px;
+                line-height: 28px;
+                .txt{
+                    width: 90%;
+                    outline: none;
+                    border: 0px;
+                    margin-bottom: 0;
+                    font-size: 12px;
+                    height: 28px;
+                    line-height: 28px;
+                }
+                .icon-xiala{
+                    font-size: 26px;
+                }
+            }
+            .option{
+                li{
+                    height: 30px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}

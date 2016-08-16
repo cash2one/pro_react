@@ -1,0 +1,41 @@
+// Main content
+section.content
+  .row
+    .col-xs-12
+      .box.box-primary
+        // <div class="box-header">
+        // <h3 class="box-title">Ion Slider</h3>
+        // </div>
+        // /.box-header
+        .box-body
+          button.btn.btn-block.btn-success.add(type='button', style='width:10%;float:right;', data-toggle='modal', data-target='#myModal', data-title='添加超级运营员') #{modal_title}
+        // /.box-body
+      // /.box
+    // /.col
+  // /.row
+  .row.content_table
+      .col-xs-12
+        .box
+          .box-body
+            table.table.table-bordered.table-striped.table-hover
+              tbody#target_list
+                tr#target_list
+                  td #{loading}
+                script(type='text/x-tmpl-mustache',id='template_list')
+                    tr
+                      th(style='width: 10%') 序号
+                      th(style='width: 22.5%') 手机号码
+                      th(style='width: 22.5%') 姓名
+                      th(style='width: 22.5%') 运营集团
+                      th(style='width: 22.5%') 操作
+                    | {{#sup_mgrs}}
+                    tr(data-id="{{user_id}}")
+                      td.num 1
+                      td.tel {{telephone}}
+                      td.name {{user_name}}
+                      td.syn(syn_uuid="{{syndicate_uuid}}") {{syndicate_name}}
+                      td
+                        button.btn.btn-block.btn-primary.btn-sm.edit(type='button',style='width:40%;float:left;margin:auto 5%;', data-toggle='modal', data-target='#myModal',data-title='编辑超级运营员') 修改
+                        button.btn.btn-block.btn-danger.btn-sm.delete(tooltip='删除',type='button',style='width:40%;float:left;margin:auto 5%;') 删除
+                    | {{/sup_mgrs}}
+          include ../../common_partials/pagination.pug

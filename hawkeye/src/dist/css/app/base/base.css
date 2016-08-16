@@ -1,0 +1,93 @@
+@charset "UTF-8";
+body {
+  font: normal 100%;
+  margin: 0;
+  font-size: 14px;
+  font-family: "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, STHeiti, "WenQuanYi Micro Hei", SimSun, Helvetica, sans-serif; }
+
+a, address, b, big, blockquote, body, cite, code, dd, del, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, ul, var, tr, td, th {
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+button, html input[type=button], input[type=submit] {
+  -webkit-apperance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+em, i {
+  font-style: normal; }
+
+/*公用*/
+.fl {
+  float: left;
+  display: inline; }
+
+.fr {
+  float: right;
+  display: inline; }
+
+.pr {
+  position: relative; }
+
+.pa {
+  position: absolute; }
+
+.w {
+  width: 100%; }
+
+.h {
+  height: 100%; }
+
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clear {
+  *zoom: 1; }
+
+.btn {
+  display: block; }
+
+.none {
+  display: none; }
+
+.full-screen.list-blank-holder {
+  margin-top: 170px; }
+
+.list-blank-holder {
+  position: relative;
+  margin: 0 auto;
+  color: #8c8c8c;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  width: 8.4em;
+  height: 10em;
+  background: url(/hawkeye/css/app/img/blank-list.png) center center no-repeat;
+  background-size: 100% 100%; }
+  .list-blank-holder span {
+    position: relative;
+    top: 21%; }
+
+/*# sourceMappingURL=base.css.map */

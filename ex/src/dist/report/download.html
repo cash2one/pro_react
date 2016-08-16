@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>普智舆情</title>
+	<link rel="stylesheet" href="/rocket/css/style.css">
+	<style>
+		.loading{
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<img src="" alt="" id="img" class="db bc">
+	</div>
+	<div class="loading tc">
+		<div class="sk-circle">
+			<div class="sk-circle1 sk-child"></div>
+			<div class="sk-circle2 sk-child"></div>
+			<div class="sk-circle3 sk-child"></div>
+			<div class="sk-circle4 sk-child"></div>
+			<div class="sk-circle5 sk-child"></div>
+			<div class="sk-circle6 sk-child"></div>
+			<div class="sk-circle7 sk-child"></div>
+			<div class="sk-circle8 sk-child"></div>
+			<div class="sk-circle9 sk-child"></div>
+			<div class="sk-circle10 sk-child"></div>
+			<div class="sk-circle11 sk-child"></div>
+			<div class="sk-circle12 sk-child"></div>
+		</div>
+		<span>加载中，请稍候...</span>
+	</div>
+</body>
+<script type="text/javascript" src="/rocket/js/paths.conf.js?rel=1465354180938"></script>
+<script type="text/javascript" src="/rocket/js/lib/jquery.js?rel=1465354180938"></script>
+<script type="text/javascript" src="/rocket/js/lib/jquery_rest.js?rel=1465354180938"></script>
+<script type="text/javascript" src="/rocket/js/plu/jquery.cookie.js?rel=1465354180938"></script>
+<script type="text/javascript" src="/rocket/js/plu/highcharts.js?rel=1465354180938"></script>
+<script type="text/javascript" src="/rocket/js/plu/jquery.validate.js?rel=1465354180938"></script>
+<script type="text/javascript" src="/rocket/js/plu/messages_zh.js?rel=1465354180938"></script>
+<script type="text/javascript" src="/js/init.js?rel=1465354180938"></script>
+<script>
+	$(function(){
+		var date = $.GetQueryString('day'),
+			token = $.cookie('user_token');
+		$.ajax(paths.rcn.api + '/api/v1/report/png', {
+			data: {
+				day: date
+			},
+			headers: {
+				user_token: token
+			}
+		}).done(function(data){
+			$('#img').attr('src', data);
+			$('.loading').remove();
+		})
+	})
+</script>
+</html>

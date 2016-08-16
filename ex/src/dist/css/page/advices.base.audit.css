@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.advices-base-audit .con {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.advices-base-audit .time-range .dropwrap {
+  display: inline-block; }
+  .advices-base-audit .time-range .dropwrap .holder {
+    display: block;
+    color: #444;
+    position: relative;
+    padding-right: 30px;
+    cursor: pointer; }
+    .advices-base-audit .time-range .dropwrap .holder:after {
+      content: "";
+      border: 4px transparent solid;
+      border-top: 6px #999 solid;
+      position: absolute;
+      top: calc(50% - 3px);
+      right: 6px; }
+    .advices-base-audit .time-range .dropwrap .holder:after {
+      content: "";
+      right: 12px; }
+    .advices-base-audit .time-range .dropwrap .holder:hover {
+      color: #3a99d8; }
+      .advices-base-audit .time-range .dropwrap .holder:hover:after {
+        border-top-color: #3a99d8; }
+  .advices-base-audit .time-range .dropwrap .dropdown-list {
+    z-index: 1;
+    left: -10px;
+    top: 100%;
+    width: 190px;
+    overflow: hidden; }
+    .advices-base-audit .time-range .dropwrap .dropdown-list .dropdown-item {
+      float: left;
+      line-height: 34px;
+      height: 34px;
+      overflow: hidden;
+      padding: 0 10px; }
+
+.advices-base-audit .tab-part {
+  background-color: #fff;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  border-bottom: 1px #eee solid; }
+  .advices-base-audit .tab-part .c-tab {
+    -webkit-box-flex: 1;
+    flex: 1;
+    background-color: #fff;
+    height: 46px;
+    line-height: 44px;
+    border-bottom: 0; }
+    .advices-base-audit .tab-part .c-tab li.active {
+      height: 46px; }
+    .advices-base-audit .tab-part .c-tab li:hover {
+      height: 46px; }
+  .advices-base-audit .tab-part .txt {
+    color: #999;
+    font-size: 14px;
+    padding-right: 22px; }
+
+.advices-base-audit .pagin-part {
+  padding-top: 30px;
+  padding-bottom: 29px; }
+  .advices-base-audit .pagin-part .txt {
+    margin-left: 10px;
+    color: #c3c4c4;
+    font-size: 14px; }

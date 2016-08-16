@@ -1,0 +1,40 @@
+// REQUIRED JS SCRIPTS
+// jQuery 2.2.3
+script(src='../js/libs/jQuery/jquery-2.2.3.min.js')
+// jQuery cookie
+script(src='../js/libs/jQuery-Cookie/jquery.cookie.js')
+// Bootstrap 3.3.6
+script(src='../js/libs/bootstrap/bootstrap.min.js')
+//datetime-picker
+script(src='../js/libs/bootstrap/bootstrap-datetimepicker.js')
+script(src='../js/libs/bootstrap/locales/bootstrap-datetimepicker.fr.js')
+<!-- PACE -->
+script(src='../js/libs/pace/pace.min.js')
+//confirm
+script(src='../js/libs/confirm/jquery.confirm.min.js')
+//slimscroll
+script(src='../js/libs/slimScroll/jquery.slimscroll.min.js')
+// AdminLTE App
+script(src='../js/app.min.js')
+//mustache.js
+script(src='../js/mustache.js')
+//conf.js
+script(src='../js/conf.js')
+//admin.js
+script(src='../js/admin.js')
+block other_js
+
+//
+  Optionally, you can add Slimscroll and FastClick plugins.
+  Both of these plugins are recommended to enhance the
+  user experience. Slimscroll is required when using the
+  fixed layout.
+
+script(type='text/javascript').
+    // To make Pace works on Ajax calls
+    $(document).ajaxStart(function() { Pace.restart(); });
+    $('.ajax').click(function(){
+    $.ajax({url: '#', success: function(result){
+    $('.ajax-content').html('<hr>Ajax Request Completed !');
+    }});
+    });

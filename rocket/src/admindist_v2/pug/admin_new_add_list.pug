@@ -1,0 +1,24 @@
+extends ./layouts/layout_all.pug
+
+block variables
+  include ./specified/admin_new_add_list/variables.pug
+
+block meta_info
+  include ./common_partials/head_meta_info.pug
+
+block title
+  include ./common_partials/head_title.pug
+
+block css_link
+  include ./common_partials/head_css_link.pug
+
+block js_include
+  include ./common_partials/head_js_include.pug
+
+block content
+  .wrapper
+    include ./common_partials/main_header.pug
+    include ./specified/admin_new_add_list/menu.pug
+    include ./specified/admin_new_add_list/content.pug
+    include ./common_partials/main_footer.pug
+    include ./specified/admin_new_add_list/require_specified_js.pug

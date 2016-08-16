@@ -1,0 +1,280 @@
+/*!
+ *   Overwrite AdminLTE v1.0
+ *   Author: yyp
+ *	 Website: None
+ *   License: Open source - MIT
+ *           Please visit http://opensource.org/licenses/MIT for more information
+!*/
+/*
+ * Core: Overwrite General Layout Style
+ * -------------------------
+ */
+
+/*div.custom_size {
+  width:70%;
+  margin:auto;
+  clear:both;
+  overflow:hidden;
+}
+.modal-header {
+  background-color: #ccc;
+  border-bottom-color: #ccc;
+}
+.modal-footer {
+  background-color: #ccc;
+  border-top-color: #ccc;
+}*/
+
+.box-body {
+  font-size: 15px;
+}
+
+th,td {
+  text-align: center;
+}
+
+a.disabled {
+   pointer-events: none;
+   cursor: default;
+}
+
+ul.role {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.role li {
+    float:left;
+}
+
+.mailbox-read-info h3 {
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.mailbox-read-time {
+    margin: 0 15px 0;
+}
+
+.box .nav-stacked > li.child {
+    margin-left:15px;
+}
+
+#target_attrs li{
+    line-height: 25px;
+}
+
+.nav > li.parent > a, .nav > li.child > a {
+    display: inline;
+}
+
+.col-md-12,.col-sm-12,.col-xs-12 {
+    margin: 10px 0px 5px;
+}
+
+.article-box-content {
+    margin-left: 130px;
+}
+
+.article-box-icon {
+    width: 130px;
+    height: 110px;
+    line-height: 110px;
+}
+
+.article-box {
+    color: #333;
+    min-height: 110px;
+}
+
+.article-box:hover {
+    color: #333;
+}
+
+img.article {
+    height:100%;
+    width:100%;
+    vertical-align:top;
+}
+
+.article-box-title {
+    font-size: 14px;
+}
+
+.article-box-text {
+    font-size: 12px;
+}
+
+.articlebox-controls {
+    padding: 0px;
+}
+
+.infos {
+    font-size: 12px;
+    color: #999;
+    vertical-align:middle;
+    float: left;
+    margin: 7px auto;
+}
+
+.info-ops {
+}
+
+.articlebox-controls,i.op-delete {
+    cursor: pointer;
+    color: #999;
+    display: none;
+}
+
+a.search-type {
+    cursor: pointer;
+}
+
+.box-body {
+    padding-top: 10px !important;
+}
+
+.article-search,.daterange-search,.dropdown{
+    color: #fff;
+    margin: 10px 15px;
+}
+
+.daterange-search {
+    width: 45%;
+    float:right;
+}
+
+.btn-search {
+    color: #333;
+    background-color: #fff;
+    border-color: #D2D6DE;
+}
+
+span.fa-caret-down {
+    margin-left: 10px;
+}
+
+span.info {
+    margin: 0 5px;
+}
+
+.dropdown {
+    width:45%;
+    float:left;
+}
+
+a.dropdown-toggle {
+    color: #333;
+}
+a.dropdown-toggle:hover {
+    color: #999;
+}
+
+a {
+    cursor: pointer;
+}
+
+li.select2-selection__choice {
+	list-style: outside none none;
+}
+
+.select2-selection__choice {
+	display: inline-block !important;
+	background-color: #3C8DBC;
+	border-color: #367FA9;
+	border-radius: 4px;
+	padding: 1px 10px;
+	float: left;
+	color: #FFF;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.select2-selection__choice__remove:hover {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.select2-selection__choice__remove {
+	color: #999;
+	margin-right: 5px;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: bold;
+	margin-right: 2px;
+}
+
+ul#target_tags, ul#target_cats {
+    margin: 0 10px 10px;
+}
+
+.cat-head {
+    color: #999;
+    float: left;
+}
+
+.cat-op {
+    vertical-align: middle;
+    min-height: 1px;
+    float: right;
+}
+
+.cat-body {
+    font-size:12px;
+    float: left;
+    vertical-align: middle;
+    max-height: 75px;
+    overflow: hidden;
+}
+
+.item {
+    margin: 0 10px 10px 0;
+    float: left;
+}
+
+.item span {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.item span.cb {
+    display: none;
+}
+
+.cat-op span {
+    float:right;
+}
+
+.cat-wrap {
+    margin: 10px 0;
+    width: 100%;
+    float: left;
+}
+
+span.result_count {
+    color: #999;
+    margin: auto 5px;
+}
+
+em.search {
+    color:red;
+}
+
+span.com_item {
+    color: #999;
+    margin: 5px;
+}
+
+li.parent,li.child,li.parent span,li.child span {
+    display: block;
+}
+
+.mailbox-read-time {
+    margin: 10px;
+}

@@ -1,0 +1,11 @@
+#myModal.modal.fade.modal-custom(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h4.modal-title(style='text-align:center;') #{modal_title}
+        .modal-body
+          block modal_body
+        .modal-footer
+          button.btn.cancel(type='button', data-dismiss='modal') 取消
+          button.btn.confirm#add(type='submit') 确定
+          button.btn.confirm#edit(type='submit') 确定

@@ -1,0 +1,269 @@
+/**
+ * create by lxt
+ * edit on 2016/07/14
+ * 公司管理页v2样式
+ */
+
+@import '../mixins/flex';
+@import '../var';
+
+.company-base{
+	.btnbox{
+		position: relative;
+		top: -30px;
+		left: -63px;
+		.icon-bianji{
+			position: absolute;
+			top: 0px;
+			font-size: 16px;
+			color: $gray-light;
+			&:hover{
+				cursor: pointer;
+				color: $blue-light;
+			}
+		}
+		.icon-lajitong{
+			position: absolute;
+			top: 0px;
+			left: 30px;
+			color: $gray-light;
+			&:hover{
+				cursor: pointer;
+				color: $blue-light;
+			}
+		}
+	}
+	.show-frame {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		min-height: 160px;
+		.backdrop {
+			opacity: 0.8;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 1000;
+			background-color: #fff;
+		}
+		.framebox {
+			position: absolute;
+			width: 100%;
+			top: 120px;
+			left: -47px;
+			iframe {
+				position: relative;
+				top: 10px;
+				display: block;
+				border: none;
+				z-index: 1001;
+				margin: 0 auto;
+			}
+		}
+		.c-button {
+			position: relative;
+			top: 10px;
+			z-index: 1001;
+			height: 34px;
+			line-height: 32px;
+			border-radius: 4px;
+			margin: 0 auto;
+			text-align: center;
+			margin-top: 20px;
+		}
+	}
+
+	.companyWelcome{
+		min-height: 600px;
+		.bg{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: url("http://home.puzhizhuhai.com/img/com_welcome.jpg") no-repeat center center;
+			top: 0;
+			left: 0;
+		}
+		.txt{
+		    position: absolute;
+		    top: 59%;
+		    left: 50%;
+		    margin-left: -145px;
+		    color: #3e4957;
+		    font-size: 24px;
+		    width: 430px;
+		    text-align: right;
+		}
+	}
+	.c-button{
+		width: 100px;
+		height: 40px;
+		line-height: 38px;
+		border-radius: 0;
+		&.green{
+			background-color: #2abcb9;
+		}
+		&.blue{
+			background-color: #6699cc;
+		}
+	}
+	.com-search{
+		width: 100%;
+	}
+	.com-rt{
+		color: $gray-darker;
+	    border-bottom: 1px #eee solid;
+        padding: 0px 0px 20px;
+	}
+	.com-blank{
+		padding-top: 80px;
+		padding-bottom: 40px;
+		color: #8c8c8c;
+		font-size: 14px;
+		text-align: center;
+	}
+	.com-list{
+		margin-left: -22px;
+		margin-right: -22px;
+		&>.item{
+			height: 92px;
+			background-color: #fff;
+			border-left: 4px solid #fff;
+			border-right: 4px solid #fff;
+			@include flexbox();
+			@include alignCenter();
+			position: relative;
+			cursor: pointer;
+			&.itembox.cur_com:hover{
+				background-color: $gray-lighter;
+			}
+			&.itembox:hover{
+				background-color: $gray-lighter;
+				border-left: 4px solid $gray-lighter;
+				border-right: 4px solid $gray-lighter;
+			}
+			&.itembox.cur_com{
+				background-color: $gray-lighter;
+				border-left: 4px solid $gray-lighter;
+				border-right: 4px solid $blue-light2;
+			}
+			.cl-mark{
+				display: inline-block;
+				width: 47px;
+				height: 47px;
+				line-height: 47px;
+				text-align: center;
+				border-radius: 30px;
+				color: $gray-darker;
+				margin-left: 18px;
+				&.col{
+					background-color: #c0a7f2;
+				}
+				&.acol,&.Acol,&.bcol,&.Bcol,&.ccol,&.Ccol{
+					background-color: #dff0fc;
+					color: #2489cc;
+				}
+				&.dcol,&.Dcol,&.ecol,&.Ecol,&.fcol,&.Fcol{
+					background-color: #ffefe4;
+					color: #f67a26;
+				}
+				&.gcol,&.Gcol,&.hcol,&.Hcol,&.icol,&.Icol{
+					background-color: #eafae8;
+					color: #5bc24c;
+				}
+				&.jcol,&.Jcol,&.kcol,&.Kcol,&.lcol,&.Lcol{
+					background-color: #ece6fa;
+					color: #8362d6;
+				}
+				&.mcol,&.Mcol,&.ncol,&.Ncol,&.ocol,&.Ocol{
+					background-color: #fff7e6;
+					color: #f5b025;
+				}
+				&.pcol,&.Pcol,&.qcol,&.Qcol,&.rcol,&.Rcol{
+					background-color: #e2f4fb;
+					color: #27a2cf;
+				}
+				&.scol,&.Scol,&.tcol,&.Tcol,&.ucol,&.Ucol,&.vcol,&.Vcol{
+					background-color: #ffe4e0;
+					color: #e63f24;
+				}
+				&.wcol,&.Wcol,&.xcol,&.Xcol,&.ycol,&.Ycol,&.zcol,&.Zcol{
+					background-color: #e4f9f4;
+					color: #30a487;
+				}
+			}
+			.cl-tit{
+				display: inline-block;
+				text-overflow: ellipsis;
+				max-width: 9em;
+				white-space: nowrap;
+				overflow: hidden;
+				vertical-align: bottom;
+			    font-size: 16px;
+			}
+			.cl-note{
+				display: inline-block;
+				color: $gray-light;
+				vertical-align: middle;
+				font-size: 12px;
+				margin: 0 12px;
+				padding-bottom: 1px;
+			}
+			.cl-cont{
+				color: $gray-darker;
+				font-size: 14px;
+				margin-top: 5px;
+				min-height: 21px;
+				width: 91%;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				-o-text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				left: 20px;
+				right: 20px;
+				bottom: 0;
+				height: 1px;
+				background-color: $border-color-light;
+				margin: 0 auto;
+			}
+			.mid{
+				@include flex();
+			}
+			.name{
+				color: #2a2a2a;
+				font-size: 18px;
+			}
+			.type{
+				color: #8c8c8c;
+				font-size: 12px;
+			}
+			.desc{
+				font-size: 16px;
+				color: #2a2a2a;
+			}
+			.cate{
+				max-width: 600px;
+				&>.item{
+					display: inline-block;
+					border: 1px #dedede solid;
+					border-radius: 4px;
+					padding: 0 8px;
+					margin-right: 10px;
+					margin-bottom: 5px;
+					font-size: 14px;
+					line-height: 20px;
+					color: #8c8c8c;
+				}
+			}
+		}
+	}
+}

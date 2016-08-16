@@ -1,0 +1,22 @@
+/* 
+created by: Andy
+date:	2016-07-25
+ */
+
+.c-tooltip-holder{
+	$col: #3a99d8;
+	border: 1px $col solid;
+	color: $col;
+	font-size: 14px;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	line-height: 16px;
+	text-align: center;
+	border-radius: 100%;
+	cursor: default;
+	&:hover{
+		background-color: $col;
+		color: #fff;
+	}
+}

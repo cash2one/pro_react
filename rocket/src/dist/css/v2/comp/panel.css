@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/**
+ * create by lxt
+ * 2016/07/18
+ * panel/tab组件v2样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.panel .panel-footer {
+  height: 70px;
+  line-height: 49px; }
+.panel.panel-default .panel-heading {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center; }
+  .panel.panel-default .panel-heading .panel-title {
+    -webkit-box-flex: 1;
+    flex: 1; }
+.panel.panel-default .tab {
+  height: 52px;
+  line-height: 50px;
+  color: #999;
+  background-color: #fafafa;
+  border-bottom: 1px solid #dedede; }
+  .panel.panel-default .tab ul {
+    margin-bottom: 0; }
+    .panel.panel-default .tab ul li {
+      float: left;
+      display: inline-block;
+      width: 130px;
+      height: 100%;
+      text-align: center;
+      border-right: 1px solid #dedede;
+      cursor: pointer;
+      border-top: 2px solid rgba(255, 255, 255, 0); }
+      .panel.panel-default .tab ul li:nth-child(1) {
+        border-left: 0; }
+      .panel.panel-default .tab ul li:nth-child(2) {
+        border-left: 0; }
+      .panel.panel-default .tab ul li:nth-child(3) {
+        border-left: 0; }
+      .panel.panel-default .tab ul li:hover {
+        background-color: #f4f4f4;
+        height: 51px; }
+      .panel.panel-default .tab ul li.active {
+        color: #444;
+        background-color: #fff;
+        border-top: 2px solid #3a99db;
+        border-bottom: 1px solid #fff;
+        height: 52px; }
+
+.c-tab {
+  height: 52px;
+  line-height: 50px;
+  color: #999;
+  background-color: #fafafa;
+  border-bottom: 1px solid #dedede; }
+  .c-tab ul {
+    margin-bottom: 0; }
+    .c-tab ul li {
+      float: left;
+      display: inline-block;
+      width: 130px;
+      height: 100%;
+      text-align: center;
+      border-right: 1px solid #dedede;
+      cursor: pointer;
+      border-top: 2px solid rgba(255, 255, 255, 0); }
+      .c-tab ul li:nth-child(1) {
+        border-left: 0; }
+      .c-tab ul li:nth-child(2) {
+        border-left: 0; }
+      .c-tab ul li:nth-child(3) {
+        border-left: 0; }
+      .c-tab ul li:hover {
+        background-color: #f4f4f4;
+        height: 51px; }
+      .c-tab ul li.active {
+        color: #444;
+        background-color: #fff;
+        border-top: 2px solid #3a99db;
+        border-bottom: 1px solid #fff;
+        height: 52px; }
+
+/*# sourceMappingURL=panel.css.map */

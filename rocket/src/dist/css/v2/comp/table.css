@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/**
+ * create by lxt
+ * 2016/07/18
+ * 表格v2样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.table {
+  border-bottom: 1px solid #eee; }
+  .table .iconfont {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #999; }
+    .table .iconfont:first-child {
+      margin-left: 0; }
+    .table .iconfont:last-child {
+      margin-right: 0; }
+    .table .iconfont:hover {
+      color: #2c97de; }
+  .table th {
+    font-weight: bold; }
+  .table tbody tr:hover {
+    background-color: #f4f4f4; }
+  .table.spec th:first-child, .table.spec td:first-child {
+    width: 75px;
+    text-align: center;
+    white-space: nowrap; }
+  .table.spec th:last-child, .table.spec td:last-child {
+    width: 150px;
+    white-space: nowrap; }
+  .table tr:hover {
+    background-color: #f4f4f4; }
+
+/*# sourceMappingURL=table.css.map */

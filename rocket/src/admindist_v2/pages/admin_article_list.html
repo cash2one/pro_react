@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <!--各类中英文常量-->
+  <!--head header-->
+  <!--footer 版权-->
+  <!--侧边栏-->
+  <!--个人设置-->
+  <!--其他-->
+  <head>
+    <title>深圳普智 | 管理台</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width-->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6-->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons-->
+    <link rel="stylesheet" href="../font-awesome/css/ionicons.min.css">
+    <!-- Theme style-->
+    <link rel="stylesheet" href="../css/AdminLTE.css">
+    <!--
+    AdminLTE Skins. We have chosen the skin-blue for this starter
+    page. However, you can choose any other skin. Make sure you
+    apply the skin class to the body tag so the changes take effect.
+    -->
+    <link rel="stylesheet" href="../css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="../css/Overwrite.css"><!-- Pace style -->
+    <link rel="stylesheet" href="../css/pace/pace.min.css">
+    <!--datetime-picker-->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-datetimepicker.min.css">
+    <!--daterange picker-->
+    <link rel="stylesheet" href="../css/bootstrap/daterangepicker.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://--><!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini fixed">
+    <div class="wrapper">
+      <header class="main-header"><a class="logo" href="admin_index.html"><span class="logo-mini"><b>普</b>智</span><span class="logo-lg"><b>深圳</b>普智</span></a>
+        <nav class="navbar navbar-static-top" role="navigation"><a class="sidebar-toggle" href="#" data-toggle="offcanvas" role="button"><span class="sr-only">Toggle navigation</span></a>
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <li><a id="logout" href="#" title="退出"><i class="fa fa-sign-out"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <aside class="main-sidebar">
+        <section class="sidebar">
+          <ul class="sidebar-menu">
+            <li class="header">系统管理</li>
+                  <li class="treeview"><a href="#"><i class="fa fa-building-o"></i><span>集团管理</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                    <ul class="treeview-menu">
+                      <li id="rule_sys_manager_syndicate"><a href="admin_syn_list.html"><i class="fa fa-circle-o"></i><span>集团管理</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="treeview"><a href="#"><i class="fa fa-user"></i><span>人员管理</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                    <ul class="treeview-menu">
+                      <li id="rule_sys_manager_adminer"><a href="admin_admin_list.html"><i class="fa fa-circle-o"></i><span>超级管理员管理</span></a></li>
+                      <li id="rule_sys_manager_super"><a href="admin_spr_mgr_list.html"><i class="fa fa-circle-o"></i><span>超级运营员管理</span></a></li>
+                      <li id="rule_sys_list_login"><a href="admin_online_users_list.html"><i class="fa fa-circle-o"></i><span>用户登陆系统状态查看</span></a></li>
+                      <li id="rule_sys_list_newly_added"><a href="admin_new_add_list.html"><i class="fa fa-circle-o"></i><span>新增用户查看</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="treeview active"><a href="#"><i class="fa fa-file-text-o"></i><span>文章管理</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                    <ul class="treeview-menu">
+                      <li class="active" id="rule_sys_manager_article"><a href="admin_article_list.html"><i class="fa fa-circle-o"></i><span>文章列表</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="treeview"><a href="#"><i class="fa fa-building-o"></i><span>媒体管理</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                    <ul class="treeview-menu">
+                      <li id="rule_sys_media_audit"><a href="admin_media_manage.html"><i class="fa fa-circle-o"></i><span>媒体管理</span></a></li>
+                    </ul>
+                  </li>
+          </ul>
+        </section>
+      </aside>
+      <div class="content-wrapper">
+        <!-- Content Header (Page header)-->
+        <section class="content-header">
+          <h1>文章管理<small>文章列表</small></h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li class="active">文章列表</li>
+          </ol>
+        </section>
+        <section class="content">
+          <section class="content">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="box box-primary">
+                  <div class="box-body no-padding">
+                          <div class="input-group input-group-sm article-search">
+                            <div class="input-group-btn">
+                              <button class="btn btn-search dropdown-toggle" aria-expanded="false" type="button" data-toggle="dropdown">全文<span class="fa fa-caret-down"></span></button>
+                              <ul class="dropdown-menu search">
+                                <li><a class="search-type" type="content">全文</a></li>
+                                <li><a class="search-type" type="link_title">标题</a></li>
+                              </ul>
+                            </div>
+                            <input class="form-control search" type="text" search-type="content"><span class="input-group-btn">
+                              <button class="btn btn-search btn-flat" id="btn-search" type="button"><i class="fa fa-search"></i></button></span>
+                          </div>
+                          <div class="dropdown"><a class="dropdown-toggle order" aria-expanded="false" data-toggle="dropdown" href="#" order="desc">按发布时间降序<span class="caret"></span></a>
+                            <ul class="dropdown-menu order">
+                              <li role="presentation"><a role="menuitem" tabindex="-1" order="desc">按发布时间降序</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" order="asc">按发布时间升序</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" order="desc">默认</a></li>
+                            </ul>
+                          </div>
+                          <div class="input-group daterange-search">
+                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                            <input class="form-control pull-right" id="reservation" type="text">
+                          </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 article" id="target_list">
+                            <script type="text/x-tmpl-mustache" id="template_list">{{#articles}}<a class="info-box article-box" data-id="{{_source.uuid}}" target="_blank" href="admin_article_detail.html?uuid={{_source.uuid}}"><span class="info-box-icon bg-aqua article-box-icon"><img class="article" src="{{_source.imgs}}"></span>
+                                <div class="info-box-content article-box-content">
+                                  <!--i.fa.fa-trash-o.pull-right.op-delete--><span class="info-box-text article-box-title">{{{_source.link_title}}}</span><span class="info-box-number article-box-text">{{{_source.content}}}</span>
+                                  <!--span.label.label-danger 预警文章-->
+                                  <div class="info-ops">
+                                    <div class="infos"><span class="info">{{_source.publish_at}}</span><span class="info">{{_source.from.media}}</span><span class="info">{{_source.emotion}}</span><span class="info"><span>自动标签：</span>{{#_source.tags}}<span>{{.}}&nbsp;&nbsp;</span>{{/_source.tags}}</span></div>
+                                    <div class="mailbox-controls with-border text-center pull-right articlebox-controls">
+                                      <div class="btn-group">
+                                              <button class="btn btn-default btn-sm" type="button" data-toggle="tooltip" data-container="body" title="修改情感面"><i class="fa fa-frown-o"></i></button>
+                                              <button class="btn btn-default btn-sm" type="button" data-toggle="tooltip" data-container="body" title="添加日报"><i class="fa fa-file-text-o"></i></button>
+                                              <button class="btn btn-default btn-sm" type="button" data-toggle="tooltip" data-container="body" title="纷纷反对"><i class="fa fa-thumbs-down"></i></button>
+                                      </div>
+                                            <button class="btn btn-default btn-sm" type="button" data-toggle="tooltip" data-container="body" title="添加预警"><i class="fa fa-exclamation-triangle"></i></button>
+                                    </div>
+                                  </div>
+                                </div></a>{{/articles}}</script>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-footer clearfix">
+                  <ul class="pagination pagination-sm no-margin pull-right" id="target_paginate">
+                    <script type="text/x-tmpl-mustache" id="template_paginate">
+                      <li><a class="forward" href="#">«</a></li>{{#count}}
+                      <li class="page template_generated"><a href="{{page_link}}">{{page_num}}</a></li>{{/count}}
+                      <li><a class="backward active" href="#">»</a></li><span class="result_count">搜索结果 {{result_count}} 条</span>
+                    </script>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box box-solid">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">筛选条件</h3>
+                    <div class="box-tools">
+                      <button class="btn btn-box-tool" type="button" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div>
+                  </div>
+                  <div class="box-body no-padding">
+                    <ul class="nav nav-pills nav-stacked" id="target_tags">
+                            <script type="text/x-tmpl-mustache" id="template_tags">{{#tags}}
+                              <li class="select2-selection__choice" name="{{tag_name}}"><span class="select2-selection__choice__remove" role="presentation">×</span>{{tag_title}}:<span class="tag_val" tag_v="{{tag_v}}">{{tag_k}}</span></li>{{/tags}}
+                            </script>
+                    </ul>
+                  </div>
+                </div>
+                <div class="box box-solid">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">所有分类</h3>
+                    <div class="box-tools">
+                      <button class="btn btn-box-tool" type="button" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div>
+                  </div>
+                  <div class="box-body no-padding">
+                    <ul class="nav nav-pills nav-stacked" id="target_aggs">
+                            <script type="text/x-tmpl-mustache" id="template_aggs">{{#aggregations}}
+                                    <div class="cat-wrap">
+                                      <div class="cat-head col-md-3"><span cat-name="{{cat_name}}">{{cat_title}}</span></div>
+                                      <div class="cat-body col-md-7">
+                                        <div class="item-wrap">{{#items}}
+                                          <div class="item"><span class="tag_val" v="{{v}}">{{k}}</span><span class="cb">测试啊</span></div>{{/items}}
+                                        </div>
+                                      </div>
+                                      <div class="cat-op col-md-2"><span></span><span></span></div>
+                                    </div>{{/aggregations}}
+                            </script>
+                    </ul>
+                    <!--script(type='text/x-tmpl-mustache',id='template_cats')-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+      <!-- Main Footer-->
+      <footer class="main-footer">
+        <!-- To the right-->
+        <div class="pull-right hidden-xs">版权所有2016@深圳铺智传媒科技有限公司.</div>
+        <!-- Default to the left--><strong>Copyright © 2016<a href="#">PZZH</a>.</strong> All rights reserved.
+      </footer>
+      <div class="modal fade bs-example-modal-sm" id="msg_modal" style="padding-right: 13px" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="mySmallModalLabel">提示</h4>
+            </div>
+            <div class="modal-body" id="target_msg" style="text-align:center">
+              <script type="text/x-tmpl-mustache" id="template_msg">
+                <p>{{msg}}</p>
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- REQUIRED JS SCRIPTS-->
+      <!-- jQuery 2.2.3-->
+      <script src="../js/libs/jQuery/jquery-2.2.3.min.js"></script>
+      <!-- jQuery cookie-->
+      <script src="../js/libs/jQuery-Cookie/jquery.cookie.js"></script>
+      <!-- Bootstrap 3.3.6-->
+      <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
+      <!--datetime-picker-->
+      <script src="../js/libs/bootstrap/bootstrap-datetimepicker.js"></script>
+      <script src="../js/libs/bootstrap/locales/bootstrap-datetimepicker.fr.js"></script><!-- PACE -->
+      <script src="../js/libs/pace/pace.min.js"></script>
+      <!--confirm-->
+      <script src="../js/libs/confirm/jquery.confirm.min.js"></script>
+      <!--slimscroll-->
+      <script src="../js/libs/slimScroll/jquery.slimscroll.min.js"></script>
+      <!-- AdminLTE App-->
+      <script src="../js/app.min.js"></script>
+      <!--mustache.js-->
+      <script src="../js/mustache.js"></script>
+      <!--conf.js-->
+      <script src="../js/conf.js"></script>
+      <!--admin.js-->
+      <script src="../js/admin.js"></script>
+      <script src="../js/pages/admin_article_list.js"></script>
+      <script src="../js/pages/date_range_picker.js"></script>
+      <script src="../js/mustache.js"></script>
+      <script src="../js/libs/bootstrap/moment.min.js"></script>
+      <script src="../js/libs/bootstrap/daterangepicker.js"></script>
+      <!--
+      Optionally, you can add Slimscroll and FastClick plugins.
+      Both of these plugins are recommended to enhance the
+      user experience. Slimscroll is required when using the
+      fixed layout.
+      
+      -->
+      <script type="text/javascript">
+        // To make Pace works on Ajax calls
+        $(document).ajaxStart(function() { Pace.restart(); });
+        $('.ajax').click(function(){
+        $.ajax({url: '#', success: function(result){
+        $('.ajax-content').html('<hr>Ajax Request Completed !');
+        }});
+        });
+      </script>
+    </div>
+  </body>
+</html>

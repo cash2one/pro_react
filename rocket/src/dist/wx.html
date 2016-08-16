@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>微信登陆跳转页</title>
+</head>
+<body>
+	<div></div>
+
+	<script type="text/javascript" src="js/paths.conf.js?rel=1465803683816"></script>
+	<script type="text/javascript" src="js/lib/jquery.js?rel=1465803683816"></script>
+	<script type="text/javascript" src="js/lib/jquery_rest.js?rel=1465803683816"></script>
+	<script type="text/javascript" src="js/plu/jquery.cookie.js?rel=1465803683816"></script>
+
+	<script>
+		$(function(){
+
+			$.GetQueryString = function(name){
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");  
+				var r = window.location.search.substr(1).match(reg);  //获取url中"?"符后的字符串并正则匹配
+				var context = "";  
+				if (r != null)  
+				     context = r[2];  
+				reg = null;  
+				r = null;  
+				return context == null || context == "" || context == "undefined" ? "" : context;  
+			}
+			
+			var config = {
+				stripTrailingSlash: true,
+				stringifyData: false,
+				ajax: {
+					beforeSend: function(xhr){
+						xhr.setRequestHeader('user_token', $.GetQueryString('user_token'));
+					}
+				}
+			};
+
+			var rest = new $.RestClient(paths.rcn.api + '/api/v1/', config);
+
+			rest.add('user');
+
+			if (window.location.search) {
+
+				if ($.GetQueryString('code')) { // 用户允许授权
+    				var code = $.GetQueryString("code");
+    	            var state = $.GetQueryString("state");
+
+	            	getURI(code, state);
+
+				} else { // 用户禁止授权 , 用户调回登陆页
+					var url = paths.rcn.api;
+					window.location.href = url;
+				}
+
+			}
+
+			function getURI(code, state){
+				rest.user.read('redirect_uri', {state}).done(data => {
+					var url = data.redirect_uri + '?' + 'code=' + code + '&state=' + state;
+					window.location.href = url;
+				});
+			};
+
+		});
+	</script>
+</body>
+</html>

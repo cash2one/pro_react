@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1458719469_7120104.css">
+	<link rel="stylesheet" href="http://home.puzhizhuhai.com/css/style.css">
+	<!-- <link rel="stylesheet" href="http://home.puzhizhuhai.com/css/mixins/bootstrap.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="http://home.puzhizhuhai.com/css/mixins/default.css"> -->
+	<link rel="stylesheet" href="http://home.puzhizhuhai.com/css/mixins/jquery.webui-popover.min.css">
+	<!-- <link rel="stylesheet" href="http://home.puzhizhuhai.com/css/mixins/demo.css"> -->
+	<script src="http://home.puzhizhuhai.com/js/lib/jquery.js?rel=1465803683812" type="text/javascript"></script>
+	<script src="http://home.puzhizhuhai.com/js/plu/jquery.webui-popover.min.js?rel=1465803683812" type="text/javascript"></script>	
+</head>
+<body>
+	<div class="frame-header">
+		<div class="frame-header-left">
+			<img src="img/logo.png" alt="" width="32" height="41">
+			<span class="text">普智数据中心</span>
+		</div>
+		<div class="frame-header-right">
+			<div class="operations">
+				<div class="item">
+					<div class="inner">
+						<span>注销</span>
+						<span class="iconfont icon-tuichu"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="frame-body">
+		<div class="frame-body-left">
+			<div class="navi-part">
+				<ul class="navi-container">
+					<li class="item">
+						<a href="###">
+							<span class='text'>舆情中心</span>
+						</a>
+					</li>
+					<li class="item">
+						<a href="###">
+							<span class='text'>个人设置</span>
+							<span class="iconfont icon-xiala corner"></span>
+						</a>
+						<ul class="sub-navi-container">
+							<li class="item">
+								<a href="###">
+									<span class="text">关键词设置</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="user-part">
+				<a href="###" class="colf no_unl db tc">
+					<img src="img/del1.png" alt="" width="40" height="40" class="vm mr10">
+					<span class="vm">Abcd</span>
+				</a>
+			</div>
+		</div>
+		<div class="frame-body-right">
+			<div class="frame-body-container">
+				<div class="all-manager fr-br-container">
+					<div class="container-fluid">
+						<div class="row fr-br-top">
+							<div class="group">
+								<label for="phone">手机号</label>
+								<input type="text" />
+							</div>
+							<div class="group">
+								<label for="name">用户名</label>
+								<input type="text" />
+							</div>
+						</div>
+						<div class="row fr-br-mid">
+							<div>运营公司</div>
+						</div>
+						<div class="row fr-br-main">
+							<span class="tag" data-placement="bottom-right">小米公司</span>
+							<span class="tag" data-placement="bottom-right">小米公司</span>
+							<span class="tag" data-placement="bottom-right">小米公司</span>
+							<span class="tag" data-placement="bottom-right">小米公司</span>
+							<span class="tag" data-placement="bottom-right">小米公司</span>
+							<span class="tag" data-placement="bottom-right">小米公司</span>
+							<span class="tag" data-placement="bottom-right">小米公司</span>
+							<span class="tag" data-placement="bottom-right">小米公司</span>
+							<span class="tag" data-placement="bottom-right">小米公司</span>
+							<span class="tag" data-placement="bottom-right">小米公司</span>
+							<span class="tag" data-placement="bottom-right">小米公司</span>
+							<span class="tag" data-placement="bottom-right">小米公司</span>
+							<div class="tooltip bottom" role="tooltip">
+								<div class="tooltip-arrow"></div>
+								<div class="tooltipbox">
+									<div class="rolebox-top">
+										<span class="role">舆情运营员</span>
+										<span class="role">行情运营员</span>
+										<span class="role">新闻运营员</span>
+										<span class="role">话题运营员</span>
+										<span class="role">知识运营员</span>
+									</div>
+									<div class="rolebox-bottom">
+										<div class="warm">
+											<span class="tit">提示：</span>
+											<span class="cont">需要选中此公司最少需选中一种身份<br/>点击清除将取消选中公司<br/>
+											重复点击可取消选中</span>
+										</div>
+										<div class="btnbox">
+											<span class="rolebtn">全选</span>
+											<span class="rolebtn">清除</span>
+											<span class="rolebtn">关闭</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row fr-br-bottom">
+							<div class="buttonbox">
+								<span class="formbtn">取消</span>
+								<span class="formbtn">确定</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		(function(){
+
+			var settings = {
+				trigger:'click',
+				content:'<p>This is webui popover demo.</p><p>just enjoy it and have fun !</p>',
+				width:320,						
+				multi:true,						
+				closeable:false,
+				style:'',
+				delay:300,
+				padding:true
+			};
+
+			function initPopover(){					
+				$('.tag').webuiPopover('destroy').webuiPopover(settings);	
+			}
+
+			function updateSettings(){
+				settings.multi = $('.option-mulit').hasClass('active');
+				initPopover();
+			}	
+
+			updateSettings()
+
+		})();
+	</script>
+</body>
+</html>

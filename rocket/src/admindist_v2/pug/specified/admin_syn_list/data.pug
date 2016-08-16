@@ -1,0 +1,80 @@
+// Main content
+section.content
+  .row
+    .col-xs-12
+      .box.box-primary
+        // <div class="box-header">
+        // <h3 class="box-title">Ion Slider</h3>
+        // </div>
+        // /.box-header
+        .box-body
+          button.btn.btn-block.btn-success(type='button', style='width:10%;float:right;', data-toggle='modal', data-target='#myModal') #{modal_title}
+        // /.box-body
+      // /.box
+    // /.col
+  // /.row
+  .row.content_table
+    .col-md-12
+      .custom_size
+          #target #{loading}
+          script(type='text/x-tmpl-mustache',id='template')
+            // Info Boxes Style 2
+            .info-box.bg-yellow
+              span.info-box-icon X
+              .info-box-content
+                span.info-box-number {{syn_name}}
+                span.info-box-text ID:{{syn_id}}          超级运营员: {{syn_spr_mgrs}}
+                .progress
+                  .progress-bar(style='width: 100%')
+                span.progress-description
+                  | {{syn_desc}}
+          // Info Boxes Style 2
+          .info-box.bg-yellow
+            span.info-box-icon X
+            .info-box-content
+              span.info-box-number 小米
+              span.info-box-text ID:mi          超级运营员: test1,test2
+              .progress
+                .progress-bar(style='width: 100%')
+              span.progress-description
+                | 公司的办公地址位于珠江口西岸的核心城市，幸福之城珠海，珠海市吉大景山路23号二楼206号，我们有最好的产品和专业的销售和技术团队，
+                | 我们为客户提供最好的产品、良好的技术支持、健全的售后服务，珠海速赢达网络科技有限公司是珠海网络工程行业知名企业.
+            // /.info-box-content
+          // /.info-box
+          .info-box.bg-green
+            span.info-box-icon H
+            .info-box-content
+              span.info-box-number 华为
+              span.info-box-text ID:huawei          超级运营员: test1,test2
+              .progress
+                .progress-bar(style='width: 100%')
+              span.progress-description
+                | 公司的办公地址位于珠江口西岸的核心城市，幸福之城珠海，珠海市吉大景山路23号二楼206号，我们有最好的产品和专业的销售和技术团队，
+                | 我们为客户提供最好的产品、良好的技术支持、健全的售后服务，珠海速赢达网络科技有限公司是珠海网络工程行业知名企业.
+            // /.info-box-content
+          // /.info-box
+          .info-box.bg-red
+            span.info-box-icon J
+            .info-box-content
+              span.info-box-number 金山
+              span.info-box-text ID: kingsoft          超级运营员: test1,test2
+              .progress
+                .progress-bar(style='width: 100%')
+              span.progress-description
+                | 公司的办公地址位于珠江口西岸的核心城市，幸福之城珠海，珠海市吉大景山路23号二楼206号，我们有最好的产品和专业的销售和技术团队，
+                | 我们为客户提供最好的产品、良好的技术支持、健全的售后服务，珠海速赢达网络科技有限公司是珠海网络工程行业知名企业.
+            // /.info-box-content
+          // /.info-box
+          .info-box.bg-aqua
+            span.info-box-icon A
+            .info-box-content
+              span.info-box-number 阿里巴巴
+              span.info-box-text ID: alibaba          超级运营员: test1,test2
+              .progress
+                .progress-bar(style='width: 100%')
+              span.progress-description
+                | 公司的办公地址位于珠江口西岸的核心城市，幸福之城珠海，珠海市吉大景山路23号二楼206号，我们有最好的产品和专业的销售和技术团队，
+                | 我们为客户提供最好的产品、良好的技术支持、健全的售后服务，珠海速赢达网络科技有限公司是珠海网络工程行业知名企业.
+            // /.info-box-content
+          // /.info-box
+          // /.box

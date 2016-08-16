@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/**
+ * 搜索框v2样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.c-search {
+  border: 1px #eee solid;
+  border-radius: 2px;
+  display: table;
+  overflow: hidden;
+  background-color: #fff; }
+  .c-search.active {
+    border: 1px #dedede solid; }
+    .c-search.active .s-btn {
+      color: #444;
+      cursor: pointer; }
+    .c-search.active .s-input:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #444; }
+    .c-search.active .s-input::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #444; }
+    .c-search.active .s-input:-ms-input-placeholder {
+      color: #444; }
+    .c-search.active .s-input::-webkit-input-placeholder {
+      color: #444; }
+  .c-search .s-input {
+    height: 40px;
+    line-height: 38px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    line-height: 1.4;
+    vertical-align: 1px;
+    width: 100%;
+    display: table-cell;
+    padding: 5px 12px;
+    color: #444; }
+  .c-search .s-btn {
+    cursor: pointer;
+    line-height: 1;
+    vertical-align: middle;
+    width: 1%;
+    display: table-cell;
+    padding: 0 12px;
+    background-color: #f4f4f4;
+    color: #999;
+    position: relative; }
+    .c-search .s-btn:hover {
+      background-color: #3a99d8;
+      color: #fff; }
+    .c-search .s-btn:first-child:before {
+      left: auto;
+      right: -1px; }
+  .c-search.md .s-input {
+    height: 38px;
+    padding: 6px 10px;
+    font-size: 15px; }
+  .c-search.md .s-btn {
+    padding: 6px 10px; }
+    .c-search.md .s-btn .icon-sousuo {
+      font-size: 20px; }
+
+.c-search.sm {
+  width: 210px;
+  height: 30px;
+  line-height: 28px; }
+  .c-search.sm .s-input {
+    height: 30px;
+    line-height: 28px; }
+  .c-search.sm .s-btn {
+    color: #999;
+    cursor: pointer; }
+    .c-search.sm .s-btn:hover {
+      color: #fff; }
+
+/*# sourceMappingURL=search.css.map */

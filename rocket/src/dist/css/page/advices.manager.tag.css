@@ -1,0 +1,193 @@
+.advices-manager-tag .content {
+  padding: 10px; }
+.advices-manager-tag .c-nav {
+  overflow: hidden;
+  padding-top: 35px; }
+  .advices-manager-tag .c-nav .item {
+    float: left;
+    padding: 0 20px;
+    margin: 0 10px;
+    color: #2a2a2a;
+    font-size: 16px;
+    border-bottom: 4px transparent solid;
+    line-height: 30px;
+    cursor: pointer; }
+    .advices-manager-tag .c-nav .item.active, .advices-manager-tag .c-nav .item:hover {
+      color: #005982;
+      border-bottom: 4px #79a1c2 solid; }
+.advices-manager-tag .c-tool {
+  background-color: #fafafa;
+  border-top: 1px #cacaca solid;
+  border-bottom: 1px #cacaca solid;
+  padding: 14px 10px;
+  overflow: hidden;
+  height: 61px; }
+.advices-manager-tag .at-tag {
+  display: inline-block;
+  padding: 0 5px;
+  margin: 5px 0;
+  color: #1fbba6;
+  border-right: 1px #ddd solid; }
+  .advices-manager-tag .at-tag:last-child {
+    border-right: none; }
+.advices-manager-tag .edit-box {
+  background-color: #fff;
+  position: absolute;
+  height: calc(100% - 140px);
+  left: 0;
+  right: 0;
+  top: 130px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px #cacaca solid;
+  border-right: 1px #cacaca solid;
+  border-bottom: 1px #cacaca solid;
+  min-height: 400px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  flex-direction: column; }
+  .advices-manager-tag .edit-box .error-bar {
+    border-bottom: 1px #cacaca solid;
+    background-color: #bfdfff;
+    font-size: 14px;
+    line-height: 32px;
+    color: #f85050;
+    text-align: center; }
+  .advices-manager-tag .edit-box .eb-t {
+    border-bottom: 1px #cacaca solid;
+    display: -webkit-box;
+    display: flex; }
+    .advices-manager-tag .edit-box .eb-t .eb-t-cell {
+      padding: 28px 60px;
+      -webkit-box-flex: 1;
+      flex: 1;
+      border-right: 1px #cacaca solid; }
+      .advices-manager-tag .edit-box .eb-t .eb-t-cell:last-child {
+        border-right: none; }
+      .advices-manager-tag .edit-box .eb-t .eb-t-cell .ip-g {
+        border: 1px #dedede solid;
+        border-radius: 2px;
+        display: table;
+        overflow: hidden;
+        line-height: 1;
+        margin-top: 3px; }
+        .advices-manager-tag .edit-box .eb-t .eb-t-cell .ip-g input {
+          border: none;
+          outline: none;
+          display: block;
+          height: 30px;
+          padding: 6px 12px;
+          line-height: 1.4;
+          width: 100%;
+          font-size: 14px; }
+          .advices-manager-tag .edit-box .eb-t .eb-t-cell .ip-g input:disabled {
+            background-color: #eee; }
+        .advices-manager-tag .edit-box .eb-t .eb-t-cell .ip-g .ip-g-b {
+          display: table-cell;
+          padding: 6px 12px;
+          color: #dedede;
+          line-height: 1;
+          width: 1%; }
+        .advices-manager-tag .edit-box .eb-t .eb-t-cell .ip-g.error {
+          border-color: red;
+          box-shadow: 0 0 3px #ff0000; }
+      .advices-manager-tag .edit-box .eb-t .eb-t-cell.disabled {
+        position: relative; }
+        .advices-manager-tag .edit-box .eb-t .eb-t-cell.disabled:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background-color: rgba(248, 248, 248, 0.5); }
+  .advices-manager-tag .edit-box .eb-t-lab {
+    color: #3a678d;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px; }
+  .advices-manager-tag .edit-box .eb-t-oper {
+    height: 36px;
+    line-height: 36px; }
+  .advices-manager-tag .edit-box .eb-t-gbtn {
+    display: -webkit-box;
+    display: flex;
+    height: 26px;
+    border: 1px #dedede solid;
+    line-height: 26px;
+    -webkit-user-select: none;
+    overflow: hidden;
+    font-size: 14px;
+    border-radius: 2px; }
+    .advices-manager-tag .edit-box .eb-t-gbtn.eb-t-gbtn-r {
+      border-radius: 13px; }
+    .advices-manager-tag .edit-box .eb-t-gbtn .eb-t-gbtn-cell {
+      -webkit-box-flex: 1;
+      flex: 1;
+      min-width: 60px;
+      text-align: center;
+      border-right: 1px #dedede solid;
+      cursor: pointer;
+      background-color: #fff;
+      color: #8c8c8c; }
+      .advices-manager-tag .edit-box .eb-t-gbtn .eb-t-gbtn-cell:last-child {
+        border-right: none; }
+      .advices-manager-tag .edit-box .eb-t-gbtn .eb-t-gbtn-cell.active {
+        background-color: #2abcb9;
+        color: #fff; }
+  .advices-manager-tag .edit-box .eb-text {
+    color: #3a678d;
+    font-size: 14px;
+    border-bottom: 1px #dedede solid;
+    line-height: 30px;
+    padding-left: 20px; }
+  .advices-manager-tag .edit-box .eb-bt {
+    padding: 6px;
+    -webkit-box-flex: 1;
+    flex: 1;
+    overflow: auto;
+    border-bottom: 1px #dadada solid; }
+    .advices-manager-tag .edit-box .eb-bt .eb-tag {
+      display: inline-block;
+      border: 1px #7b9cb9 solid;
+      border-radius: 5px;
+      line-height: 24px;
+      color: #7b9cb9;
+      padding: 0 10px;
+      margin: 3px;
+      font-size: 14px;
+      cursor: default; }
+      .advices-manager-tag .edit-box .eb-bt .eb-tag.active {
+        background-color: #7b9cb9;
+        color: #fff; }
+    .advices-manager-tag .edit-box .eb-bt.disabled {
+      position: relative;
+      overflow: hidden; }
+      .advices-manager-tag .edit-box .eb-bt.disabled:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(248, 248, 248, 0.5); }
+  .advices-manager-tag .edit-box .eb-btn {
+    width: 70px;
+    height: 30px;
+    background-color: #2abcb9;
+    border: 1px #dedede solid;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    margin: 0 19px;
+    line-height: 30px;
+    cursor: pointer; }
+    .advices-manager-tag .edit-box .eb-btn:active {
+      background-color: #25a7a4; }
+.advices-manager-tag .c-modal span {
+  font-size: inherit !important; }
+
+/*# sourceMappingURL=advices.manager.tag.css.map */

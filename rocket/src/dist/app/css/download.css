@@ -1,0 +1,64 @@
+@charset "utf-8";
+a,address,b,big,blockquote,body,cite,code,dd,del,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,label,legend,li,ol,p,pre,small,span,strong,ul,var,tr,td,th{margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+button,html input[type=button],input[type=submit]{-webkit-apperance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+ol,ul{list-style:none}
+img{border:0;vertical-align:middle}
+em,i{font-style:normal}
+body{min-width: 320px;max-width: 768px;margin: 0 auto;font: 16px/150% "PingFang SC Light", sans-serif;color:#666;background:#448bf1;}
+a{color:#666;text-decoration:none}a:hover{color:#C81623; cursor: pointer;}
+
+/*公用*/
+.fl{float:left; display: inline;}.fr{float:right; display: inline;}
+.pr{position: relative;} .pa{ position: absolute; }
+.w{width: 100%; } .h{ height: 100%; }
+.clear:after{content:".";display:block;height:0;clear:both;visibility:hidden}.clear{*zoom:1}
+.btn{display: block; }
+
+// 下载页
+.download img {
+	background-size: 100%;
+}
+.dbBtn {
+	overflow: hidden;
+	display: block;
+	left: 14%;
+	width: 70%;
+	height: 8%;
+	background-size: 100%;
+	border: 1px solid #fff;
+	border-radius: 8px;
+}
+.dbBtn:active {
+	// background-position: 1% 1%;
+}
+.dbBtn i {
+	display: inline-block;
+	width: 1.9em;
+	height: 2.4em;
+	position: relative;
+	left: 10%;
+	top: 47%;
+	margin-top: -20px;
+}
+.dbBtn p {
+	display: inline-block;
+	position: relative;
+	left: 17%;
+	font-size: 1.3em;
+	color: #fff;
+	top: 29%;
+	margin-top: -7px;
+}
+.dbBtn1 {top: 64%;}
+.dbBtn2 {top: 64%;}
+.dbBtn1 i {
+	background: url(../img/ic_android.png) no-repeat;
+	background-size: 100% 100%;
+}
+.dbBtn2 i {
+	background: url(../img/ic_apple.png) no-repeat;
+	background-size: 100% 100%;
+}

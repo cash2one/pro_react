@@ -1,0 +1,37 @@
+@import 'var';
+.err404{
+	height: 100%;
+	.inner{
+		position: absolute;
+		width: 700px;
+		height: 500px;
+		background: url(#{$imgDir}/404.png) 0 0 no-repeat;
+		left: 50%;
+		top: 50%;
+		margin-top: -250px;
+		margin-left: -350px;
+		.t1{
+			color: #77cbcb;
+			font-size: 34px;
+			position: absolute;
+			left: 39%;
+			top: 21%;
+		}
+		.t2{
+			position: absolute;
+			top: 77%;
+			font-size: 20px;
+			color: #a5a5a5;
+			left: 0;
+			right: 0;
+			text-align: center;
+		}
+		.t3{
+			position: absolute;
+			color: #fff;
+			top: 91%;
+			left: 39%;
+			font-size: 20px;
+		}
+	}
+}

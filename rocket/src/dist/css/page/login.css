@@ -1,0 +1,265 @@
+.lframe-bg {
+  background: url(../img/loginbg.jpg);
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  min-height: 410px;
+  position: relative; }
+  .lframe-bg.loginpage .aboutbox {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    bottom: 3%;
+    text-align: center;
+    margin: 0 auto;
+    color: #5bebed;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none; }
+    .lframe-bg.loginpage .aboutbox .txt1 a {
+      bottom: 7%;
+      text-align: center;
+      margin: 0 auto;
+      color: #5bebed;
+      font-size: 14px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer; }
+    .lframe-bg.loginpage .aboutbox .txt1 .rtxt {
+      margin-left: 20px; }
+  .lframe-bg.loginpage .lframe-header {
+    height: 68px;
+    background: rgba(2, 0, 0, 0.3);
+    line-height: 66px; }
+  .lframe-bg.loginpage .lframe-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -225px; }
+    .lframe-bg.loginpage .lframe-body .lfr-header-logo {
+      margin-bottom: 19px;
+      position: absolute;
+      width: 100%;
+      margin-left: -35px;
+      padding: 18px 35px 14px 35px;
+      top: 0px;
+      border-bottom: 1px solid #000; }
+      .lframe-bg.loginpage .lframe-body .lfr-header-logo img {
+        vertical-align: middle;
+        margin-right: 10px; }
+      .lframe-bg.loginpage .lframe-body .lfr-header-logo .text {
+        color: #fff;
+        opacity: 0.9;
+        vertical-align: middle;
+        font-size: 22px; }
+      .lframe-bg.loginpage .lframe-body .lfr-header-logo .iconfontbox {
+        display: inline-block;
+        position: relative;
+        top: 14px;
+        left: 134px; }
+        .lframe-bg.loginpage .lframe-body .lfr-header-logo .iconfontbox .roleicon {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          margin-left: 2px;
+          color: #2b7b7e; }
+          .lframe-bg.loginpage .lframe-body .lfr-header-logo .iconfontbox .roleicon.icon-zhanghu {
+            left: -25px;
+            color: #2b7b7e;
+            top: -3px; }
+          .lframe-bg.loginpage .lframe-body .lfr-header-logo .iconfontbox .roleicon.icon-xingxing {
+            left: -26px;
+            color: #2b7b7e;
+            top: -3px; }
+        .lframe-bg.loginpage .lframe-body .lfr-header-logo .iconfontbox .icontxt {
+          color: #E5E7E7;
+          font-size: 14px; }
+    .lframe-bg.loginpage .lframe-body .lfr-header-nav {
+      line-height: 76px;
+      font-size: 14px;
+      color: #fff;
+      opacity: 0.9; }
+      .lframe-bg.loginpage .lframe-body .lfr-header-nav .firstpage {
+        cursor: pointer; }
+      .lframe-bg.loginpage .lframe-body .lfr-header-nav .produce-note {
+        cursor: pointer; }
+    .lframe-bg.loginpage .lframe-body .lfr-body-loginbox {
+      width: 449px;
+      height: 322px;
+      background: rgba(2, 0, 0, 0.5);
+      margin: 0 auto;
+      padding: 25px 35px 22px; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .ic-loginbox {
+        left: 162px; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .lb-row1 {
+        height: 42px; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .lb-row2 {
+        height: 48px; }
+        .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .lb-row2.mt66 {
+          margin-top: 66px; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .seccodeBtn, .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .loginbtn {
+        width: 100%;
+        height: 40px;
+        line-height: 36px;
+        position: relative;
+        background-color: #2b7b7e;
+        color: #fff;
+        border: none;
+        font-size: 14px;
+        -webkit-user-select: none;
+        border: 2px solid #2b7b7e;
+        display: inline-block;
+        text-align: center; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .seccodeBtn {
+        width: 155px;
+        height: 100%;
+        line-height: 38px;
+        vertical-align: middle; }
+        .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .seccodeBtn.disable {
+          background-color: #818181;
+          color: #acacac;
+          border: 2px solid #818181; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox input {
+        background: rgba(132, 133, 133, 0.3);
+        border: 2px solid #213838;
+        color: #A9A9A9;
+        height: 48px;
+        line-height: 40px;
+        font-size: 14px;
+        text-indent: 10px;
+        vertical-align: middle; }
+        .lframe-bg.loginpage .lframe-body .lfr-body-loginbox input.phone {
+          width: 100%; }
+        .lframe-bg.loginpage .lframe-body .lfr-body-loginbox input.error {
+          border: 2px solid #892D2D; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox label.error {
+        display: none;
+        position: absolute;
+        opacity: 0; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .inputicon {
+        display: inline-block;
+        position: absolute;
+        margin-left: 11px;
+        color: #2b7b7e; }
+        .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .inputicon.icon-iconfontshouji {
+          margin-top: 7px;
+          top: 94px;
+          font-size: 22px; }
+        .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .inputicon.icon-shield {
+          margin-top: 10px;
+          font-size: 20px; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox input.phone {
+        text-indent: 40px; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox input.mess-seccode {
+        width: 219px;
+        margin-right: 5px;
+        text-indent: 40px; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox input.seccode {
+        width: 246px;
+        margin-right: 5px; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox img.seccode-img {
+        width: 128px;
+        height: 100%;
+        vertical-align: middle;
+        cursor: pointer; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .c-button {
+        background-color: #2b7b7e;
+        width: 246px;
+        height: 33px;
+        line-height: 31px; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox span.c-button {
+        display: inline-block; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .weixin-loginbox {
+        display: inline-block;
+        float: right;
+        position: relative;
+        top: 2px;
+        cursor: pointer; }
+        .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .weixin-loginbox span.iconfont {
+          color: #38c562;
+          margin-right: 10px;
+          font-size: 25px;
+          vertical-align: middle; }
+        .lframe-bg.loginpage .lframe-body .lfr-body-loginbox .weixin-loginbox span {
+          color: #E5E7E7;
+          font-size: 14px; }
+    .lframe-bg.loginpage .lframe-body .lfr-body-tipbox {
+      width: 449px;
+      min-height: 38px;
+      margin: 0 auto;
+      margin-top: 2px;
+      padding: 10px 0;
+      text-align: center;
+      color: #ed0649;
+      background: rgba(2, 0, 0, 0.5);
+      font-size: 12px; }
+      .lframe-bg.loginpage .lframe-body .lfr-body-tipbox label {
+        display: block; }
+  .lframe-bg.aboutpage {
+    height: 100%;
+    overflow-y: auto; }
+    .lframe-bg.aboutpage .aboutbox {
+      position: relative;
+      top: 70px;
+      width: 1000px;
+      margin: 0 auto;
+      border-radius: 7px;
+      padding-bottom: 50px; }
+      .lframe-bg.aboutpage .aboutbox .titlebox {
+        text-align: center;
+        height: 66px;
+        line-height: 64px;
+        background-color: #1d9e9f;
+        border-radius: 8px 8px 0 0; }
+        .lframe-bg.aboutpage .aboutbox .titlebox span {
+          font-size: 22px;
+          color: #fff; }
+      .lframe-bg.aboutpage .aboutbox .mainbox {
+        border-radius: 0 0 8px 8px;
+        background-color: rgba(2, 0, 0, 0.3);
+        min-height: 676px; }
+        .lframe-bg.aboutpage .aboutbox .mainbox .contentbox {
+          text-align: left;
+          padding: 53px 28px 34px;
+          border-bottom: 1px solid #1d9e9f; }
+          .lframe-bg.aboutpage .aboutbox .mainbox .contentbox p {
+            font-size: 12px;
+            color: #e6e9e9;
+            line-height: 24px; }
+            .lframe-bg.aboutpage .aboutbox .mainbox .contentbox p.tit {
+              font-size: 16px;
+              padding-bottom: 24px;
+              color: #1d9e9f; }
+          .lframe-bg.aboutpage .aboutbox .mainbox .contentbox.noborder {
+            border: none; }
+          .lframe-bg.aboutpage .aboutbox .mainbox .contentbox:last-child {
+            border-bottom: none; }
+
+.minh {
+  min-height: 460px; }
+
+.loadingBox {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -210px;
+  margin-left: -34px;
+  min-height: 230px; }
+  .loadingBox .loadingGif {
+    background: url(../img/loadingGif.gif);
+    width: 154px;
+    height: 154px;
+    position: relative;
+    top: 0; }
+  .loadingBox .loadingTxt {
+    position: relative;
+    top: 20px;
+    left: -40px; }
+
+/*# sourceMappingURL=login.css.map */

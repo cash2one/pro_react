@@ -1,0 +1,293 @@
+body{
+  margin: 0;
+}
+.mb30{
+  margin-bottom: 30px;
+}
+ul{
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+.advices-analy-media {
+  max-width: 1094px;
+  margin-left: auto;
+  padding-top: 20px;
+  margin-right: auto;
+  overflow: hidden;
+  }
+  .advices-analy-media.loading {
+    -webkit-filter: blur(20px);
+    filter: blur(20px); }
+  .advices-analy-media > .head {
+    height: 48px;
+    line-height: 40px;
+    border-top: 8px #6c86a4 solid;
+    background-color: #fff; }
+    .advices-analy-media > .head .tit {
+      padding-left: 20px;
+      font-size: 14px; }
+  .advices-analy-media .data-part {
+    display: -webkit-box;
+    display: flex;
+    /* margin-left: 30px; */
+    /* margin-right: -5px; */
+    /* overflow: hidden; */
+    margin-bottom: 10px;
+    /* width: 100%; */
+    }
+    .advices-analy-media .data-part .item {
+      -webkit-box-flex: 1;
+      flex: 1;
+      margin-left: 5px;
+      margin-right: 5px;
+      }
+  .advices-analy-media .media-container {
+    /* height: 100px; */
+    /* background: #f6f6f6 url(http://home.puzhizhuhai.com/img/media-data-bg.png) 0 0 no-repeat; */
+    background-size: contain;
+    text-align: center;
+    border: 1px #eee solid;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+    .advices-analy-media .media-container .key {
+      font-size: 14px;
+      color: #3493EA;
+      line-height: 30px;
+      border-top: 1px #eee solid;
+      background: #f5f5f5;
+      }
+    .advices-analy-media .media-container .val {
+      font-size: 20px;
+      color: #807F7F;
+      line-height: 68px;
+      font-family: sans-serif;
+      }
+      .advices-analy-media .media-container .val.warn {
+        color: #ff000c; }
+  .advices-analy-media .grid2 {
+    /* display: -webkit-box; */
+    /* display: flex; */
+    /* margin-left: -15px; */
+    /* margin-right: -15px; */
+    }
+    .advices-analy-media .grid2 .item {
+      /* -webkit-box-flex: 1; */
+      /* flex: 1; */
+      /* margin-left: 15px; */
+      /* margin-right: 15px; */
+      margin-bottom: 10px;
+      }
+  .advices-analy-media .media-chart-container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    flex-direction: column; }
+    .advices-analy-media .media-chart-container .hd {
+      /* background: #6c86a4 url(http://home.puzhizhuhai.com/img/media-hd.png) left center no-repeat; */
+      height: 35px;
+      line-height: 35px;
+      padding-left: 10px;
+      border-top: 1px #4BADE3 solid;
+      background: #f5f5f5;
+      }
+      .advices-analy-media .media-chart-container .hd .tit {
+        font-size: 18px;
+        color: #797979;
+        font-family: arial;
+        }
+    .advices-analy-media .media-chart-container .bd {
+      background-color: #f5f5f5;
+      -webkit-box-flex: 1;
+      flex: 1;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      flex-direction: column; }
+      .advices-analy-media .media-chart-container .bd .chart {
+        -webkit-box-flex: 1;
+        flex: 1; }
+  .advices-analy-media .emot-charts .navis:after {
+    content: "";
+    display: block;
+    clear: both;
+    /* border-top: 1px #4BADE3 solid; */
+    }
+    .advices-analy-media .emot-charts .navis .item {
+      float: left;
+      width: 50px;
+      height: 25px;
+      border: 1px #eee solid;
+      line-height: 25px;
+      text-align: center;
+      background: #fff;
+      position: relative;
+      /* overflow: hidden; */
+      margin-right: -1px;
+      cursor: pointer;
+      -webkit-transition-property: background;
+      -webkit-transition-duration: 0.1s;
+      -webkit-transition-timing-function: ease;
+      -webkit-transition-delay: 0;
+      -moz-transition-property: background;
+      -moz-transition-duration: 0.1s;
+      -moz-transition-timing-function: ease;
+      -moz-transition-delay: 0;
+      -o-transition-property: background;
+      -o-transition-duration: 0.1s;
+      -o-transition-timing-function: ease;
+      -o-transition-delay: 0;
+      -ms-transition-property: background;
+      -ms-transition-duration: 0.1s;
+      -ms-transition-timing-function: ease;
+      -ms-transition-delay: 0;
+      transition-property: background;
+      transition-duration: 0.1s;
+      transition-timing-function: ease;
+      transition-delay: 0;
+      color: #797979;
+      width: 14%;
+      margin-top: -1px;
+      }
+      .advices-analy-media .emot-charts .navis .item:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        left: 0;
+        margin-top: -1px;
+        height: 0px;
+        background-color: #5babdf;
+        -webkit-transition-property: bottom;
+        -webkit-transition-duration: 0.4s;
+        -webkit-transition-timing-function: ease;
+        -webkit-transition-delay: 0;
+        -moz-transition-property: bottom;
+        -moz-transition-duration: 0.4s;
+        -moz-transition-timing-function: ease;
+        -moz-transition-delay: 0;
+        -o-transition-property: bottom;
+        -o-transition-duration: 0.4s;
+        -o-transition-timing-function: ease;
+        -o-transition-delay: 0;
+        -ms-transition-property: bottom;
+        -ms-transition-duration: 0.4s;
+        -ms-transition-timing-function: ease;
+        -ms-transition-delay: 0;
+        transition-property: bottom;
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+        transition-delay: 0;
+        }
+      .advices-analy-media .emot-charts .navis .item .txt {
+        color: #7f7f7f;
+        font-size: 15px;
+        }
+      .advices-analy-media .emot-charts .navis .item:hover, .advices-analy-media .emot-charts .navis .item.active {
+        /* background-color: #6c86a4; */
+        }
+        .advices-analy-media .emot-charts .navis .item:hover .txt, .advices-analy-media .emot-charts .navis .item.active .txt {
+          /* color: #fff; */
+          }
+        .advices-analy-media .emot-charts .navis .item:hover:after, .advices-analy-media .emot-charts .navis .item.active:after {
+          height: 1px }
+  .advices-analy-media .emot-charts .chart {
+    background-color: #f5f5f5; }
+
+/*# sourceMappingURL=advices.analy.media.css.map */
+.advices-analy-spread-detail-load {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  }
+  .advices-analy-spread-detail-load .wrapper {
+    /* position: fixed; */
+    /* left: calc(50% + 155px); */
+    /* top: 50%; */
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 170px;
+    border-radius: 25px;
+    /* padding-bottom: 45px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgba(255, 255, 255, 0.73);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.7) inset;
+    font-family: sans-serif;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    }
+    .advices-analy-spread-detail-load .wrapper .l {
+      width: 75px;
+      height: 73px;
+      background: url(http://home.puzhizhuhai.com/img/spread-mask-icon.png) 0 0 no-repeat;
+      color: #fff;
+      line-height: 75px;
+      margin-right: 13px;
+      text-align: center;
+      padding-right: 22px;
+      }
+    .advices-analy-spread-detail-load .wrapper .r {
+      -webkit-box-flex: 1;
+      flex: 1; }
+      .advices-analy-spread-detail-load .wrapper .r .tit {
+        color: #35b2db;
+        font-size: 18px;
+        line-height: 2; }
+      .advices-analy-spread-detail-load .wrapper .r .state {
+        color: #515453;
+        font-size: 14px;
+        line-height: 1.4; }
+      .advices-analy-spread-detail-load .wrapper .r .bar {
+        margin-top: 9px;
+        overflow: hidden;
+        height: 11px;
+        background-color: #f5f5f5; }
+        .advices-analy-spread-detail-load .wrapper .r .bar .inner {
+          float: left;
+          height: 100%;
+          font-size: 12px;
+          line-height: 20px;
+          color: #ffffff;
+          text-align: center;
+          background-color: #38b0db;
+          -webkit-transition: width 0.6s ease;
+          -o-transition: width 0.6s ease;
+          transition: width 0.6s ease;
+          background-image: -webkit-linear-gradient(56deg, rgba(255, 255, 255, 0.15) 10%, transparent 10%, transparent 20%, rgba(255, 255, 255, 0.15) 20%, rgba(255, 255, 255, 0.15) 30%, transparent 30%, transparent 40%, rgba(255, 255, 255, 0.15) 40%, rgba(255, 255, 255, 0.15) 50%, transparent 50%, transparent 60%, rgba(255, 255, 255, 0.15) 60%, rgba(255, 255, 255, 0.15) 70%, transparent 70%, transparent 80%, rgba(255, 255, 255, 0.15) 80%, rgba(255, 255, 255, 0.15) 90%, transparent 90%, transparent);
+          background-image: -o-linear-gradient(56deg, rgba(255, 255, 255, 0.15) 10%, transparent 10%, transparent 20%, rgba(255, 255, 255, 0.15) 20%, rgba(255, 255, 255, 0.15) 30%, transparent 30%, transparent 40%, rgba(255, 255, 255, 0.15) 40%, rgba(255, 255, 255, 0.15) 50%, transparent 50%, transparent 60%, rgba(255, 255, 255, 0.15) 60%, rgba(255, 255, 255, 0.15) 70%, transparent 70%, transparent 80%, rgba(255, 255, 255, 0.15) 80%, rgba(255, 255, 255, 0.15) 90%, transparent 90%, transparent);
+          background-image: linear-gradient(56deg, rgba(255, 255, 255, 0.15) 10%, transparent 10%, transparent 20%, rgba(255, 255, 255, 0.15) 20%, rgba(255, 255, 255, 0.15) 30%, transparent 30%, transparent 40%, rgba(255, 255, 255, 0.15) 40%, rgba(255, 255, 255, 0.15) 50%, transparent 50%, transparent 60%, rgba(255, 255, 255, 0.15) 60%, rgba(255, 255, 255, 0.15) 70%, transparent 70%, transparent 80%, rgba(255, 255, 255, 0.15) 80%, rgba(255, 255, 255, 0.15) 90%, transparent 90%, transparent);
+          -webkit-background-size: 75px 75px;
+          background-size: 75px 75px; }
+          .advices-analy-spread-detail-load .wrapper .r .bar .inner.active {
+            -webkit-animation: progress-bar-stripes 2s linear infinite;
+            -o-animation: progress-bar-stripes 2s linear infinite;
+            animation: progress-bar-stripes 2s linear infinite; }
+  .advices-analy-spread-detail-load.tip .wrapper .l {
+    background: url(http://home.puzhizhuhai.com/img/spread-mask-tip.png) 0 0 no-repeat; }
+  .advices-analy-spread-detail-load.tip .wrapper .r .tit {
+    color: #fabd02; }
+  .advices-analy-spread-detail-load.tip .wrapper .r .state a {
+    color: #0086d3; }
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 75px 0; }
+  to {
+    background-position: 0 0; } }
+@-o-keyframes progress-bar-stripes {
+  from {
+    background-position: 75px 0; }
+  to {
+    background-position: 0 0; } }
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 75px 0; }
+  to {
+    background-position: 0 0; } }

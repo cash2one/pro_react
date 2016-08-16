@@ -1,0 +1,27 @@
+.fr-br-box.h {
+  height: 100%; }
+.fr-br-box .fr-br-container {
+  width: 90%;
+  max-width: 1100px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  margin: 0 auto;
+  color: #222;
+  height: 100%; }
+  .fr-br-box .fr-br-container .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+    .fr-br-box .fr-br-container .container-fluid .row {
+      margin-right: -15px;
+      margin-left: -15px; }
+    .fr-br-box .fr-br-container .container-fluid .fr-br-top {
+      min-height: 224px;
+      color: #212121;
+      border-bottom: 1px solid #eee; }
+    .fr-br-box .fr-br-container .container-fluid .fr-br-main {
+      padding: 11px 17px;
+      min-height: 400px; }
+
+/*# sourceMappingURL=c-frame.css.map */

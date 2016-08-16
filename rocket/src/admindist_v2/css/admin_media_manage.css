@@ -1,0 +1,64 @@
+.img {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 2px;
+  display: block;
+  float: left;
+  height: 100%;
+  width: 90px;
+  line-height: 90px;
+}
+
+.img > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.influence {
+  text-align:center;
+  margin:10px 10px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 2px;
+  display: block;
+  float: right;
+  height: 15%;
+  width: 90px;
+  line-height: 20px;
+}
+
+#edit{
+  display: none;
+}
+
+.form-group{
+  width: 10%;
+  display:inline;
+}
+.form-group > p{
+  display:inline;
+  margin:0 10px;
+}
+select.form-control{
+  width: 7%;
+  display:inline;
+}
+
+p{
+  display:inline;
+  word-wrap:break-word;
+}
+
+.add_tag{
+  display:none;
+}
+
+.add_tag > label{
+  display:inline;
+}
+.add_tag > input{
+  display:inline;
+  width: 83%;
+}

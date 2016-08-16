@@ -1,0 +1,13 @@
+{
+  "name": "rocket-raccoon",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cache-breaker": "^2.0.1"
+  }
+}

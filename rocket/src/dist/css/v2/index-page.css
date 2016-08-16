@@ -1,0 +1,781 @@
+@charset "UTF-8";
+/**
+ * create by lxt
+ * 2016/07/06
+ * 火箭熊各个页面样式总和
+ */
+/**
+ * create by lxt
+ * edit on 2016/07/22
+ * 个人设置v2样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.setting .titlebox {
+  height: 26px;
+  line-height: 26px;
+  background-color: #79a1c2; }
+  .setting .titlebox > span {
+    margin-left: 20px;
+    color: #fff; }
+.setting form .btn.btn-primary.btn-lg {
+  padding: 11px 21px;
+  width: 141px; }
+.setting .m-tip label {
+  position: relative;
+  top: 50px; }
+
+.setting .leftbox {
+  position: relative;
+  top: 32px; }
+  .setting .leftbox img {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px; }
+  .setting .leftbox button.edit-file-btn {
+    display: block;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background: none;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #2c97de; }
+    .setting .leftbox button.edit-file-btn:hover {
+      text-decoration: underline; }
+.setting .rightbox .form-group {
+  margin-bottom: 10px; }
+  .setting .rightbox .form-group.mb10 {
+    margin-bottom: 10px; }
+  .setting .rightbox .form-group .col-xs-3:first-child {
+    text-align: right; }
+  .setting .rightbox .form-group .col-xs-9 {
+    text-align: left; }
+.setting .rightbox label.error {
+  position: relative;
+  top: 5px; }
+.setting .rightbox label.prl10 {
+  position: relative;
+  left: 10px; }
+.setting .rightbox form label {
+  color: #000; }
+  .setting .rightbox form label.error {
+    display: inline;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #e9573f; }
+.setting .rightbox form table tr {
+  height: 35px; }
+  .setting .rightbox form table tr td:nth-child(1) {
+    text-align: right;
+    width: 90px;
+    padding-right: 10px;
+    vertical-align: top;
+    padding-top: 5px; }
+  .setting .rightbox form table tr td:nth-child(2) {
+    text-align: left;
+    width: 255px; }
+    .setting .rightbox form table tr td:nth-child(2) label {
+      margin-left: 10px; }
+    .setting .rightbox form table tr td:nth-child(2) input {
+      width: 254px;
+      height: 30px;
+      line-height: 28px;
+      border-radius: 2px;
+      border: 1px solid #dedede;
+      text-indent: 10px;
+      font-size: 14px;
+      font-weight: lighter; }
+      .setting .rightbox form table tr td:nth-child(2) input.error {
+        outline: none;
+        color: #212121;
+        border: 1px solid #ff0000; }
+      .setting .rightbox form table tr td:nth-child(2) input.sm.error {
+        background-size: 17% 70%; }
+    .setting .rightbox form table tr td:nth-child(2) input.sm {
+      width: 115px;
+      margin-right: 4px;
+      vertical-align: middle; }
+    .setting .rightbox form table tr td:nth-child(2) .getcode-btn {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      width: 135px;
+      height: 30px;
+      line-height: 26px;
+      padding-top: 1px;
+      background-color: #fafafa;
+      border: 1px solid #dedede;
+      color: #212121;
+      border-radius: 2px;
+      font-size: 14px;
+      cursor: pointer;
+      -webkit-user-select: none; }
+      .setting .rightbox form table tr td:nth-child(2) .getcode-btn.disabled {
+        color: #bcbcbc; }
+    .setting .rightbox form table tr td:nth-child(2) .warn {
+      padding-top: 10px;
+      color: #ff0000;
+      font-size: 14px;
+      margin-left: 10px; }
+.setting .rightbox form .setting-page-warn {
+  margin: 25px 0 -11px -40px; }
+.setting .rightbox .buttonbox .formbtn {
+  margin-left: 281px;
+  margin-top: 12px;
+  display: inline-block;
+  text-align: center; }
+.setting .rightbox .buttonbox .cancel-save-btn {
+  margin-left: 172px;
+  margin-top: 12px; }
+.setting .rightbox .buttonbox .save-btn {
+  margin-left: 10px; }
+.setting .panel-footer .btnbox {
+  height: 30px; }
+  .setting .panel-footer .btnbox .btn + .btn {
+    margin-left: 8px; }
+.setting .bind-count ul {
+  position: relative;
+  top: -30px;
+  min-height: 145px; }
+  .setting .bind-count ul li {
+    margin-right: 40px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    position: relative; }
+    .setting .bind-count ul li .iconfont {
+      position: absolute;
+      top: 0;
+      font-size: 50px;
+      height: 83px;
+      line-height: 100px; }
+      .setting .bind-count ul li .iconfont.icon-weixin {
+        color: #00bb9c; }
+      .setting .bind-count ul li .iconfont.icon-qq {
+        color: #eee; }
+      .setting .bind-count ul li .iconfont.icon-xinlang {
+        font-size: 54px;
+        line-height: 104px;
+        color: #eee; }
+      .setting .bind-count ul li .iconfont.icon-shouji {
+        color: #33475f; }
+    .setting .bind-count ul li .binded {
+      display: inline-block;
+      text-align: center;
+      width: 45px;
+      height: 16px;
+      line-height: 14px;
+      border: 1px solid #2575ac;
+      border-radius: 2px;
+      color: #5babdf;
+      background-color: #def8ff;
+      font-size: 12px;
+      margin-bottom: 4px; }
+    .setting .bind-count ul li .binded-img {
+      position: absolute;
+      display: inline-block;
+      background: url(../img/binded.png) no-repeat;
+      width: 100%;
+      height: 13px;
+      text-align: center;
+      margin: 0 auto;
+      left: 33px; }
+    .setting .bind-count ul li .icontxt {
+      position: absolute;
+      top: 80px;
+      left: 25px;
+      width: 100px;
+      user-select: none;
+      -webkit-user-select: none;
+      color: #cacaca; }
+      .setting .bind-count ul li .icontxt.black {
+        color: #000;
+        line-height: 22px;
+        margin-top: 15px; }
+      .setting .bind-count ul li .icontxt.grey {
+        color: #cacaca;
+        line-height: 22px;
+        margin-top: 15px; }
+      .setting .bind-count ul li .icontxt.bindbtn {
+        cursor: pointer; }
+      .setting .bind-count ul li .icontxt a {
+        color: #2c97de;
+        cursor: pointer; }
+        .setting .bind-count ul li .icontxt a:hover {
+          text-decoration: underline; }
+      .setting .bind-count ul li .icontxt .unselect {
+        color: #cacaca; }
+    .setting .bind-count ul li .icontxt1 {
+      position: absolute;
+      top: 80px;
+      left: 57px; }
+    .setting .bind-count ul li .icontxt2 {
+      position: absolute;
+      top: 118px; }
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .setting .leftbox {
+    position: relative;
+    top: 17px; } }
+/**
+ * edit by lxt
+ * 2016/07/14
+ * 运营员管理v2样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.all-manager .panel-body {
+  position: relative; }
+  .all-manager .panel-body .edit-form {
+    width: 400px;
+    margin: 25px auto 35px; }
+.all-manager .panel-footer .btnbox .btn + .btn {
+  margin-left: 8px; }
+.all-manager .panel-line {
+  border-top: 1px solid #eee;
+  position: absolute;
+  width: 100%;
+  margin-left: -22px; }
+.all-manager .fr-br-mid {
+  min-height: 52px;
+  padding: 10px 10px;
+  color: #444;
+  margin-left: -10px;
+  margin-right: -10px; }
+  .all-manager .fr-br-mid h5 {
+    display: inline-block;
+    position: absolute; }
+  .all-manager .fr-br-mid .all-manager-page-warn {
+    position: absolute;
+    width: 100%;
+    margin-top: 4px;
+    margin-left: -22px;
+    margin-bottom: -10px; }
+.all-manager .fr-br-main {
+  min-height: 300px;
+  margin-right: -22px; }
+  .all-manager .fr-br-main .com-role-container {
+    display: inline-block;
+    position: relative; }
+    .all-manager .fr-br-main .com-role-container .ic {
+      height: 28px;
+      line-height: 26px; }
+    .all-manager .fr-br-main .com-role-container .tag {
+      font-size: 14px;
+      display: inline-block;
+      border: 1px solid #dedede;
+      color: #444;
+      padding: 0px 11px;
+      margin-right: 20px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      min-width: 155.5px;
+      max-width: 155.5px;
+      min-height: 30px;
+      line-height: 28px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: center; }
+      .all-manager .fr-br-main .com-role-container .tag:hover {
+        background-color: #f4f4f4; }
+      .all-manager .fr-br-main .com-role-container .tag:last-child {
+        margin-right: 0; }
+      .all-manager .fr-br-main .com-role-container .tag.active {
+        background-color: #3a99d8;
+        color: #fff; }
+        .all-manager .fr-br-main .com-role-container .tag.active .ic.c-corner:after {
+          border-top: 6px #fff solid; }
+      .all-manager .fr-br-main .com-role-container .tag .icon-xiala {
+        font-size: 14px;
+        color: #999;
+        margin-left: 3px; }
+    .all-manager .fr-br-main .com-role-container .webui-popover {
+      display: block;
+      top: 30px;
+      width: auto;
+      border: 1px solid #dedede;
+      border-radius: 4px; }
+      .all-manager .fr-br-main .com-role-container .webui-popover .webui-popover-content {
+        padding: 0;
+        overflow: hidden; }
+      .all-manager .fr-br-main .com-role-container .webui-popover.bottom-right .arrow {
+        left: 21%; }
+      .all-manager .fr-br-main .com-role-container .webui-popover.none {
+        display: none; }
+.all-manager .tooltipbox {
+  color: #fff;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 4px;
+  position: relative;
+  min-width: 365px; }
+  .all-manager .tooltipbox .rolebox-top {
+    padding: 10px 20px;
+    max-width: 540px;
+    text-align: left;
+    margin-right: -10px; }
+    .all-manager .tooltipbox .rolebox-top .role {
+      display: inline-block;
+      min-width: 78px;
+      min-height: 30px;
+      line-height: 28px;
+      font-size: 14px !important;
+      color: #444;
+      text-align: center;
+      padding: 1px 10px;
+      cursor: pointer;
+      margin-bottom: 5px; }
+      .all-manager .tooltipbox .rolebox-top .role.active {
+        color: #444; }
+      .all-manager .tooltipbox .rolebox-top .role:last-child {
+        margin-right: 0; }
+      .all-manager .tooltipbox .rolebox-top .role .c-cb {
+        margin-right: 5px;
+        margin-top: -3px; }
+  .all-manager .tooltipbox .rolebox-bottom {
+    min-height: 40px;
+    background-color: #fafafa;
+    padding-right: 8px; }
+    .all-manager .tooltipbox .rolebox-bottom .btnbox {
+      color: #8c8c8c;
+      font-size: 14px;
+      line-height: 40px; }
+      .all-manager .tooltipbox .rolebox-bottom .btnbox .btn + .btn {
+        margin-left: 10px; }
+.all-manager .notebox {
+  text-align: center;
+  color: #999;
+  margin-top: 70px;
+  margin-bottom: -15px; }
+  .all-manager .notebox .warm {
+    min-width: 236px; }
+    .all-manager .notebox .warm .tit, .all-manager .notebox .warm .txt {
+      line-height: 24px; }
+    .all-manager .notebox .warm .tit {
+      vertical-align: top; }
+    .all-manager .notebox .warm .txt {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left; }
+
+.frame-body-v2 .frame-body-right .frame-body-container .fr-br-mid .page-error2 {
+  background: none; }
+
+.modal .modal-body .m-msg.fs14 {
+  font-size: 14px; }
+
+@media screen and (min-width: 1281px) {
+  .all-manager .fr-br-main .com-role-container:nth-child(6n-1) .bottom-right, .all-manager .fr-br-main .com-role-container:nth-child(6n) .bottom-right {
+    left: -213px; }
+    .all-manager .fr-br-main .com-role-container:nth-child(6n-1) .bottom-right .arrow, .all-manager .fr-br-main .com-role-container:nth-child(6n) .bottom-right .arrow {
+      left: 79%; } }
+@media screen and (min-width: 0px) and (max-width: 1280px) {
+  .all-manager .fr-br-main .com-role-container .tag {
+    min-width: 135.5px;
+    max-width: 135.5px; }
+
+  .all-manager .fr-br-main .com-role-container:nth-child(6n-1) .bottom-right, .all-manager .fr-br-main .com-role-container:nth-child(6n) .bottom-right {
+    left: -232px; }
+    .all-manager .fr-br-main .com-role-container:nth-child(6n-1) .bottom-right .arrow, .all-manager .fr-br-main .com-role-container:nth-child(6n) .bottom-right .arrow {
+      left: 79%; } }
+/**
+ * create by lxt
+ * edit on 2016/07/14
+ * 公司管理页v2样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.company-base .btnbox {
+  position: relative;
+  top: -30px;
+  left: -63px; }
+  .company-base .btnbox .icon-bianji {
+    position: absolute;
+    top: 0px;
+    font-size: 16px;
+    color: #999; }
+    .company-base .btnbox .icon-bianji:hover {
+      cursor: pointer;
+      color: #2c97de; }
+  .company-base .btnbox .icon-lajitong {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    color: #999; }
+    .company-base .btnbox .icon-lajitong:hover {
+      cursor: pointer;
+      color: #2c97de; }
+.company-base .show-frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  min-height: 160px; }
+  .company-base .show-frame .backdrop {
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff; }
+  .company-base .show-frame .framebox {
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    left: -47px; }
+    .company-base .show-frame .framebox iframe {
+      position: relative;
+      top: 10px;
+      display: block;
+      border: none;
+      z-index: 1001;
+      margin: 0 auto; }
+  .company-base .show-frame .c-button {
+    position: relative;
+    top: 10px;
+    z-index: 1001;
+    height: 34px;
+    line-height: 32px;
+    border-radius: 4px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px; }
+.company-base .companyWelcome {
+  min-height: 600px; }
+  .company-base .companyWelcome .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("http://home.puzhizhuhai.com/img/com_welcome.jpg") no-repeat center center;
+    top: 0;
+    left: 0; }
+  .company-base .companyWelcome .txt {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    margin-left: -145px;
+    color: #3e4957;
+    font-size: 24px;
+    width: 430px;
+    text-align: right; }
+.company-base .c-button {
+  width: 100px;
+  height: 40px;
+  line-height: 38px;
+  border-radius: 0; }
+  .company-base .c-button.green {
+    background-color: #2abcb9; }
+  .company-base .c-button.blue {
+    background-color: #6699cc; }
+.company-base .com-search {
+  width: 100%; }
+.company-base .com-rt {
+  color: #444;
+  border-bottom: 1px #eee solid;
+  padding: 0px 0px 20px; }
+.company-base .com-blank {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  color: #8c8c8c;
+  font-size: 14px;
+  text-align: center; }
+.company-base .com-list {
+  margin-left: -22px;
+  margin-right: -22px; }
+  .company-base .com-list > .item {
+    height: 92px;
+    background-color: #fff;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer; }
+    .company-base .com-list > .item.itembox.cur_com:hover {
+      background-color: #f4f4f4; }
+    .company-base .com-list > .item.itembox:hover {
+      background-color: #f4f4f4;
+      border-left: 4px solid #f4f4f4;
+      border-right: 4px solid #f4f4f4; }
+    .company-base .com-list > .item.itembox.cur_com {
+      background-color: #f4f4f4;
+      border-left: 4px solid #f4f4f4;
+      border-right: 4px solid #3a99d8; }
+    .company-base .com-list > .item .cl-mark {
+      display: inline-block;
+      width: 47px;
+      height: 47px;
+      line-height: 47px;
+      text-align: center;
+      border-radius: 30px;
+      color: #444;
+      margin-left: 18px; }
+      .company-base .com-list > .item .cl-mark.col {
+        background-color: #c0a7f2; }
+      .company-base .com-list > .item .cl-mark.acol, .company-base .com-list > .item .cl-mark.Acol, .company-base .com-list > .item .cl-mark.bcol, .company-base .com-list > .item .cl-mark.Bcol, .company-base .com-list > .item .cl-mark.ccol, .company-base .com-list > .item .cl-mark.Ccol {
+        background-color: #dff0fc;
+        color: #2489cc; }
+      .company-base .com-list > .item .cl-mark.dcol, .company-base .com-list > .item .cl-mark.Dcol, .company-base .com-list > .item .cl-mark.ecol, .company-base .com-list > .item .cl-mark.Ecol, .company-base .com-list > .item .cl-mark.fcol, .company-base .com-list > .item .cl-mark.Fcol {
+        background-color: #ffefe4;
+        color: #f67a26; }
+      .company-base .com-list > .item .cl-mark.gcol, .company-base .com-list > .item .cl-mark.Gcol, .company-base .com-list > .item .cl-mark.hcol, .company-base .com-list > .item .cl-mark.Hcol, .company-base .com-list > .item .cl-mark.icol, .company-base .com-list > .item .cl-mark.Icol {
+        background-color: #eafae8;
+        color: #5bc24c; }
+      .company-base .com-list > .item .cl-mark.jcol, .company-base .com-list > .item .cl-mark.Jcol, .company-base .com-list > .item .cl-mark.kcol, .company-base .com-list > .item .cl-mark.Kcol, .company-base .com-list > .item .cl-mark.lcol, .company-base .com-list > .item .cl-mark.Lcol {
+        background-color: #ece6fa;
+        color: #8362d6; }
+      .company-base .com-list > .item .cl-mark.mcol, .company-base .com-list > .item .cl-mark.Mcol, .company-base .com-list > .item .cl-mark.ncol, .company-base .com-list > .item .cl-mark.Ncol, .company-base .com-list > .item .cl-mark.ocol, .company-base .com-list > .item .cl-mark.Ocol {
+        background-color: #fff7e6;
+        color: #f5b025; }
+      .company-base .com-list > .item .cl-mark.pcol, .company-base .com-list > .item .cl-mark.Pcol, .company-base .com-list > .item .cl-mark.qcol, .company-base .com-list > .item .cl-mark.Qcol, .company-base .com-list > .item .cl-mark.rcol, .company-base .com-list > .item .cl-mark.Rcol {
+        background-color: #e2f4fb;
+        color: #27a2cf; }
+      .company-base .com-list > .item .cl-mark.scol, .company-base .com-list > .item .cl-mark.Scol, .company-base .com-list > .item .cl-mark.tcol, .company-base .com-list > .item .cl-mark.Tcol, .company-base .com-list > .item .cl-mark.ucol, .company-base .com-list > .item .cl-mark.Ucol, .company-base .com-list > .item .cl-mark.vcol, .company-base .com-list > .item .cl-mark.Vcol {
+        background-color: #ffe4e0;
+        color: #e63f24; }
+      .company-base .com-list > .item .cl-mark.wcol, .company-base .com-list > .item .cl-mark.Wcol, .company-base .com-list > .item .cl-mark.xcol, .company-base .com-list > .item .cl-mark.Xcol, .company-base .com-list > .item .cl-mark.ycol, .company-base .com-list > .item .cl-mark.Ycol, .company-base .com-list > .item .cl-mark.zcol, .company-base .com-list > .item .cl-mark.Zcol {
+        background-color: #e4f9f4;
+        color: #30a487; }
+    .company-base .com-list > .item .cl-tit {
+      display: inline-block;
+      text-overflow: ellipsis;
+      max-width: 9em;
+      white-space: nowrap;
+      overflow: hidden;
+      vertical-align: bottom;
+      font-size: 16px; }
+    .company-base .com-list > .item .cl-note {
+      display: inline-block;
+      color: #999;
+      vertical-align: middle;
+      font-size: 12px;
+      margin: 0 12px;
+      padding-bottom: 1px; }
+    .company-base .com-list > .item .cl-cont {
+      color: #444;
+      font-size: 14px;
+      margin-top: 5px;
+      min-height: 21px;
+      width: 91%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; }
+    .company-base .com-list > .item:after {
+      content: "";
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 0;
+      height: 1px;
+      background-color: #eee;
+      margin: 0 auto; }
+    .company-base .com-list > .item .mid {
+      -webkit-box-flex: 1;
+      flex: 1; }
+    .company-base .com-list > .item .name {
+      color: #2a2a2a;
+      font-size: 18px; }
+    .company-base .com-list > .item .type {
+      color: #8c8c8c;
+      font-size: 12px; }
+    .company-base .com-list > .item .desc {
+      font-size: 16px;
+      color: #2a2a2a; }
+    .company-base .com-list > .item .cate {
+      max-width: 600px; }
+      .company-base .com-list > .item .cate > .item {
+        display: inline-block;
+        border: 1px #dedede solid;
+        border-radius: 4px;
+        padding: 0 8px;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #8c8c8c; }
+
+/**
+ * create by lxt
+ * edit on 2016/07/22åå
+ * 用户反馈v2样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.feedback-page .problem-form .pf-title {
+  height: 30px;
+  line-height: 28px;
+  text-align: left; }
+  .feedback-page .problem-form .pf-title .iconfont {
+    font-size: 28px;
+    vertical-align: middle;
+    color: #2c97de; }
+  .feedback-page .problem-form .pf-title .ic-txt {
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 8px; }
+.feedback-page .c-rd {
+  vertical-align: middle; }
+.feedback-page label > i {
+  color: #e9573f;
+  margin-right: 2px; }
+.feedback-page .dropdown-v2.idx4 {
+  z-index: 4; }
+.feedback-page .dropdown-v2.idx3 {
+  z-index: 3; }
+.feedback-page .dropdown-v2.idx2 {
+  z-index: 2; }
+.feedback-page .dropdown-v2.idx1 {
+  z-index: 1; }
+
+.feedback-page .gridbox .content form .btn-group {
+  width: 435px;
+  text-align: center; }
+  .feedback-page .gridbox .content form .btn-group .c-button {
+    display: inline-block;
+    width: 138px;
+    height: 35px;
+    line-height: 33px; }
+.feedback-page .gridbox .content form .picbox {
+  width: 425px; }
+  .feedback-page .gridbox .content form .picbox .addbtn {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    vertical-align: middle;
+    color: #dedede;
+    border: 1px solid #dedede;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 22px; }
+    .feedback-page .gridbox .content form .picbox .addbtn:hover {
+      color: #3492e9; }
+    .feedback-page .gridbox .content form .picbox .addbtn .iconfont {
+      display: block;
+      font-size: 26px;
+      text-align: center;
+      margin-top: 6px;
+      margin-bottom: 6px; }
+    .feedback-page .gridbox .content form .picbox .addbtn span {
+      display: block;
+      text-align: center; }
+  .feedback-page .gridbox .content form .picbox .pics {
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    vertical-align: middle;
+    border: 1px solid #dedede;
+    margin-right: 10px;
+    text-align: center; }
+    .feedback-page .gridbox .content form .picbox .pics:hover {
+      cursor: pointer; }
+    .feedback-page .gridbox .content form .picbox .pics img {
+      display: block;
+      margin: 3px auto 1px; }
+    .feedback-page .gridbox .content form .picbox .pics span {
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      color: #fff; }
+      .feedback-page .gridbox .content form .picbox .pics span:hover {
+        color: #3492e9; }
+.feedback-page .gridbox .content form.fb-container p.tip {
+  text-align: left;
+  margin-left: 90px;
+  margin-top: -15px;
+  font-size: 14px;
+  color: #8c8c8c; }
+.feedback-page .gridbox .content form.fb-container .group {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  .feedback-page .gridbox .content form.fb-container .group label {
+    font-size: 14px;
+    width: 80px;
+    height: 40px;
+    line-height: 38px;
+    color: #212121;
+    margin-right: 16px; }
+    .feedback-page .gridbox .content form.fb-container .group label.vt {
+      line-height: 18px; }
+    .feedback-page .gridbox .content form.fb-container .group label.label-type {
+      line-height: 22px;
+      vertical-align: top; }
+  .feedback-page .gridbox .content form.fb-container .group input[type="text"] {
+    font-size: 14px;
+    text-indent: 10px;
+    width: 350px;
+    height: 40px;
+    border: 1px solid #dedede; }
+  .feedback-page .gridbox .content form.fb-container .group input[type="radio"] {
+    font-size: 14px;
+    color: #212121;
+    margin-right: 5px;
+    margin-bottom: 18px; }
+  .feedback-page .gridbox .content form.fb-container .group .radio-group {
+    width: 350px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    padding-left: 6px; }
+    .feedback-page .gridbox .content form.fb-container .group .radio-group label.radiobox {
+      display: inline-block;
+      margin-right: 0;
+      width: 68px;
+      cursor: pointer; }
+.feedback-page .gridbox .content form.fb-container .btn-group {
+  margin-left: 77px;
+  width: 350px;
+  text-align: center; }
+  .feedback-page .gridbox .content form.fb-container .btn-group .c-button {
+    display: inline-block;
+    width: 138px;
+    height: 35px;
+    line-height: 33px; }
+.feedback-page .gridbox .content form.fb-container.nav-fb {
+  width: 460px; }
+  .feedback-page .gridbox .content form.fb-container.nav-fb .group input[type="text"] {
+    width: 380px; }
+  .feedback-page .gridbox .content form.fb-container.nav-fb .btn-group {
+    width: 380px; }
+.feedback-page .gridbox .warn {
+  display: block;
+  min-height: 20px;
+  line-height: 18px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #ff0000; }
+  .feedback-page .gridbox .warn label {
+    display: block; }
+  .feedback-page .gridbox .warn.none {
+    display: none; }
+
+/**
+ * 人员管理样式
+ */
+.advices-base .form-group .dropdown-v2 .cb {
+  margin-right: 10px; }
+
+/*# sourceMappingURL=index-page.css.map */

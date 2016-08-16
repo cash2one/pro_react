@@ -1,0 +1,10 @@
+.alert.alert-danger {
+  position: absolute;
+  right: 0;
+  width: 17em; }
+  .alert.alert-danger .iconfont {
+    margin-right: 10px;
+    position: relative;
+    top: -1px; }
+
+/*# sourceMappingURL=alert.css.map */

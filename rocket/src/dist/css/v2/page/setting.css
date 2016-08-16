@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/**
+ * create by lxt
+ * edit on 2016/07/22
+ * 个人设置v2样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.setting .titlebox {
+  height: 26px;
+  line-height: 26px;
+  background-color: #79a1c2; }
+  .setting .titlebox > span {
+    margin-left: 20px;
+    color: #fff; }
+.setting form .btn.btn-primary.btn-lg {
+  padding: 11px 21px;
+  width: 141px; }
+.setting .m-tip label {
+  position: relative;
+  top: 50px; }
+
+.setting .leftbox {
+  position: relative;
+  top: 32px; }
+  .setting .leftbox img {
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px; }
+  .setting .leftbox button.edit-file-btn {
+    display: block;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background: none;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #2c97de; }
+    .setting .leftbox button.edit-file-btn:hover {
+      text-decoration: underline; }
+.setting .rightbox .form-group {
+  margin-bottom: 10px; }
+  .setting .rightbox .form-group.mb10 {
+    margin-bottom: 10px; }
+  .setting .rightbox .form-group .col-xs-3:first-child {
+    text-align: right; }
+  .setting .rightbox .form-group .col-xs-9 {
+    text-align: left; }
+.setting .rightbox label.error {
+  position: relative;
+  top: 5px; }
+.setting .rightbox label.prl10 {
+  position: relative;
+  left: 10px; }
+.setting .rightbox form label {
+  color: #000; }
+  .setting .rightbox form label.error {
+    display: inline;
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #e9573f; }
+.setting .rightbox form table tr {
+  height: 35px; }
+  .setting .rightbox form table tr td:nth-child(1) {
+    text-align: right;
+    width: 90px;
+    padding-right: 10px;
+    vertical-align: top;
+    padding-top: 5px; }
+  .setting .rightbox form table tr td:nth-child(2) {
+    text-align: left;
+    width: 255px; }
+    .setting .rightbox form table tr td:nth-child(2) label {
+      margin-left: 10px; }
+    .setting .rightbox form table tr td:nth-child(2) input {
+      width: 254px;
+      height: 30px;
+      line-height: 28px;
+      border-radius: 2px;
+      border: 1px solid #dedede;
+      text-indent: 10px;
+      font-size: 14px;
+      font-weight: lighter; }
+      .setting .rightbox form table tr td:nth-child(2) input.error {
+        outline: none;
+        color: #212121;
+        border: 1px solid #ff0000; }
+      .setting .rightbox form table tr td:nth-child(2) input.sm.error {
+        background-size: 17% 70%; }
+    .setting .rightbox form table tr td:nth-child(2) input.sm {
+      width: 115px;
+      margin-right: 4px;
+      vertical-align: middle; }
+    .setting .rightbox form table tr td:nth-child(2) .getcode-btn {
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      width: 135px;
+      height: 30px;
+      line-height: 26px;
+      padding-top: 1px;
+      background-color: #fafafa;
+      border: 1px solid #dedede;
+      color: #212121;
+      border-radius: 2px;
+      font-size: 14px;
+      cursor: pointer;
+      -webkit-user-select: none; }
+      .setting .rightbox form table tr td:nth-child(2) .getcode-btn.disabled {
+        color: #bcbcbc; }
+    .setting .rightbox form table tr td:nth-child(2) .warn {
+      padding-top: 10px;
+      color: #ff0000;
+      font-size: 14px;
+      margin-left: 10px; }
+.setting .rightbox form .setting-page-warn {
+  margin: 25px 0 -11px -40px; }
+.setting .rightbox .buttonbox .formbtn {
+  margin-left: 281px;
+  margin-top: 12px;
+  display: inline-block;
+  text-align: center; }
+.setting .rightbox .buttonbox .cancel-save-btn {
+  margin-left: 172px;
+  margin-top: 12px; }
+.setting .rightbox .buttonbox .save-btn {
+  margin-left: 10px; }
+.setting .panel-footer .btnbox {
+  height: 30px; }
+  .setting .panel-footer .btnbox .btn + .btn {
+    margin-left: 8px; }
+.setting .bind-count ul {
+  position: relative;
+  top: -30px;
+  min-height: 145px; }
+  .setting .bind-count ul li {
+    margin-right: 40px;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    position: relative; }
+    .setting .bind-count ul li .iconfont {
+      position: absolute;
+      top: 0;
+      font-size: 50px;
+      height: 83px;
+      line-height: 100px; }
+      .setting .bind-count ul li .iconfont.icon-weixin {
+        color: #00bb9c; }
+      .setting .bind-count ul li .iconfont.icon-qq {
+        color: #eee; }
+      .setting .bind-count ul li .iconfont.icon-xinlang {
+        font-size: 54px;
+        line-height: 104px;
+        color: #eee; }
+      .setting .bind-count ul li .iconfont.icon-shouji {
+        color: #33475f; }
+    .setting .bind-count ul li .binded {
+      display: inline-block;
+      text-align: center;
+      width: 45px;
+      height: 16px;
+      line-height: 14px;
+      border: 1px solid #2575ac;
+      border-radius: 2px;
+      color: #5babdf;
+      background-color: #def8ff;
+      font-size: 12px;
+      margin-bottom: 4px; }
+    .setting .bind-count ul li .binded-img {
+      position: absolute;
+      display: inline-block;
+      background: url(../img/binded.png) no-repeat;
+      width: 100%;
+      height: 13px;
+      text-align: center;
+      margin: 0 auto;
+      left: 33px; }
+    .setting .bind-count ul li .icontxt {
+      position: absolute;
+      top: 80px;
+      left: 25px;
+      width: 100px;
+      user-select: none;
+      -webkit-user-select: none;
+      color: #cacaca; }
+      .setting .bind-count ul li .icontxt.black {
+        color: #000;
+        line-height: 22px;
+        margin-top: 15px; }
+      .setting .bind-count ul li .icontxt.grey {
+        color: #cacaca;
+        line-height: 22px;
+        margin-top: 15px; }
+      .setting .bind-count ul li .icontxt.bindbtn {
+        cursor: pointer; }
+      .setting .bind-count ul li .icontxt a {
+        color: #2c97de;
+        cursor: pointer; }
+        .setting .bind-count ul li .icontxt a:hover {
+          text-decoration: underline; }
+      .setting .bind-count ul li .icontxt .unselect {
+        color: #cacaca; }
+    .setting .bind-count ul li .icontxt1 {
+      position: absolute;
+      top: 80px;
+      left: 57px; }
+    .setting .bind-count ul li .icontxt2 {
+      position: absolute;
+      top: 118px; }
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .setting .leftbox {
+    position: relative;
+    top: 17px; } }
+
+/*# sourceMappingURL=setting.css.map */

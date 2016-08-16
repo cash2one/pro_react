@@ -1,0 +1,33 @@
+.err404 {
+  height: 100%; }
+  .err404 .inner {
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    background: url(/img/404.png) 0 0 no-repeat;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -350px; }
+    .err404 .inner .t1 {
+      color: #77cbcb;
+      font-size: 34px;
+      position: absolute;
+      left: 39%;
+      top: 21%; }
+    .err404 .inner .t2 {
+      position: absolute;
+      top: 77%;
+      font-size: 20px;
+      color: #a5a5a5;
+      left: 0;
+      right: 0;
+      text-align: center; }
+    .err404 .inner .t3 {
+      position: absolute;
+      color: #fff;
+      top: 91%;
+      left: 39%;
+      font-size: 20px; }
+
+/*# sourceMappingURL=err404.css.map */

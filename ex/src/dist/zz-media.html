@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>深圳普智 - 媒体分布</title>
+	<link rel="stylesheet" href="/ex/css/mobile/media.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+	<style> html{display : none ; } </style> 
+	<script>		
+		if (self == top) {
+			document.documentElement.style.display = 'block';
+		} else {
+			top.location = self.location;
+		}
+	</script>
+	<script type="text/javascript">
+		var _vds = _vds || [];
+		window._vds = _vds;
+		(function() {
+			_vds.push(['setAccountId', '9509e55ffcb54736']);
+			(function() {
+				var vds = document.createElement('script');
+				vds.type = 'text/javascript';
+				vds.async = true;
+				vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(vds, s);
+			})();
+		})();
+	</script>
+</head>
+<body>
+	<div class="advices-analy-media">
+		<!-- <section class="toggle-part" id="toggle-part">
+			<div class="wrap">
+				<div class="toggle-item" data-time="today">
+					<span>今天</span>
+				</div>
+				<div class="toggle-item" data-time="week">
+					<span>近7天</span>
+				</div>
+				<div class="toggle-item" data-time="month">
+					<span>近30天</span>
+				</div>
+			</div>
+		</section> -->
+		<section class="data-part mb30">
+			<div class="item">
+				<div class="media-container">
+					<div class="val">
+						<span id="count_media"></span>
+					</div>
+					<div class="key">
+						<span>媒体数</span>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="media-container">
+					<div class="val">
+						<span id="count_art"></span>
+					</div>
+					<div class="key">
+						<span>文章数</span>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="media-container">
+					<div class="val warn">
+						<span id="count_ratio"></span>
+					</div>
+					<div class="key">
+						<span>负面比例</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="mb30">
+			<div class="grid2">
+				<div class="item">
+					<div class="media-chart-container" style="height: 450px;">
+						<div class="hd">
+							<span class="tit">载体分布</span>
+						</div>
+						<div class="bd">
+							<div class="chart" id="chart_zaiti"></div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="media-chart-container" style="height: 450px;">
+						<div class="hd">
+							<span class="tit">总体正负面分布</span>
+						</div>
+						<div class="bd">
+							<div class="chart" id="chart_zhengfu"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="emot-charts">
+				<ul class="navis" id="chart_mids_navi">
+					<li class="item">
+						<!-- <span class="txt">{env.srcMap[data.category]}</span> -->
+					</li>
+				</ul>
+				<div class="chart">
+					<div id="chart_mids" style="height: 450px;"></div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+<script type="text/javascript" src="/ex/js/mobile/media.js"></script>
+<script type="text/javascript" src="/ex/js/mobile/media/main.js"></script>
+</html>

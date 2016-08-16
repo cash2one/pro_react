@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="http://home.puzhizhuhai.com/css/style.css">
+</head>
+<body>
+	<div class="frame-header">
+		<div class="frame-header-left">
+			<img src="img/logo.png" alt="" width="32" height="41">
+			<span class="text">普智数据中心</span>
+		</div>
+		<div class="frame-header-right">
+			<div class="operations">
+				<div class="item">
+					<div class="inner">
+						<span>注销</span>
+						<span class="iconfont icon-tuichu"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="frame-body">
+		<div class="frame-body-left">
+			<div class="navi-part">
+				<ul class="navi-container">
+					<li class="item">
+						<a href="###">
+							<span class='text'>舆情中心</span>
+						</a>
+					</li>
+					<li class="item">
+						<a href="###">
+							<span class='text'>个人设置</span>
+							<span class="iconfont icon-xiala corner"></span>
+						</a>
+						<ul class="sub-navi-container">
+							<li class="item">
+								<a href="###">
+									<span class="text">关键词设置</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="user-part">
+				<a href="###" class="colf no_unl db tc">
+					<img src="img/del1.png" alt="" width="40" height="40" class="vm mr10">
+					<span class="vm">Abcd</span>
+				</a>
+			</div>
+		</div>
+		<div class="frame-body-right">
+			<div class="frame-body-container">
+				<div class="advices-base-report">
+					<div class="edit-container">
+						<div class="hd">
+							<div class="title">
+								<span>舆情日报</span>
+							</div>
+							<div class="date">
+								<span>2016-10-10</span>
+							</div>
+						</div>
+						<div class="bd">
+							<div class="summarize-part">
+								<table class="c-table edit-table">
+									<colgroup width="11.5%"></colgroup>
+									<colgroup width="11.5%"></colgroup>
+									<colgroup width="38.8%"></colgroup>
+									<colgroup width="14%"></colgroup>
+									<colgroup width="12%"></colgroup>
+									<colgroup width="12%"></colgroup>
+									<thead>
+										<tr>
+											<th>选择</th>
+											<th>编号</th>
+											<th>标题</th>
+											<th>事件级别</th>
+											<th>开始时间</th>
+											<th>结束时间</th>
+										</tr>
+									</thead>
+									<tbody id="event-list-box">
+										<tr>
+											<td>
+												<input type="checkbox" checkbox article-count="{{ event_articles.get(evt_item[0],0) }}">
+											</td>
+											<td>
+												1
+											</td>
+											<td class="edit-text" contenteditable event-id={{evt_item[0]}} event-title>{{evt_item[1]}}</td>
+											<td>
+												<select name="" id="" event-rank>
+                                                    <option value="0">普通</option>
+													<option value="1">一级</option>
+													<option value="2">二级</option>
+                                                    <option value="3">三级</option>
+												</select>
+											</td>
+											<td>
+												{{evt_item[2]}}
+											</td>
+											<td>
+												{{evt_item[3]}}
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="summarize">
+									<div class="title">
+										<span>总结：</span>
+									</div>
+									<div class="content">
+										<div class="left">
+											<p class="label">事件指数</p>
+											<div class="edit">
+												<input type="text">
+											</div>
+										</div>
+										<div class="right">
+											<p class="label">事件综述</p>
+											<div class="edit">
+												<textarea></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="index-part">
+								<div class="index">
+									<div class="title">
+										<span>百度指数</span>
+									</div>
+									<div id="chart_index_baidu"></div>
+									<div>
+										<div class="kw-hd">
+											<span>已设关键词</span>
+											<span class="tip">（最多5个关键词）</span>
+										</div>
+										<div class="kw-bd">
+											<label>
+												<input type="checkbox" />
+												小米手机
+											</label>
+											<label>
+												<input type="checkbox" />
+												小米手机
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="index">
+									<div class="title">
+										<span>百度指数</span>
+									</div>
+									<div id="chart_index_baidu"></div>
+									<div>
+										<div class="kw-hd">
+											<span>已设关键词</span>
+											<span class="tip">（最多5个关键词）</span>
+										</div>
+										<div class="kw-bd">
+											<label>
+												<input type="checkbox" />
+												小米手机
+											</label>
+											<label>
+												<input type="checkbox" />
+												小米手机
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="statistic-part">
+								<div class="title">
+									<span>
+										分布统计图表
+									</span>
+								</div>
+								<div class="chart-statis-container">
+									<div class="item">
+										<div id="negative_statistic"></div>
+										<div class="tc f18" style="color: #e40d20">负面报道</div>
+									</div>
+									<div class="item">
+										<div id="neutral_statistic"></div>
+										<div class="tc f18" style="color: #f39d27">中性报道</div>
+									</div>
+									<div class="item">
+										<div id="positive_statistic"></div>
+										<div class="tc f18" style="color: #116ab4">正面报道</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+				        <!-- <div style="display:none" id="report-info">{{ info }}</div> -->
+				        <!-- <div style="display:none" id="emotion-statis">
+				            {% for k,v in emotion_statis.items() %}
+				            <span class="emotion-statis-value" emotion="{{k}}" value="{{v}}" ></span>
+				            {% end %}
+
+				        </div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

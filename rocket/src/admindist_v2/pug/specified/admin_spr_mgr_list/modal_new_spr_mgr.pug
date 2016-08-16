@@ -1,0 +1,21 @@
+extends ../../common_partials/modal.pug
+
+block modal_body
+  .box-inner
+    // form start
+    form(role='form')
+      .box-body
+        .form-group.tel
+          label(for='tel') 手机号码
+          input#tel.form-control(placeholder='', type='text')
+        .form-group.name
+          label(for='name') 姓名
+          input#name.form-control(placeholder='')
+        .form-group.syn
+          label 运营集团
+          select.form-control
+          script(type='text/x-tmpl-mustache',id='template_select')
+            | {{#syns}}
+            option(value="{{uuid}}") {{name}}
+            | {{/syns}}
+      // /.box-body

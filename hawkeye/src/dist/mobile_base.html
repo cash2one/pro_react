@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1"/>
+	<title>移动端-行情中心-搜索指数</title>
+	<link rel="stylesheet" href="css/app/style.css">
+
+	<!-- 埋点 -->
+	<script type='text/javascript'>
+		var _vds = _vds || [];
+		window._vds = _vds;
+		(function(){
+			_vds.push(['setAccountId', '9509e55ffcb54736']);
+			(function() {
+				var vds = document.createElement('script');
+				vds.type='text/javascript';
+				vds.async = true;
+				vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(vds, s);
+			})();
+		})();
+	</script>
+
+	<!-- 放劫持 -->
+	<style> html{display : none ; } </style> 
+	<script>
+	if( self == top ) {
+		document.documentElement.style.display = 'block' ;
+	} else {
+		top.location = self.location ;
+	}
+	</script>
+
+	<script type="text/javascript" src="js/gzip/concat.js"></script>
+
+</head>
+<body>
+	<div id="mobile_index_base" class="mobile-index-base index-base">
+		<div class="index-base-info fr-br-container">
+			<div class="container-fluid">
+				<div class="fr-br-main">
+					<div class="gridbox">
+						<div class="tab">
+							<ul>
+								<li class="tabli active" data-index="0">近一周</li>
+								<li class="tabli" data-index="1">近半个月</li>
+								<li class="tabli" data-index="2">近一个月</li>
+							</ul>
+						</div>
+						<div class="chartshow" id="chartshow0" style="display: block;">
+							<ul>
+								<li>
+									<div class="cb-tit" style="display: none;">百度指数</div>
+									<div class="cb chartsbox1"></div>
+								</li>
+								<li>
+									<div class="cb-tit" style="display: none;">360指数</div>
+									<div class="cb chartsbox2"></div>
+								</li>
+								<li>
+									<div class="cb-tit" style="display: none;">新浪指数</div>
+									<div class="cb chartsbox3"></div>
+								</li>
+							</ul>
+						</div>
+						<div class="chartshow" id="chartshow1" style="display: none;">
+							<ul>
+								<li>
+									<div class="cb-tit" style="display: none;">百度指数</div>
+									<div class="cb chartsbox1"></div>
+								</li>
+								<li>
+									<div class="cb-tit" style="display: none;">360指数</div>
+									<div class="cb chartsbox2"></div>
+								</li>
+								<li>
+									<div class="cb-tit" style="display: none;">新浪指数</div>
+									<div class="cb chartsbox3"></div>
+								</li>
+							</ul>
+						</div>
+						<div class="chartshow" id="chartshow2" style="display: none;">
+							<ul>
+								<li>
+									<div class="cb-tit" style="display: none;">百度指数</div>
+									<div class="cb chartsbox1"></div>
+								</li>
+								<li>
+									<div class="cb-tit" style="display: none;">360指数</div>
+									<div class="cb chartsbox2"></div>
+								</li>
+								<li>
+									<div class="cb-tit" style="display: none;">新浪指数</div>
+									<div class="cb chartsbox3"></div>
+								</li>
+							</ul>
+						</div>
+						<div class='list-blank-holder none'></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="progressbar"></div>
+	<script type='text/javascript' src="js/app/mobile_index_vjq.js"></script>
+</body>
+<!-- <script type="text/javascript" src="http://home.puzhizhuhai.com/js/paths.conf.js"></script> -->
+<!-- <script type="text/javascript" src="http://index.puzhizhuhai.com/js/gzip/concat.js"></script> -->
+<!-- <script type="text/javascript" src="http://home.puzhizhuhai.com/js/lib/jquery.js"></script> -->
+<!-- <script type="text/javascript" src="http://home.puzhizhuhai.com/js/lib/jquery_rest.js"></script> -->
+<!-- <script type="text/javascript" src="http://home.puzhizhuhai.com/js/plu/highcharts.js"></script> -->
+<!-- <script type="text/javascript" src="http://home.puzhizhuhai.com/js/require.js" data-main="js/page/base/mobile_index"></script> -->
+</html>

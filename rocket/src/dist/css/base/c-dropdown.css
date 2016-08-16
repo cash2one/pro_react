@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/*----------- 下拉菜单 ------------ */
+.c-dropdown {
+  display: inline-block;
+  width: 150px;
+  border-radius: 2px;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1; }
+  .c-dropdown .select {
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: left;
+    border: 1px solid #dedede;
+    border-radius: 2px 2px 0 0; }
+    .c-dropdown .select .txt {
+      float: left;
+      display: inline-block;
+      width: 90%;
+      height: 100%;
+      text-indent: 10px;
+      vertical-align: middle;
+      color: #212121;
+      font-size: 14px; }
+    .c-dropdown .select .ic {
+      float: right;
+      display: inline-block;
+      width: 10%;
+      height: 100%;
+      color: #474747;
+      background-color: #2abcb9;
+      text-align: center;
+      border-radius: 0 2px 0 0; }
+      .c-dropdown .select .ic .icon-xiala {
+        color: #fafafa;
+        display: inline-block;
+        transition-duration: .5s;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg); }
+      .c-dropdown .select .ic .icon-xiala.down {
+        transition-duration: .5s;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg); }
+  .c-dropdown .option {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-indent: 10px;
+    font-size: 12px;
+    border-bottom: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    max-height: 121px;
+    overflow-y: auto; }
+    .c-dropdown .option li:hover {
+      background-color: #c0d7eb;
+      cursor: pointer; }
+
+.dropdown.active {
+  border: 1px solid #77a8d4; }
+
+/*# sourceMappingURL=c-dropdown.css.map */

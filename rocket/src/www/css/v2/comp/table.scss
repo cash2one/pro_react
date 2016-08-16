@@ -1,0 +1,49 @@
+/**
+ * create by lxt
+ * 2016/07/18
+ * 表格v2样式
+ */
+
+@import '../var';
+
+.table {
+	border-bottom: 1px solid $border-color-light;
+	.iconfont {
+		cursor: pointer;
+		display: inline-block;
+		margin-left: 10px;
+		margin-right: 10px;
+		color: $gray-light;
+		&:first-child{
+			margin-left: 0;
+		}
+		&:last-child{
+			margin-right: 0;
+		}
+		&:hover{
+		    color: $blue-light;
+		}
+	}
+	th{
+		font-weight: bold;
+	}
+	tbody tr:hover{
+		background-color: $gray-lighter;
+	}
+	&.spec{
+		th,td{
+			&:first-child{
+				width: 75px;
+				text-align: center;
+				white-space: nowrap;
+			}
+			&:last-child{
+				width: 150px;
+				white-space: nowrap;
+			}
+		}
+	}
+	tr:hover{
+		background-color: $gray-lighter;
+	}
+}

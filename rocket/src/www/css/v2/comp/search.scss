@@ -1,0 +1,100 @@
+/**
+ * 搜索框v2样式
+ */
+
+@import '../var';
+
+.c-search{
+	border: 1px #eee solid;
+	border-radius: 2px;
+	display: table;
+	overflow: hidden;
+	background-color: #fff;
+	&.active {
+		border: 1px #dedede solid;
+		.s-btn{
+			color: $gray-darker;
+			cursor: pointer;
+		}
+		.s-input{
+			&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+			    color: $gray-darker;  
+			}
+
+			&::-moz-placeholder { /* Mozilla Firefox 19+ */
+			    color: $gray-darker;
+			}
+
+			&:-ms-input-placeholder{
+			    color: $gray-darker;
+			}
+
+			&::-webkit-input-placeholder{
+			    color: $gray-darker;
+			}
+		}
+	}
+	.s-input{
+		height: 40px;
+		line-height: 38px;
+		outline: none;
+		border: none;
+		background-color: transparent;
+		line-height: 1.4;
+		vertical-align: 1px;
+		width: 100%;
+		display: table-cell;
+		padding: 5px 12px;
+		color: $gray-darker;
+	}
+	.s-btn{
+		cursor: pointer;
+		line-height: 1;
+		vertical-align: middle;
+		width: 1%;
+		display: table-cell;
+		padding: 0 12px;
+		background-color: $gray-lighter;
+		color: $gray-light;
+		position: relative;
+		&:hover{
+			background-color: $blue-light2;
+			color: #fff;
+		}
+		&:first-child{
+			&:before{
+				left: auto;
+				right: -1px;
+			}
+		}
+	}
+	&.md{
+		.s-input{
+			height: 38px;
+			padding: 6px 10px;
+			font-size: 15px;
+		}
+		.s-btn{
+			padding: 6px 10px;
+			.icon-sousuo{
+				font-size: 20px;
+			}
+		}
+	}
+}
+.c-search.sm {
+	width: 210px;
+	height: 30px;
+	line-height: 28px;
+	.s-input{
+		height: 30px;
+		line-height: 28px;
+	}
+	.s-btn{
+		color: $gray-light;
+		cursor: pointer;
+		&:hover{
+			color: #fff;
+		}
+	}
+}

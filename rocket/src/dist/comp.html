@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>component</title>
+	<script type="text/javascript" src="js/lib/jquery_2.1.4.min.js?rel=1465803683813"></script>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1458280883_2400203.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- 按钮 -->
+	<div>
+		<button class="c-button" type="button">点我</button>
+	</div>
+
+	<!-- 下拉菜单 -->
+	<div>
+		<div class="c-dropdown">
+			<div class="select" type="button">
+				<span class="txt">选择</span>
+				<span class="ic"><span class="iconfont icon-xiala"></span></span>
+			</div>
+			<ul class="option none">
+				<li value="111">111</li>
+				<li value="222">222</li>
+				<li value="333">333</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- 表格 -->
+	<div>
+		<table class="c-table">
+			<colgroup width="15%"></colgroup>
+			<colgroup width="15%"></colgroup>
+			<colgroup width="15%"></colgroup>
+			<colgroup width="15%"></colgroup>
+			<colgroup width="15%"></colgroup>
+			<colgroup width="20%"></colgroup>
+			<thead>
+				<th>序号</th>
+				<th>手机号码</th>
+				<th>姓名</th>
+				<th>人员角色</th>
+				<th>运营公司</th>
+				<th>操作</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>15822337561</td>
+					<td>张三</td>
+					<td>舆情运营员</td>
+					<td>A公司</td>
+					<td>
+						<span class="iconfont icon-lajitong"></span>
+						<span class="iconfont icon-xiugai ml20"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>15822337561</td>
+					<td>张三</td>
+					<td>舆情运营员</td>
+					<td>A公司</td>
+					<td>
+						<span class="iconfont icon-lajitong"></span>
+						<span class="iconfont icon-xiugai ml20"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>15822337561</td>
+					<td>张三</td>
+					<td>舆情运营员</td>
+					<td>A公司</td>
+					<td>
+						<span class="iconfont icon-lajitong"></span>
+						<span class="iconfont icon-xiugai ml20"></span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<!-- 弹窗 -->
+	<div class="c-modal-backdrop"></div>
+	<div class="c-modal" id="eg_modal1">
+		<div class="dialog sm">
+			<div class="cont">
+				<div class="header">
+					<span>弹窗标题</span>
+				</div>
+				<div class="body">
+					<form action="">
+						<label for="">手机号码</label>
+						<input type="text">
+						<label for="">姓名</label>
+						<input type="text" class="input-tip">
+						<span class="label-tip">请输入正确的姓名</span>
+					</form>
+				</div>
+				<div class="footer">
+					<span class="btn" type="button">取消</span>
+					<span class="btn" type="button">确定</span>
+				</div>
+			</div><!-- modal内容 -->
+		</div><!-- modal大小 -->
+	</div>
+
+	<script type="text/javascript">
+		$('#eg_btn1').click(function() {
+			modal();
+		})
+		function modal() {
+			$('#eg_modal1').toggle(200,function() {
+				$('.icon-xiala').parents('body').addClass('modal-open');
+			});
+		}
+
+		$('.dropdown').click(function(){
+			$(this).addClass('active');
+		})
+		$('.ic-dd').click(100,function(e){
+			$('.dd-option').toggle(100);
+			$('.icon-xiala').toggleClass('down');
+			$(document).one("click", function(){
+			    $(".dd-option").hide();
+			});
+			e.stopPropagation();
+		})
+		$('.dd-option li').click(function(){
+			var val = $(this).val();
+			$('#dd_s_txt').html(val);
+			$(this).parent().hide();
+		})
+	</script>
+</body>
+</html>

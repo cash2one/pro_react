@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel="stylesheet" href="css/download.css">
+	<title>下载app页</title>
+
+	<!-- 埋点 -->
+	<script type='text/javascript'>
+		var _vds = _vds || [];
+		window._vds = _vds;
+		(function(){
+			_vds.push(['setAccountId', '9509e55ffcb54736']);
+			(function() {
+				var vds = document.createElement('script');
+				vds.type='text/javascript';
+				vds.async = true;
+				vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(vds, s);
+			})();
+		})();
+	</script>
+	
+	<!-- 放劫持 -->
+	<style> html{display : none ; } </style> 
+	<script>
+	if( self == top ) {
+		document.documentElement.style.display = 'block' ;
+	} else {
+		top.location = self.location ;
+	}
+	</script>
+	
+</head>
+<body>
+	<div class="download pr w">
+		<img class="w" src="img/download_bg.jpg" />
+		<!-- <div class="dbBtn dbBtn1 pa w"><i></i><p>iOS版 下载</p></div> -->
+		<a class="dbBtn dbBtn2 pa w" href="/app-release.apk"><i></i><p>Android版 下载</p></a>
+	</div>
+</body>
+</html>

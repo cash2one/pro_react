@@ -1,0 +1,87 @@
+@import '../mixins/trans';
+@import '../mixins/flex';
+@import '../var';
+@import '../mixins/corner';
+.advices-base-audit{
+	.con{
+		max-width: 1080px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.time-range{
+		.dropwrap{
+			display: inline-block;
+			.holder{
+				display: block;
+				color: $gray-darker;
+				position: relative;
+				// line-height: 46px;
+				padding-right: 30px;
+				cursor: pointer;
+				@include corner();
+				&:after{
+					content: "";
+					right: 12px;
+				}
+				&:hover{
+					color: $blue-light2;
+					&:after{
+						border-top-color: $blue-light2;
+					}
+				}
+			}
+			.dropdown-list{
+				z-index: 1;
+				left: -10px;
+				top: 100%;
+				width: 190px;
+				overflow: hidden;
+				.dropdown-item{
+					float: left;
+					line-height: 34px;
+					height: 34px;
+					overflow: hidden;
+					padding: 0 10px;
+				}
+			}
+		}
+	}
+	.tab-part{
+		background-color: #fff;
+		@include flexbox();
+		@include alignCenter();
+		border-bottom: 1px #eee solid;
+		.c-tab{
+			@include flex();
+			background-color: #fff;
+			height: 46px;
+			line-height: 44px;
+			border-bottom: 0;
+			li{
+				&.active{
+					height: 46px;
+				}
+				&:hover{
+					height: 46px;
+				}
+			}
+		}
+		.txt{
+			color: $gray-light;
+			font-size: 14px;
+			padding-right: 22px;
+		}
+	}
+	.list-part{
+
+	}
+	.pagin-part{
+		padding-top: 30px;
+		padding-bottom: 29px;
+		.txt{
+			margin-left: 10px;
+			color: #c3c4c4;
+			font-size: 14px;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+#msg_modal.modal.fade.bs-example-modal-sm(style='padding-right: 13px;', tabindex='-1', role='dialog', aria-labelledby='mySmallModalLabel')
+    .modal-dialog.modal-sm
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') &times;
+            h4#mySmallModalLabel.modal-title 提示
+          .modal-body#target_msg(style='text-align:center;')
+            script(type='text/x-tmpl-mustache',id='template_msg')
+              p {{msg}}

@@ -1,0 +1,32 @@
+/**
+ * 常用的兼容各浏览器的特殊样式
+ */
+
+@import '../var';
+
+// input的placeholder颜色设置
+input::-webkit-input-placeholder { /* WebKit browsers */
+　　color: $gray-light;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+　　color: $gray-light;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+　　color: $gray-light;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+　　color: $gray-light;
+}
+
+textarea::-webkit-input-placeholder { /* WebKit browsers */
+　　color: $gray-light;
+}
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+　　color: $gray-light;
+}
+textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+　　color: $gray-light;
+}
+textarea:-ms-textarea-placeholder { /* Internet Explorer 10+ */
+　　color: $gray-light;
+}

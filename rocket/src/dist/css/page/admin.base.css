@@ -1,0 +1,227 @@
+.admin-base {
+  min-height: 100%;
+  width: 100%; }
+  .admin-base .fr-top {
+    background-color: #fff;
+    position: relative;
+    z-index: 1; }
+  .admin-base .fr-main {
+    height: 100%;
+    margin-top: -20px; }
+    .admin-base .fr-main .fr-main-mid:before, .admin-base .fr-main .fr-main-mid:after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      background-color: #dedede;
+      left: 50%;
+      top: 0; }
+    .admin-base .fr-main .fr-main-mid:before {
+      margin-left: -500px; }
+    .admin-base .fr-main .fr-main-mid:after {
+      margin-left: 499px; }
+    .admin-base .fr-main .w1000 {
+      margin: 0 auto;
+      height: 100%;
+      border-left: 1px solid #eee;
+      border-right: 1px solid #eee; }
+      .admin-base .fr-main .w1000 .c-table {
+        border-top: 1px solid #dedede;
+        border-bottom: 1px solid #dedede;
+        border-left: 0;
+        border-right: 0; }
+  .admin-base .admin-manager-super {
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden; }
+    .admin-base .admin-manager-super .w1000 {
+      padding-top: 20px; }
+    .admin-base .admin-manager-super .c-modal .dialog .body form input.userid.none {
+      display: none; }
+    .admin-base .admin-manager-super .c-modal .dialog .body form .rolebox {
+      width: 286px;
+      padding-top: 5px;
+      margin-left: -10px;
+      margin-bottom: 5px;
+      text-align: center; }
+      .admin-base .admin-manager-super .c-modal .dialog .body form .rolebox span {
+        font-size: 12px;
+        border: 1px solid #eee;
+        display: inline-block;
+        width: 84px;
+        height: 25px;
+        line-height: 23px;
+        text-align: center;
+        margin-left: 10px;
+        margin-bottom: 8px; }
+        .admin-base .admin-manager-super .c-modal .dialog .body form .rolebox span:hover {
+          border: 1px solid #3a678d;
+          cursor: pointer; }
+        .admin-base .admin-manager-super .c-modal .dialog .body form .rolebox span.role-choose {
+          background-color: #1fbba6;
+          color: #fff; }
+  .admin-base .admin-manager-syndicate {
+    height: 100%; }
+    .admin-base .admin-manager-syndicate .c-modal .dialog .cont .body .c-uuid {
+      display: inline-block; }
+      .admin-base .admin-manager-syndicate .c-modal .dialog .cont .body .c-uuid.none {
+        display: none; }
+    .admin-base .admin-manager-syndicate .c-modal .dialog .cont .body label.none {
+      display: none; }
+    .admin-base .admin-manager-syndicate .c-modal .dialog .cont .body .reset.none {
+      display: none; }
+    .admin-base .admin-manager-syndicate .c-modal .dialog .cont .body textarea {
+      padding: 5px 10px; }
+    .admin-base .admin-manager-syndicate .com-list > .item {
+      height: 110px;
+      background-color: #fff;
+      padding: 14px 0 20px 30px;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      position: relative; }
+      .admin-base .admin-manager-syndicate .com-list > .item.itembox:hover, .admin-base .admin-manager-syndicate .com-list > .item.itembox.cur_com:hover {
+        background-color: #EDF2FC; }
+      .admin-base .admin-manager-syndicate .com-list > .item.itembox.cur_com {
+        background-color: #fcfcfc;
+        border-left: 6px solid #1fbba6;
+        border-right: 6px solid #1fbba6; }
+      .admin-base .admin-manager-syndicate .com-list > .item .icon-cuowu {
+        font-size: 18px;
+        color: #a9b7b7;
+        position: absolute;
+        top: 42px; }
+        .admin-base .admin-manager-syndicate .com-list > .item .icon-cuowu:hover {
+          cursor: pointer;
+          color: #ff0000; }
+      .admin-base .admin-manager-syndicate .com-list > .item .icon-bianji {
+        color: #a9b7b7; }
+        .admin-base .admin-manager-syndicate .com-list > .item .icon-bianji:hover {
+          cursor: pointer;
+          color: #8c8c8c; }
+      .admin-base .admin-manager-syndicate .com-list > .item .cl-mark {
+        display: inline-block;
+        width: 63px;
+        height: 63px;
+        line-height: 62px;
+        text-align: center;
+        border-radius: 30px;
+        color: #fff; }
+        .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.col {
+          background-color: #c0a7f2;
+          opacity: 0.5; }
+        .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.acol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Acol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.bcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Bcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.ccol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Ccol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.dcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Dcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.ecol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Ecol {
+          background-color: #c0a7f2; }
+        .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.fcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Fcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.gcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Gcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.hcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Hcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.icol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Icol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.jcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Jcol {
+          background-color: #33cccc; }
+        .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.kcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Kcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.lcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Lcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.mcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Mcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.ncol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Ncol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.ocol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Ocol {
+          background-color: #a7c0f2; }
+        .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.pcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Pcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.qcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Qcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.rcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Rcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.scol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Scol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.tcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Tcol {
+          background-color: #f2c1a7; }
+        .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.ucol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Ucol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.vcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Vcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.wcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Wcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.xcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Xcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.ycol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Ycol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.zcol, .admin-base .admin-manager-syndicate .com-list > .item .cl-mark.Zcol {
+          background-color: #f2a7a7; }
+      .admin-base .admin-manager-syndicate .com-list > .item .cl-tit {
+        color: #464646;
+        font-size: 18px;
+        display: inline-block;
+        text-overflow: ellipsis;
+        max-width: 9em;
+        white-space: nowrap;
+        overflow: hidden;
+        vertical-align: bottom; }
+      .admin-base .admin-manager-syndicate .com-list > .item .cl-note {
+        display: inline-block;
+        color: #6699cc;
+        vertical-align: middle;
+        font-size: 12px;
+        margin: 0 12px;
+        padding-bottom: 2px; }
+      .admin-base .admin-manager-syndicate .com-list > .item .cl-cont {
+        color: #6b6b6b;
+        font-size: 14px;
+        margin-top: 5px;
+        min-height: 21px;
+        width: 580px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical; }
+      .admin-base .admin-manager-syndicate .com-list > .item:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        background-color: #dedede;
+        margin: 0 auto; }
+      .admin-base .admin-manager-syndicate .com-list > .item .mid {
+        -webkit-box-flex: 1;
+        flex: 1;
+        text-align: left;
+        height: 100%;
+        padding-top: 11px; }
+      .admin-base .admin-manager-syndicate .com-list > .item .name {
+        color: #2a2a2a;
+        font-size: 18px; }
+      .admin-base .admin-manager-syndicate .com-list > .item .type {
+        color: #8c8c8c;
+        font-size: 12px; }
+      .admin-base .admin-manager-syndicate .com-list > .item .desc {
+        font-size: 16px;
+        color: #2a2a2a; }
+      .admin-base .admin-manager-syndicate .com-list > .item .cate {
+        max-width: 600px; }
+        .admin-base .admin-manager-syndicate .com-list > .item .cate > .item {
+          display: inline-block;
+          border: 1px #dedede solid;
+          border-radius: 4px;
+          padding: 0 8px;
+          margin-right: 10px;
+          margin-bottom: 5px;
+          font-size: 14px;
+          line-height: 20px;
+          color: #8c8c8c; }
+      .admin-base .admin-manager-syndicate .com-list > .item .superbox {
+        width: 289px;
+        height: 20px;
+        line-height: 18px;
+        position: absolute;
+        right: 0;
+        bottom: 38px;
+        color: #2a2a2a;
+        text-align: left;
+        font-size: 14px; }
+        .admin-base .admin-manager-syndicate .com-list > .item .superbox span {
+          margin-right: 8px; }
+      .admin-base .admin-manager-syndicate .com-list > .item .btnbox {
+        width: 146px;
+        height: 36px;
+        line-height: 34px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: #c1c1c1;
+        border-top: 1px solid #e5e5e5;
+        border-left: 1px solid #e5e5e5; }
+        .admin-base .admin-manager-syndicate .com-list > .item .btnbox span {
+          display: inline-block;
+          width: 50%;
+          text-align: center;
+          font-size: 14px;
+          cursor: pointer; }
+          .admin-base .admin-manager-syndicate .com-list > .item .btnbox span.delbtn {
+            border-right: 1px solid #e5e5e5; }
+            .admin-base .admin-manager-syndicate .com-list > .item .btnbox span.delbtn:hover {
+              background-color: #a4cdee;
+              color: #fff; }
+          .admin-base .admin-manager-syndicate .com-list > .item .btnbox span.editbtn:hover {
+            background-color: #a4cdee;
+            color: #fff; }
+
+/*# sourceMappingURL=admin.base.css.map */

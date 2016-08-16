@@ -1,0 +1,20 @@
+.box-inner
+    // form start
+    form(role='form')
+      .box-body
+        .form-group.syn_name
+          label(for='syn_name') 集团名称
+          input#syn_name.form-control(placeholder='', type='text')
+        .form-group.syn_info
+          label(for='syn_info') 集团概况
+          textarea#syn_info.form-control(placeholder='')
+        .form-group.spr_mgr
+          label(for='sup_mgr_name') 超级运营员名称
+          input#sup_mgr_name.form-control(placeholder='', type='text')
+        .form-group.tel
+          label(for='tel') 手机号
+          input#tel.form-control(placeholder='', type='text')
+        .form-group.syn_uuid
+          label(for='syn_uuid') ID
+          input#syn_uuid.form-control(placeholder='例如：HD1123746438 12个字符', type='text')
+      // /.box-body

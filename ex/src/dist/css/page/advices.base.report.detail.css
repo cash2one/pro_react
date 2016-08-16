@@ -1,0 +1,319 @@
+@charset "UTF-8";
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.advices-base-report-detail-v2 .con, .advices-base-report-share .con {
+  max-width: 804px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.advices-base-report-detail-v2 .report-title .txt, .advices-base-report-share .report-title .txt {
+  display: inline-block;
+  width: 185px;
+  vertical-align: middle;
+  margin-right: 10px;
+  position: relative; }
+  .advices-base-report-detail-v2 .report-title .txt.notedit, .advices-base-report-share .report-title .txt.notedit {
+    color: #999; }
+    .advices-base-report-detail-v2 .report-title .txt.notedit:after, .advices-base-report-share .report-title .txt.notedit:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+    .advices-base-report-detail-v2 .report-title .txt.notedit .form-control, .advices-base-report-share .report-title .txt.notedit .form-control {
+      color: #999; }
+    .advices-base-report-detail-v2 .report-title .txt.notedit .iconfont, .advices-base-report-share .report-title .txt.notedit .iconfont {
+      color: #999; }
+  .advices-base-report-detail-v2 .report-title .txt .iconfont, .advices-base-report-share .report-title .txt .iconfont {
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 8px);
+    cursor: pointer;
+    height: 16px;
+    color: #50a3e6; }
+  .advices-base-report-detail-v2 .report-title .txt .form-control, .advices-base-report-share .report-title .txt .form-control {
+    padding-left: 34px;
+    color: #444; }
+
+.advices-base-report-detail-v2 .report-title .title, .advices-base-report-share .report-title .title {
+  font-size: 16px;
+  color: #3e4957;
+  vertical-align: middle; }
+
+.advices-base-report-detail-v2 .report-title .date, .advices-base-report-share .report-title .date {
+  font-size: 14px;
+  color: #999;
+  vertical-align: middle;
+  margin-left: 20px; }
+
+.advices-base-report-detail-v2 .hd-part, .advices-base-report-share .hd-part {
+  margin-left: 11px;
+  margin-right: 11px;
+  border-bottom: 1px #eee solid; }
+  .advices-base-report-detail-v2 .hd-part .title, .advices-base-report-share .hd-part .title {
+    padding-top: 10px;
+    font-size: 24px;
+    color: #444; }
+  .advices-base-report-detail-v2 .hd-part .subtitle, .advices-base-report-share .hd-part .subtitle {
+    font-size: 14px;
+    color: #999;
+    padding: 5px 0; }
+    .advices-base-report-detail-v2 .hd-part .subtitle .date, .advices-base-report-share .hd-part .subtitle .date {
+      margin-right: 10px; }
+
+.advices-base-report-detail-v2 .group, .advices-base-report-share .group {
+  padding-left: 22px;
+  padding-right: 22px; }
+  .advices-base-report-detail-v2 .group:last-child .group-con, .advices-base-report-share .group:last-child .group-con {
+    border-bottom: 0; }
+  .advices-base-report-detail-v2 .group .group-title, .advices-base-report-share .group .group-title {
+    line-height: 53px;
+    color: #444; }
+    .advices-base-report-detail-v2 .group .group-title .sub, .advices-base-report-share .group .group-title .sub {
+      color: #999; }
+  .advices-base-report-detail-v2 .group .group-con, .advices-base-report-share .group .group-con {
+    padding-bottom: 30px;
+    border-bottom: 1px #eee solid; }
+    .advices-base-report-detail-v2 .group .group-con.noborder, .advices-base-report-share .group .group-con.noborder {
+      border-bottom: 0;
+      padding-bottom: 0; }
+    .advices-base-report-detail-v2 .group .group-con .panel, .advices-base-report-share .group .group-con .panel {
+      margin-bottom: 0;
+      border-color: #eee !important; }
+      .advices-base-report-detail-v2 .group .group-con .panel .tab, .advices-base-report-share .group .group-con .panel .tab {
+        border-color: #eee !important; }
+        .advices-base-report-detail-v2 .group .group-con .panel .tab li, .advices-base-report-share .group .group-con .panel .tab li {
+          border-right: 1px solid #eee; }
+
+.advices-base-report-detail-v2 .summary-part, .advices-base-report-share .summary-part {
+  position: relative;
+  height: 124px; }
+  .advices-base-report-detail-v2 .summary-part textarea, .advices-base-report-share .summary-part textarea {
+    height: 100%;
+    resize: none;
+    padding-left: 34px;
+    color: #999; }
+    .advices-base-report-detail-v2 .summary-part textarea:focus, .advices-base-report-share .summary-part textarea:focus {
+      color: #444; }
+      .advices-base-report-detail-v2 .summary-part textarea:focus + .iconfont, .advices-base-report-share .summary-part textarea:focus + .iconfont {
+        color: #50a3e6; }
+  .advices-base-report-detail-v2 .summary-part p, .advices-base-report-share .summary-part p {
+    padding-left: 36px;
+    padding-top: 7px;
+    word-break: break-all;
+    overflow: auto;
+    color: #444;
+    height: 100%;
+    margin-bottom: 0; }
+  .advices-base-report-detail-v2 .summary-part .iconfont, .advices-base-report-share .summary-part .iconfont {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    font-size: 20px;
+    color: #999; }
+
+.advices-base-report-detail-v2 .summary-part2 .wrap, .advices-base-report-share .summary-part2 .wrap {
+  width: 255px;
+  height: 255px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(/img/report-crisis-index.png) center center no-repeat;
+  text-align: center;
+  padding-top: 1px; }
+  .advices-base-report-detail-v2 .summary-part2 .wrap .img, .advices-base-report-share .summary-part2 .wrap .img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto; }
+  .advices-base-report-detail-v2 .summary-part2 .wrap .num, .advices-base-report-share .summary-part2 .wrap .num {
+    font-size: 46px;
+    line-height: 1.2;
+    margin-top: 6px; }
+  .advices-base-report-detail-v2 .summary-part2 .wrap .txt, .advices-base-report-share .summary-part2 .wrap .txt {
+    font-size: 16px;
+    color: #999; }
+  .advices-base-report-detail-v2 .summary-part2 .wrap.c1 .img, .advices-base-report-share .summary-part2 .wrap.c1 .img {
+    background-image: url(/img/report-crisis-1.png); }
+  .advices-base-report-detail-v2 .summary-part2 .wrap.c1 .num, .advices-base-report-share .summary-part2 .wrap.c1 .num {
+    color: #3a99d8; }
+  .advices-base-report-detail-v2 .summary-part2 .wrap.c2 .img, .advices-base-report-share .summary-part2 .wrap.c2 .img {
+    background-image: url(/img/report-crisis-2.png); }
+  .advices-base-report-detail-v2 .summary-part2 .wrap.c2 .num, .advices-base-report-share .summary-part2 .wrap.c2 .num {
+    color: #f6bb42; }
+  .advices-base-report-detail-v2 .summary-part2 .wrap.c3 .img, .advices-base-report-share .summary-part2 .wrap.c3 .img {
+    background-image: url(/img/report-crisis-3.png); }
+  .advices-base-report-detail-v2 .summary-part2 .wrap.c3 .num, .advices-base-report-share .summary-part2 .wrap.c3 .num {
+    color: #f88b37; }
+  .advices-base-report-detail-v2 .summary-part2 .wrap.c4 .img, .advices-base-report-share .summary-part2 .wrap.c4 .img {
+    background-image: url(/img/report-crisis-4.png); }
+  .advices-base-report-detail-v2 .summary-part2 .wrap.c4 .num, .advices-base-report-share .summary-part2 .wrap.c4 .num {
+    color: #e9573f; }
+
+.advices-base-report-detail-v2 .platform-part .desc, .advices-base-report-share .platform-part .desc {
+  width: 116px;
+  height: 30px;
+  background-color: #f4f4f4;
+  border: 1px #dedede solid;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+  text-align: center;
+  color: #444; }
+
+.advices-base-report-detail-v2 .platform-part .item, .advices-base-report-share .platform-part .item {
+  margin-bottom: 40px; }
+  .advices-base-report-detail-v2 .platform-part .item:last-child, .advices-base-report-share .platform-part .item:last-child {
+    margin-bottom: 0; }
+
+.advices-base-report-detail-v2 .index-part .index-item, .advices-base-report-share .index-part .index-item {
+  position: relative;
+  padding: 30px 0; }
+  .advices-base-report-detail-v2 .index-part .index-item:after, .advices-base-report-share .index-part .index-item:after {
+    content: "";
+    height: 1px;
+    background-color: #eee;
+    left: 22px;
+    right: 22px;
+    bottom: 0;
+    position: absolute; }
+  .advices-base-report-detail-v2 .index-part .index-item:last-child:after, .advices-base-report-share .index-part .index-item:last-child:after {
+    height: 0; }
+
+.advices-base-report-detail-v2 .index-part.mob .index-item:after, .advices-base-report-share .index-part.mob .index-item:after {
+  left: 12px;
+  right: 12px; }
+
+.advices-base-report-detail-v2 .art-part, .advices-base-report-share .art-part {
+  border: 1px #eee solid;
+  border-radius: 2px;
+  margin-bottom: -1px;
+  overflow: hidden; }
+  .advices-base-report-detail-v2 .art-part li, .advices-base-report-share .art-part li {
+    border-bottom: 1px #eee solid;
+    padding: 15px 22px; }
+    .advices-base-report-detail-v2 .art-part li:nth-of-type(2n), .advices-base-report-share .art-part li:nth-of-type(2n) {
+      background-color: #f9f9f9; }
+    .advices-base-report-detail-v2 .art-part li:nth-of-type(2n+1), .advices-base-report-share .art-part li:nth-of-type(2n+1) {
+      background-color: #fff; }
+    .advices-base-report-detail-v2 .art-part li:hover, .advices-base-report-share .art-part li:hover {
+      background-color: #f4f4f4; }
+    .advices-base-report-detail-v2 .art-part li .title, .advices-base-report-share .art-part li .title {
+      margin-bottom: 5px;
+      overflow: hidden; }
+      .advices-base-report-detail-v2 .art-part li .title a, .advices-base-report-share .art-part li .title a {
+        font-size: 14px;
+        text-decoration: none;
+        vertical-align: middle;
+        display: inline-block;
+        max-width: 80%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+      .advices-base-report-detail-v2 .art-part li .title .rank, .advices-base-report-share .art-part li .title .rank {
+        font-size: 12px;
+        border-radius: 5px;
+        vertical-align: middle;
+        padding: 0 2px;
+        margin-left: 5px; }
+        .advices-base-report-detail-v2 .art-part li .title .rank.rank1, .advices-base-report-share .art-part li .title .rank.rank1 {
+          border: 1px #e9573f solid;
+          color: #e9573f; }
+        .advices-base-report-detail-v2 .art-part li .title .rank.rank2, .advices-base-report-share .art-part li .title .rank.rank2 {
+          border: 1px #e9733f solid;
+          color: #e9733f; }
+        .advices-base-report-detail-v2 .art-part li .title .rank.rank3, .advices-base-report-share .art-part li .title .rank.rank3 {
+          border: 1px #f6bb42 solid;
+          color: #f6bb42; }
+        .advices-base-report-detail-v2 .art-part li .title .rank.rank4, .advices-base-report-share .art-part li .title .rank.rank4 {
+          border: 1px #3a99d8 solid;
+          color: #3a99d8; }
+      .advices-base-report-detail-v2 .art-part li .title .c-cb, .advices-base-report-share .art-part li .title .c-cb {
+        float: right;
+        background-color: #fff; }
+    .advices-base-report-detail-v2 .art-part li .infos, .advices-base-report-share .art-part li .infos {
+      color: #999;
+      font-size: 12px;
+      overflow: hidden; }
+      .advices-base-report-detail-v2 .art-part li .infos span, .advices-base-report-share .art-part li .infos span {
+        margin-right: 40px; }
+      .advices-base-report-detail-v2 .art-part li .infos .tool, .advices-base-report-share .art-part li .infos .tool {
+        float: right;
+        height: 22px; }
+        .advices-base-report-detail-v2 .art-part li .infos .tool span, .advices-base-report-share .art-part li .infos .tool span {
+          margin-right: 20px; }
+          .advices-base-report-detail-v2 .art-part li .infos .tool span:last-child, .advices-base-report-share .art-part li .infos .tool span:last-child {
+            margin-right: 0; }
+        .advices-base-report-detail-v2 .art-part li .infos .tool .iconfont, .advices-base-report-share .art-part li .infos .tool .iconfont {
+          cursor: pointer; }
+          .advices-base-report-detail-v2 .art-part li .infos .tool .iconfont:hover, .advices-base-report-share .art-part li .infos .tool .iconfont:hover {
+            color: #3a99d8; }
+  .advices-base-report-detail-v2 .art-part .odd li:nth-of-type(2n), .advices-base-report-share .art-part .odd li:nth-of-type(2n) {
+    background-color: #fff; }
+  .advices-base-report-detail-v2 .art-part .odd li:nth-of-type(2n+1), .advices-base-report-share .art-part .odd li:nth-of-type(2n+1) {
+    background-color: #f9f9f9; }
+
+.advices-base-report-detail-v2 .publish-wrap, .advices-base-report-share .publish-wrap {
+  padding-left: 85px;
+  padding-right: 85px;
+  color: #444; }
+  .advices-base-report-detail-v2 .publish-wrap .code, .advices-base-report-share .publish-wrap .code {
+    border: 1px #eee solid;
+    border-radius: 2px;
+    width: 158px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 8px;
+    margin-top: 20px;
+    margin-bottom: 25px; }
+    .advices-base-report-detail-v2 .publish-wrap .code .img, .advices-base-report-share .publish-wrap .code .img {
+      width: 156px;
+      height: 156px;
+      background-repeat: no-repeat;
+      background-position: center center; }
+  .advices-base-report-detail-v2 .publish-wrap .intxt:hover, .advices-base-report-share .publish-wrap .intxt:hover {
+    text-decoration: none; }
+
+.advices-base-report-detail-v2 .blank-part, .advices-base-report-share .blank-part {
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.advices-base-report-share .group {
+  padding-left: 12px;
+  padding-right: 12px; }
+
+.advices-base-report-share .summary-part {
+  position: relative;
+  height: 60px; }
+  .advices-base-report-share .summary-part p {
+    padding-left: 36px;
+    padding-top: 7px;
+    word-break: break-all;
+    overflow: auto;
+    color: #444;
+    height: 100%;
+    margin-bottom: 0; }
+
+.advices-base-report-share .art-part ul li {
+  padding: 15px 12px; }
+
+.advices-base-report-share .art-part .infos span {
+  margin-right: 10px !important; }
+
+.advices-base-report-share .art-part .infos .tool span {
+  margin-right: 10px !important; }

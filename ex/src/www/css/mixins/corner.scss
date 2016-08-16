@@ -1,0 +1,10 @@
+@mixin corner($color: #999){
+	&:after{
+		content: "";
+		border: 4px transparent solid;
+		border-top: 6px $color solid;
+		position: absolute;
+		top: calc(50% - 3px);
+		right: 6px;
+	}
+}

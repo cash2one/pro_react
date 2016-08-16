@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/**
+ * 下拉带单组件v2样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.dropdown-v2 {
+  display: inline-block;
+  width: 100%;
+  border-radius: 2px;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1; }
+  .dropdown-v2 .select {
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: left;
+    border: 1px solid #eee;
+    border-radius: 2px 2px 0 0; }
+    .dropdown-v2 .select input.txt {
+      float: left;
+      display: inline-block;
+      width: 90%;
+      height: 100%;
+      text-indent: 10px;
+      vertical-align: middle;
+      font-size: 14px;
+      border: none;
+      background-color: #fff; }
+    .dropdown-v2 .select .ic {
+      float: right;
+      display: inline-block;
+      width: 10%;
+      height: 38px;
+      line-height: 36px;
+      text-align: center;
+      border-radius: 0 2px 0 0;
+      position: relative; }
+      .dropdown-v2 .select .ic .corner:after {
+        content: "";
+        border: 4px transparent solid;
+        border-top: 6px #999 solid;
+        position: absolute;
+        top: calc(50% - 3px);
+        right: 6px; }
+      .dropdown-v2 .select .ic .corner:after {
+        right: 15px; }
+      .dropdown-v2 .select .ic .icon-xiala {
+        color: #807f7f;
+        display: inline-block;
+        transition-duration: .5s;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg); }
+      .dropdown-v2 .select .ic .icon-xiala.down {
+        transition-duration: .5s;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg); }
+  .dropdown-v2 .option {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    text-indent: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    overflow-y: auto;
+    -webkit-box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2); }
+    .dropdown-v2 .option li {
+      height: 38px;
+      line-height: 36px; }
+      .dropdown-v2 .option li:hover {
+        color: #2c97de;
+        cursor: pointer; }
+  .dropdown-v2 .dropdown.active {
+    border: 1px solid #77a8d4; }
+
+.dropdown-list {
+  min-width: 89px;
+  border: 1px #dedede solid;
+  background-color: #fff;
+  color: #000;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 0 8px #eee;
+  padding: 5px 0;
+  border-radius: 2px; }
+  .dropdown-list.angle:before {
+    content: "";
+    position: absolute;
+    border: 8px transparent solid;
+    border-bottom: 8px #dedede solid;
+    top: -16px;
+    left: calc(50% - 8px); }
+  .dropdown-list.angle:after {
+    content: "";
+    position: absolute;
+    border: 8px transparent solid;
+    border-bottom: 8px #fff solid;
+    top: -15px;
+    left: calc(50% - 8px); }
+  .dropdown-list .dropdown-item {
+    padding: 8px 10px;
+    cursor: pointer; }
+    .dropdown-list .dropdown-item:hover {
+      color: #06a2ff; }
+    .dropdown-list .dropdown-item .button {
+      display: inline-block;
+      width: 49px;
+      height: 21px;
+      background-color: #2c97de;
+      border-radius: 2px;
+      color: #fff;
+      line-height: 21px;
+      font-size: 12px; }
+      .dropdown-list .dropdown-item .button:hover {
+        background-color: #218ad0; }
+
+.ic {
+  float: right;
+  display: inline-block;
+  width: 10%;
+  height: 38px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 0 2px 0 0;
+  position: relative; }
+  .ic.c-corner:after {
+    content: "";
+    border: 4px transparent solid;
+    border-top: 6px #999 solid;
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 6px; }
+  .ic.c-corner:after {
+    right: 15px; }
+
+/*# sourceMappingURL=dropdown.css.map */

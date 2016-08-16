@@ -1,0 +1,84 @@
+.box-inner
+    // form start
+    form(role='form')
+      .box-body
+        .form-group.name
+          label(for='name') 名称
+          input#name.form-control(placeholder='', type='text')
+        .form-group.avater
+          label(for='avater') 图片url
+          input#avater.form-control(placeholder='', type='text')
+        .form-group.desc
+          label(for='desc') 媒体描述
+          textarea#desc.form-control(placeholder='')
+        .form-group.tags
+          label(for='tags') 标签
+          textarea#tags.form-control(placeholder='')
+        ul.list-inline.list-unstyled
+          li
+            .form-group.rank
+              label(for='rank') 关注度
+              input#rank.form-control(placeholder='', type='text')
+          li
+            .form-group.effect
+              label(for='effect') 影响力
+              input#effect.form-control(placeholder='', type='text')
+        ul.crawler1.list-inline.list-unstyled
+          li
+            .form-group.crawler_at
+              label(for='crawler_at') 抓取时间
+              //input.datetimepicker.form-control#crawler_at(type='text', style='display:block;')
+              input#crawler_at.form-control(placeholder='', type='text')
+          li
+              .form-group.crawler_status
+                label(for='crawler_status') 抓取状态
+                input#crawler_status.form-control(placeholder='', type='text')
+
+        .form-group.auth
+          label(for='auth') 认证信息
+          input#auth.form-control(placeholder='', type='text')
+        .form-group.channel
+          label(for='channel') 频道
+          textarea#channel.form-control(placeholder='', type='text')
+        div
+            .form-group.product_form
+              label(for='product_form') 产品分类
+              select#product_form.form-control(style='width:22%')
+                option 门户
+                option 博客
+                option 播客
+                option 社交网络
+                option 论坛
+                option 贴吧
+                option 杂志
+                option 报纸
+                option 期刊
+                option 新闻客户端
+                option 微博
+                option 问答
+                option 直播秀
+            .form-group.circulation_medium
+              label(for='circulation_medium') 传播媒体
+              select#circulation_medium.form-control(style='width:22%')
+                option 纸媒
+                option 广播
+                option 电视
+                option 网站
+                option 移动互联网
+        div
+            .form-group.create_way
+              label(for='create_way') 创建方式
+              select#create_way.form-control(style='width:22%')
+                option 职业媒体
+                option 自媒体
+
+            .form-group.platform_name
+              label(for='platform_name') 平台名称
+              select#platform_name.form-control(style='width:22%')
+                option(platform_mid="") 微信
+                option(platform_mid="") 雪球
+                option(platform_mid="") 百度百家
+                option(platform_mid="") 今日头条
+                option(platform_mid="") 新浪微博
+                option(platform_mid="") 一点资讯
+      // /.box-body

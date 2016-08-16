@@ -1,0 +1,146 @@
+@import '../mixins/flex';
+@import '../mixins/trans';
+@import '../var';
+.advices-base-article-v2{
+	border: 1px #DEDEDE solid;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 0 22px;
+	margin-bottom: 20px;
+	&>.title{
+		font-size: 18px;
+		color: #000;
+		text-align: center;
+		padding-top: 30px;
+		margin-bottom: 10px;
+	}
+	&>.infos{
+		text-align: center;
+		margin-bottom: 15px;
+		.info{
+			font-size: 12px;
+			vertical-align: middle;
+			color: #807f7f;
+			display: inline-block;
+			margin-right: 20px;
+			.kw{
+				color: #e9573f;
+			}
+			.tag{
+				color: #37bc9b;
+			}
+			.txt{
+				color: $gray-light;
+			}
+		}
+		.icon{
+			margin-right: 5px;
+		}
+	}
+	&>.opers{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-top: 1px #eee solid;
+		border-bottom: 1px #eee solid;
+		@include flexbox();
+		.status{
+			@include flex();
+			margin-bottom: -5px;
+			.tag{
+				display: inline-block;
+				vertical-align: middle;
+				white-space: nowrap;
+				padding: 2px 10px;
+				margin-right: 10px;
+				margin-bottom: 5px;
+				color: #fff;
+				border-radius: 2px;
+				font-size: 12px;
+				position: relative;
+				max-width: 20em;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				&.tag-event{
+					background-color: #5babdf;
+				}
+				&.tag-report{
+					background-color: #f7c870;
+				}
+				&.tag-warn{
+					background-color: #e37566;
+				}
+			}
+			.desc{
+				color: $gray-light;
+			}
+		}
+	}
+	.content{
+		padding: 20px 0;
+		line-height: 1.7;
+		.search{
+			color: #e9573f;
+		}
+		.tag{
+			color: #37bc9b;
+		}
+	}
+	.virtual-content{
+		padding-top: 20px;
+		.content{
+			padding: 0 0 20px;
+		}
+		h4{
+			margin-bottom: 5px;
+			margin-top: 0;
+		}
+	}
+	.dropdown-list{
+		min-width: 89px;
+		border: 1px #dedede solid;
+		background-color: #fff;
+		color: #000;
+		font-size: 14px;
+		text-align: center;
+		box-shadow: 0 0 8px #eee;
+		padding: 5px 0;
+		border-radius: 2px;
+		&.angle{
+			&:before{
+				content: "";
+				position: absolute;
+				border: 8px transparent solid;
+				border-bottom: 8px #dedede solid;
+				top: -16px;
+				left: calc(50% - 8px);
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				border: 8px transparent solid;
+				border-bottom: 8px #fff solid;
+				top: -15px;
+				left: calc(50% - 8px);
+			}	
+		}
+		.dropdown-item{
+			padding: 8px 10px;
+			cursor: pointer;
+			&:hover{
+				color: #06a2ff;
+			}
+			.button{
+				display: inline-block;
+				width: 49px;
+				height: 21px;
+				background-color: #4A8ADC;
+				border-radius: 2px;
+				color: #fff;
+				line-height: 21px;
+				&:hover{
+					background-color: darken(#4A8ADC, 5%);
+				}
+			}
+		}
+	}
+}

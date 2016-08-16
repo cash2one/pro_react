@@ -1,0 +1,138 @@
+mixin attr(isParent,key,value,hasChild)
+  if isParent
+    li.parent
+      if hasChild
+        | #{key}
+      else
+        | #{key}
+        span.pull-right= value
+  else
+    li.child
+      | #{key}
+      span.pull-right= value
+
+mixin menu_tree(sec_icon,sec_name,sub_secs,isactive)
+  if isactive
+      li.treeview(class='active')
+        a(href='#')
+          i.fa(class=sec_icon)
+          span= sec_name
+          span.pull-right-container
+            i.fa.fa-angle-left.pull-right
+        ul.treeview-menu
+            each sub_sec in sub_secs
+              li(class=sub_sec.active,id=sub_sec.rule)
+                a(href=sub_sec.url)
+                  i.fa.fa-circle-o
+                  span= sub_sec.name
+  else
+      li.treeview
+        a(href='#')
+          i.fa(class=sec_icon)
+          span= sec_name
+          span.pull-right-container
+            i.fa.fa-angle-left.pull-right
+        ul.treeview-menu
+            each sub_sec in sub_secs
+              li(id=sub_sec.rule)
+                a(href=sub_sec.url)
+                  i.fa.fa-circle-o
+                  span= sub_sec.name
+
+mixin article_list()
+  script(type='text/x-tmpl-mustache',id='template_list')
+      | {{#articles}}
+      a.info-box.article-box(data-id='{{_source.uuid}}',target="_blank",href="admin_article_detail.html?uuid={{_source.uuid}}")
+        span.info-box-icon.bg-aqua.article-box-icon
+          img.article(src="{{_source.imgs}}")
+        .info-box-content.article-box-content
+          //i.fa.fa-trash-o.pull-right.op-delete
+          span.info-box-text.article-box-title {{{_source.link_title}}}
+          span.info-box-number.article-box-text {{{_source.content}}}
+          //span.label.label-danger 预警文章
+          .info-ops
+              .infos
+                span.info {{_source.publish_at}}
+                span.info {{_source.from.media}}
+                span.info {{_source.emotion}}
+                span.info
+                  span 自动标签：
+                  | {{#_source.tags}}
+                  span {{.}}&nbsp;&nbsp;
+                  | {{/_source.tags}}
+              .mailbox-controls.with-border.text-center.pull-right.articlebox-controls
+                .btn-group
+                  +btn_with_tooltip("修改情感面","fa-frown-o")
+                  +btn_with_tooltip("添加日报","fa-file-text-o")
+                  +btn_with_tooltip("纷纷反对","fa-thumbs-down")
+                +btn_with_tooltip("添加预警","fa-exclamation-triangle")
+      | {{/articles}}
+
+mixin btn_with_tooltip(title,icon)
+  button.btn.btn-default.btn-sm(type='button', data-toggle='tooltip', data-container='body', title=title)
+    i.fa(class=icon)
+
+mixin article_search()
+  .input-group.input-group-sm.article-search
+    .input-group-btn
+        button.btn.btn-search.dropdown-toggle(aria-expanded='false', type='button', data-toggle='dropdown')
+          | 全文
+          span.fa.fa-caret-down
+        ul.dropdown-menu.search
+          li
+            a.search-type(type='content') 全文
+          li
+            a.search-type(type='link_title') 标题
+    input.form-control.search(type='text',search-type="content")
+    span.input-group-btn
+      button.btn.btn-search.btn-flat#btn-search(type='button')
+        i.fa.fa-search
+
+mixin sort()
+    .dropdown
+      a.dropdown-toggle.order(aria-expanded='false', data-toggle='dropdown', href='#', order="desc")
+        | 按发布时间降序
+        span.caret
+      ul.dropdown-menu.order
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', order='desc') 按发布时间降序
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', order='asc') 按发布时间升序
+        li(role='presentation')
+          a(role='menuitem', tabindex='-1', order='desc') 默认
+
+mixin date_range_search()
+  .input-group.daterange-search
+    .input-group-addon
+      i.fa.fa-calendar
+    input#reservation.form-control.pull-right(type='text')
+
+mixin removable_tags()
+  script(type='text/x-tmpl-mustache',id='template_tags')
+    | {{#tags}}
+    li.select2-selection__choice(name="{{tag_name}}")
+      span.select2-selection__choice__remove(role='presentation') ×
+      | {{tag_title}}:
+      span.tag_val(tag_v="{{tag_v}}") {{tag_k}}
+    | {{/tags}}
+
+mixin category()
+  .cat-wrap
+      .cat-head.col-md-3
+        span(cat-name='{{cat_name}}') {{cat_title}}
+      .cat-body.col-md-7
+        .item-wrap
+          | {{#items}}
+          .item
+            span.tag_val(v="{{v}}") {{k}}
+            span.cb 测试啊
+          | {{/items}}
+      .cat-op.col-md-2
+        span
+        span
+
+mixin agg_cats()
+  script(type='text/x-tmpl-mustache',id='template_aggs')
+    | {{#aggregations}}
+    +category()
+    | {{/aggregations}}

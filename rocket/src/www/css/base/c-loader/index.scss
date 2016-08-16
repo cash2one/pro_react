@@ -1,0 +1,32 @@
+@import 'spinkit';
+@import 'variables';
+@import '../../mixins/trans';
+.c-loader{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10000;
+	text-align: center;
+	&.fix{
+		position: fixed;
+		left: 231px;
+		top: 60px;
+	}
+	.wrap{
+		background-color: rgba(0,0,0,.4);
+		border-radius: 8px;
+		margin: 40px auto;
+		display: inline-block;
+		padding: 10px;
+	}
+	&.show-leave{
+		opacity: 1;
+		@include transition(opacity, .2s);
+	}
+	&.show-leave-active{
+		opacity: 0;
+	}
+}

@@ -1,0 +1,58 @@
+@mixin flexbox(){
+	display: -webkit-box;
+	display: flex;
+}
+
+@mixin flex($flex: 1){
+	-webkit-box-flex: $flex;
+	flex: $flex;
+}
+
+@mixin directionVertical(){
+	-webkit-box-orient: vertical;
+	flex-direction: column;
+}
+
+@mixin directionRowReverse(){
+	-webkit-box-orient: reverse;
+	flex-direction: row-reverse;
+}
+
+@mixin justifyCenter(){
+	-webkit-box-pack: center;
+	justify-content: center;
+}
+
+@mixin justifyBetween(){
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+
+@mixin justifyEnd(){
+	-webkit-box-pack: end;
+	justify-content: flex-end;
+}
+
+@mixin justifyAround(){
+	-webkit-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+@mixin alignStretch(){
+	-webkit-box-align: stretch;
+	align-items: stretch;
+}
+@mixin alignEnd(){
+	-webkit-box-align: end;
+	align-items: flex-end;
+}
+
+@mixin alignCenter(){
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+@mixin flexWrap(){
+	-webkit-box-lines: multiple;
+	flex-wrap: wrap;
+}

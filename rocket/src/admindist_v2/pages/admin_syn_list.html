@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <!--各类中英文常量-->
+  <!--head header-->
+  <!--footer 版权-->
+  <!--侧边栏-->
+  <!--个人设置-->
+  <!--其他-->
+  <head>
+    <title>深圳普智 | 管理台</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width-->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6-->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons-->
+    <link rel="stylesheet" href="../font-awesome/css/ionicons.min.css">
+    <!-- Theme style-->
+    <link rel="stylesheet" href="../css/AdminLTE.css">
+    <!--
+    AdminLTE Skins. We have chosen the skin-blue for this starter
+    page. However, you can choose any other skin. Make sure you
+    apply the skin class to the body tag so the changes take effect.
+    -->
+    <link rel="stylesheet" href="../css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="../css/Overwrite.css"><!-- Pace style -->
+    <link rel="stylesheet" href="../css/pace/pace.min.css">
+    <!--datetime-picker-->
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap-datetimepicker.min.css">
+    <!--daterange picker-->
+    <link rel="stylesheet" href="../css/bootstrap/daterangepicker.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://--><!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini fixed">
+    <div class="wrapper">
+      <header class="main-header"><a class="logo" href="admin_index.html"><span class="logo-mini"><b>普</b>智</span><span class="logo-lg"><b>深圳</b>普智</span></a>
+        <nav class="navbar navbar-static-top" role="navigation"><a class="sidebar-toggle" href="#" data-toggle="offcanvas" role="button"><span class="sr-only">Toggle navigation</span></a>
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <li><a id="logout" href="#" title="退出"><i class="fa fa-sign-out"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <aside class="main-sidebar">
+        <section class="sidebar">
+          <ul class="sidebar-menu">
+            <li class="header">系统管理</li>
+                  <li class="treeview active"><a href="#"><i class="fa fa-building-o"></i><span>集团管理</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                    <ul class="treeview-menu">
+                      <li class="active" id="rule_sys_manager_syndicate"><a href="admin_syn_list.html"><i class="fa fa-circle-o"></i><span>集团管理</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="treeview"><a href="#"><i class="fa fa-user"></i><span>人员管理</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                    <ul class="treeview-menu">
+                      <li id="rule_sys_manager_adminer"><a href="admin_admin_list.html"><i class="fa fa-circle-o"></i><span>超级管理员管理</span></a></li>
+                      <li id="rule_sys_manager_super"><a href="admin_spr_mgr_list.html"><i class="fa fa-circle-o"></i><span>超级运营员管理</span></a></li>
+                      <li id="rule_sys_list_login"><a href="admin_online_users_list.html"><i class="fa fa-circle-o"></i><span>用户登陆系统状态查看</span></a></li>
+                      <li id="rule_sys_list_newly_added"><a href="admin_new_add_list.html"><i class="fa fa-circle-o"></i><span>新增用户查看</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="treeview"><a href="#"><i class="fa fa-file-text-o"></i><span>文章管理</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                    <ul class="treeview-menu">
+                      <li id="rule_sys_manager_article"><a href="admin_article_list.html"><i class="fa fa-circle-o"></i><span>文章列表</span></a></li>
+                    </ul>
+                  </li>
+                  <li class="treeview"><a href="#"><i class="fa fa-building-o"></i><span>媒体管理</span><span class="pull-right-container"><i class="fa fa-angle-left pull-right"></i></span></a>
+                    <ul class="treeview-menu">
+                      <li id="rule_sys_media_audit"><a href="admin_media_manage.html"><i class="fa fa-circle-o"></i><span>媒体管理</span></a></li>
+                    </ul>
+                  </li>
+          </ul>
+        </section>
+      </aside>
+      <div class="content-wrapper">
+        <!-- Content Header (Page header)-->
+        <section class="content-header">
+          <h1>集团管理<small>集团列表</small></h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+            <li class="active">集团管理</li>
+          </ol>
+        </section>
+        <section class="content">
+          <!-- Main content-->
+          <section class="content">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="box box-primary">
+                  <div class="box-body">
+                    <button class="btn btn-block btn-success add" type="button" style="width:10%;float:right" data-toggle="modal" data-target="#myModal" data-title="新建集团">新建集团</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row content_table">
+              <div class="col-md-12">
+                <div class="custom_size" id="target_list">
+                  <div id="target">加载中...</div>
+                  <script type="text/x-tmpl-mustache" id="template_list">{{#syns}}
+                    <div class="info-box bg-green"><span class="info-box-icon">{{py}}<span style="display:none">{{py}}</span></span>
+                      <div class="info-box-content"><span class="info-box-number">{{name}}</span>
+                        <div class="tools" style="margin:auto;float:right"><i class="fa fa-edit edit" style="margin:5px 10px;cursor:pointer" data-toggle="modal" data-target="#myModal" data-title="编辑集团"></i><i class="fa fa-trash-o delete" tooltip="删除" style="margin:5px auto;cursor:pointer"></i></div><span class="info-box-text" syn_uuid="{{uuid}}">ID: {{uuid}}          超级运营员: {{supers}}</span>
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 100%"></div>
+                        </div><span class="progress-description">{{desc}}</span>
+                      </div>
+                    </div>{{/syns}}
+                  </script>
+                </div>
+                <div class="box-footer clearfix">
+                  <ul class="pagination pagination-sm no-margin pull-right" id="target_paginate">
+                    <script type="text/x-tmpl-mustache" id="template_paginate">
+                      <li><a class="forward" href="#">«</a></li>{{#count}}
+                      <li class="page template_generated"><a href="{{page_link}}">{{page_num}}</a></li>{{/count}}
+                      <li><a class="backward active" href="#">»</a></li><span class="result_count">搜索结果 {{result_count}} 条</span>
+                    </script>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <div class="modal fade modal-custom" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" style="text-align:center">新建集团</h4>
+              </div>
+              <div class="modal-body">
+                <div class="box-inner">
+                  <!-- form start-->
+                  <form role="form">
+                    <div class="box-body">
+                      <div class="form-group syn_name">
+                        <label for="syn_name">集团名称</label>
+                        <input class="form-control" id="syn_name" placeholder="" type="text">
+                      </div>
+                      <div class="form-group syn_info">
+                        <label for="syn_info">集团概况</label>
+                        <textarea class="form-control" id="syn_info" placeholder=""></textarea>
+                      </div>
+                      <div class="form-group spr_mgr">
+                        <label for="sup_mgr_name">超级运营员名称</label>
+                        <input class="form-control" id="sup_mgr_name" placeholder="" type="text">
+                      </div>
+                      <div class="form-group tel">
+                        <label for="tel">手机号</label>
+                        <input class="form-control" id="tel" placeholder="" type="text">
+                      </div>
+                      <div class="form-group syn_uuid">
+                        <label for="syn_uuid">ID</label>
+                        <input class="form-control" id="syn_uuid" placeholder="例如：HD1123746438 12个字符" type="text">
+                      </div>
+                    </div>
+                    <!-- /.box-body-->
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn cancel" type="button" data-dismiss="modal">取消</button>
+                <button class="btn confirm" id="add" type="submit">确定</button>
+                <button class="btn confirm" id="edit" type="submit">确定</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main Footer-->
+      <footer class="main-footer">
+        <!-- To the right-->
+        <div class="pull-right hidden-xs">版权所有2016@深圳铺智传媒科技有限公司.</div>
+        <!-- Default to the left--><strong>Copyright © 2016<a href="#">PZZH</a>.</strong> All rights reserved.
+      </footer>
+      <div class="modal fade bs-example-modal-sm" id="msg_modal" style="padding-right: 13px" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="mySmallModalLabel">提示</h4>
+            </div>
+            <div class="modal-body" id="target_msg" style="text-align:center">
+              <script type="text/x-tmpl-mustache" id="template_msg">
+                <p>{{msg}}</p>
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- REQUIRED JS SCRIPTS-->
+      <!-- jQuery 2.2.3-->
+      <script src="../js/libs/jQuery/jquery-2.2.3.min.js"></script>
+      <!-- jQuery cookie-->
+      <script src="../js/libs/jQuery-Cookie/jquery.cookie.js"></script>
+      <!-- Bootstrap 3.3.6-->
+      <script src="../js/libs/bootstrap/bootstrap.min.js"></script>
+      <!--datetime-picker-->
+      <script src="../js/libs/bootstrap/bootstrap-datetimepicker.js"></script>
+      <script src="../js/libs/bootstrap/locales/bootstrap-datetimepicker.fr.js"></script><!-- PACE -->
+      <script src="../js/libs/pace/pace.min.js"></script>
+      <!--confirm-->
+      <script src="../js/libs/confirm/jquery.confirm.min.js"></script>
+      <!--slimscroll-->
+      <script src="../js/libs/slimScroll/jquery.slimscroll.min.js"></script>
+      <!-- AdminLTE App-->
+      <script src="../js/app.min.js"></script>
+      <!--mustache.js-->
+      <script src="../js/mustache.js"></script>
+      <!--conf.js-->
+      <script src="../js/conf.js"></script>
+      <!--admin.js-->
+      <script src="../js/admin.js"></script>
+      <script src="../js/pages/admin_syn_list.js"></script>
+      <script src="../js/mustache.js"></script>
+      <!--
+      Optionally, you can add Slimscroll and FastClick plugins.
+      Both of these plugins are recommended to enhance the
+      user experience. Slimscroll is required when using the
+      fixed layout.
+      
+      -->
+      <script type="text/javascript">
+        // To make Pace works on Ajax calls
+        $(document).ajaxStart(function() { Pace.restart(); });
+        $('.ajax').click(function(){
+        $.ajax({url: '#', success: function(result){
+        $('.ajax-content').html('<hr>Ajax Request Completed !');
+        }});
+        });
+      </script>
+    </div>
+  </body>
+</html>

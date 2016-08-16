@@ -1,0 +1,65 @@
+.setting-warn .hd {
+  margin-top: 55px;
+  background-color: #79a1c2;
+  font-size: 16px;
+  padding: 0 20px;
+  line-height: 25px;
+  color: #fff; }
+.setting-warn .bd {
+  padding: 15px 50px;
+  border-bottom: 1px #dedede solid; }
+  .setting-warn .bd table {
+    font-size: 14px;
+    color: #212121;
+    width: 100%; }
+    .setting-warn .bd table td:first-child {
+      padding-right: 20px;
+      text-align: right; }
+    .setting-warn .bd table td {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    .setting-warn .bd table .c-button-g {
+      float: left; }
+    .setting-warn .bd table input {
+      display: inline-block;
+      width: 320px;
+      height: 30px;
+      border: 1px #dedede solid;
+      border-radius: 2px;
+      padding: 0 5px;
+      line-height: 28px;
+      font-size: 14px;
+      background: none;
+      box-shadow: none; }
+      .setting-warn .bd table input.error {
+        outline: none;
+        color: #212121;
+        border: 1px solid #ff0000; }
+      .setting-warn .bd table input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px #fff inset; }
+    .setting-warn .bd table label.error {
+      margin-left: 5px;
+      margin-top: 2px;
+      color: red; }
+    .setting-warn .bd table.disabled .label {
+      color: #dedede; }
+    .setting-warn .bd table.disabled input {
+      color: #8c8c8c; }
+      .setting-warn .bd table.disabled input::-webkit-input-placeholder {
+        color: #d2d2d2; }
+      .setting-warn .bd table.disabled input::-moz-placeholder {
+        color: #d2d2d2; }
+      .setting-warn .bd table.disabled input:-ms-input-placeholder {
+        color: #d2d2d2; }
+  .setting-warn .bd .err-box {
+    margin: 25px -50px -15px; }
+    .setting-warn .bd .err-box label.error {
+      background-color: #bfdfff;
+      color: #f85050;
+      text-align: center;
+      font-size: 12px;
+      line-height: 25px;
+      display: block;
+      margin-top: -1px; }
+
+/*# sourceMappingURL=setting.warn.css.map */

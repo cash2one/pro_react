@@ -1,0 +1,42 @@
+@mixin transition($prop: all, $duration: .4s, $timing: ease, $delay: 0){
+	-webkit-transition-property: $prop;
+	-webkit-transition-duration: $duration;
+	-webkit-transition-timing-function: $timing;
+	-webkit-transition-delay: $delay;
+
+	-moz-transition-property: $prop;
+	-moz-transition-duration: $duration;
+	-moz-transition-timing-function: $timing;
+	-moz-transition-delay: $delay;
+
+	-o-transition-property: $prop;
+	-o-transition-duration: $duration;
+	-o-transition-timing-function: $timing;
+	-o-transition-delay: $delay;
+
+	-ms-transition-property: $prop;
+	-ms-transition-duration: $duration;
+	-ms-transition-timing-function: $timing;
+	-ms-transition-delay: $delay;
+
+	transition-property: $prop;
+	transition-duration: $duration;
+	transition-timing-function: $timing;
+	transition-delay: $delay;
+}
+
+@mixin transform($tranform){
+	-webkit-transform: $tranform;
+	-moz-transform: $tranform;
+	-o-transform: $tranform;
+	-ms-transform: $tranform;
+	transform: $tranform;
+}
+
+@mixin transform-origin($x: center, $y: center){
+	-webkit-transform-origin: $x $y;
+	-moz-transform-origin: $x $y;
+	-o-transform-origin: $x $y;
+	-ms-transform-origin: $x $y;
+	transform-origin: $x $y;
+}

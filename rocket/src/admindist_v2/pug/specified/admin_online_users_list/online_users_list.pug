@@ -1,0 +1,53 @@
+// Main content
+section.content
+  .row
+    .col-xs-12
+      .box.box-primary
+        // <div class="box-header">
+        // <h3 class="box-title">Ion Slider</h3>
+        // </div>
+        // /.box-header
+        .box-body
+          //button.btn.btn-block.btn-success(type='button', style='width:10%;float:right;', data-toggle='modal', data-target='#myModal') #{modal_title}
+          .col-md-3.col-sm-6.col-xs-12
+            .info-box
+                span.info-box-icon.bg-yellow
+                  i.ion.ion-ios-people-outline
+                .info-box-content
+                  span.info-box-text 当前在线用户
+                  span.info-box-number 0
+                  script(type='text/x-tmpl-mustache',id='template_online_count')
+                    span.info-box-number {{count}}
+        // /.box-body
+      // /.box
+    // /.col
+  // /.row
+  .row.content_table
+      .col-xs-12
+        .box
+          .box-body
+            table.table.table-bordered.table-striped.table-hover
+              tbody#target_list
+                tr#target
+                  td #{loading}
+                script(type='text/x-tmpl-mustache',id='template_list')
+                    tr
+                      th(style='width: 10%') 序号
+                      th(style='width: 15%') 手机号
+                      th(style='width: 15%') 用户名
+                      th(style='width: 15%') 角色组
+                      th(style='width: 15%') 当前登录平台
+                      th(style='width: 15%') 当前登录平台
+                      th(style='width: 15%') 操作
+                    | {{#online_users}}
+                    tr(data-id="{{user_id}}")
+                      td.num 1
+                      td.tel {{telephone}}
+                      td.name {{user_name}}
+                      td.role(role_group_name='{{role_group_name}}') {{role_group_title}}
+                      td.ltime {{last_login_time}}
+                      td.lplatform {{last_login_platform}}
+                      td
+                        button.btn.btn-block.btn-danger.btn-sm.kickout(tooltip='踢出',type='button',style='width:40%;float:left;margin:auto 30%;') 踢出
+                    | {{/online_users}}
+          include ../../common_partials/pagination.pug

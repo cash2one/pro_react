@@ -1,0 +1,9 @@
+.c-rank .icon-xingxing {
+  color: #dedede;
+  font-size: 24px;
+  margin-left: 3px;
+  margin-right: 3px; }
+  .c-rank .icon-xingxing.active {
+    color: #F6BB42; }
+
+/*# sourceMappingURL=c-rank.css.map */

@@ -1,0 +1,344 @@
+.lframe-bg{
+	background: url(../img/loginbg.jpg);
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	overflow-y: hidden;
+	min-height: 410px;
+	position: relative;
+	&.loginpage{
+		.aboutbox{
+			position: absolute;
+			width: 100%;
+			height: 45px;
+			bottom: 3%;
+		    text-align: center;
+		    margin: 0 auto;
+		    color: #5bebed;
+		    font-size: 14px;
+		    letter-spacing: 1px;
+		    display: inline-block;
+		    text-decoration: none;
+			.txt1{
+			    a {
+			    	bottom: 7%;
+			    	text-align: center;
+			    	margin: 0 auto;
+			    	color: #5bebed;
+			    	font-size: 14px;
+			    	letter-spacing: 1px;
+			    	cursor: pointer;
+			    	display: inline-block;
+			    	text-decoration: none;
+			    	cursor: pointer;
+			    }
+			    .ltxt{	
+			    	
+			    }
+			    .rtxt{
+			    	margin-left: 20px;
+			    }
+			}
+			.txt2{
+
+			}
+		}
+		.lframe-header{
+			height: 68px;
+			background:rgba(2,0,0,0.3);
+			line-height: 66px;
+		}
+		.lframe-body{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -200px;
+			margin-left: -225px;
+			.lfr-header-logo{
+				margin-bottom: 19px;
+				position: absolute;
+				width: 100%;
+				margin-left: -35px;
+				padding: 18px 35px 14px 35px;
+				top: 0px;
+				border-bottom: 1px solid #000;
+				img{
+					vertical-align: middle;
+				    margin-right: 10px;
+				}
+				.text{
+					color: #fff;
+					opacity: 0.9;
+				    vertical-align: middle;
+				    font-size: 22px;
+				}
+				.iconfontbox{
+					display: inline-block;
+					position: relative;
+					top: 14px;
+					left: 134px;
+					.roleicon{
+						display: inline-block;
+						width: 20px;
+						height: 20px;
+						position: absolute;
+						margin-left: 2px;
+						color: #2b7b7e;
+						&.icon-zhanghu{
+							left: -25px;
+							color: #2b7b7e;
+							top: -3px;
+						}
+						&.icon-xingxing{
+							left: -26px;
+							color: #2b7b7e;
+							top: -3px;
+						}
+					}
+					.icontxt{
+						color: #E5E7E7;
+					    font-size: 14px;
+					}
+				}
+			}
+			.lfr-header-nav{
+				line-height: 76px;
+				font-size: 14px;
+				color: #fff;
+				opacity: 0.9;
+				.firstpage{
+					cursor: pointer;
+				}
+				.produce-note{
+					cursor: pointer;
+				}
+			}
+			.lfr-body-loginbox{
+				width: 449px;
+				height: 322px;
+				background:rgba(2,0,0,0.5);
+				margin: 0 auto;
+				padding: 25px 35px 22px;
+				.ic-loginbox{
+					left: 162px;
+				}
+				.lb-row1{
+					height: 42px;
+				}
+				.lb-row2{
+					height: 48px;
+					&.mt66{
+						margin-top: 66px;
+					}
+				}
+				.seccodeBtn, .loginbtn{
+					width: 100%;
+					height: 40px;
+					line-height: 36px;
+					position: relative;
+					background-color: #2b7b7e;
+					color: #fff;
+					border: none;
+					font-size: 14px;
+					// cursor: pointer;
+					-webkit-user-select: none;
+					border: 2px solid #2b7b7e;
+					display: inline-block;
+					text-align: center;
+					&:active{
+					    // background-color: darken(#2abcb9, 5%);
+					}
+					&.focus{
+						// background-color: #25676b;
+					 //    border: 2px solid #1c9797;
+					}
+				}
+				.seccodeBtn{
+					width:  155px;
+					height: 100%;
+					line-height: 38px;
+					vertical-align: middle;
+					&.disable{
+						background-color: #818181;
+						color:#acacac;
+						border: 2px solid #818181;
+					}
+				}
+				input{
+					background: rgba(132,133,133,0.3);
+					border: 2px solid #213838;
+					color: #A9A9A9;
+					height: 48px;
+					line-height: 40px;
+					font-size: 14px;
+					text-indent: 10px;
+					vertical-align: middle;
+					&.phone{
+						width: 100%;
+					}
+					&.error{
+						border: 2px solid #892D2D;
+					}
+					&:-webkit-autofill,&.phone:-webkit-autofill,&.mess-seccode:-webkit-autofill{
+						// -webkit-box-shadow: 0 0 0 1000px #848585 inset;
+						// -webkit-text-fill-color:#fff;
+						// opacity: 0.5;
+					}
+				}
+				label.error{
+					display: none;
+					position: absolute;
+					opacity: 0;
+				}
+				.inputicon{
+					display: inline-block;
+					position: absolute;
+					margin-left: 11px;
+					color: #2b7b7e;
+					&.icon-iconfontshouji{
+						margin-top: 7px;
+						top: 94px;
+						font-size: 22px;
+					}
+					&.icon-shield{
+						margin-top: 10px;
+						font-size: 20px;
+					}
+				}
+				input.phone{
+			    	text-indent: 40px;
+				}
+				input.mess-seccode{
+					width: 219px;
+					margin-right: 5px;
+			    	text-indent: 40px;
+				}
+				input.seccode{
+					width: 246px;
+					margin-right: 5px;
+				}
+				img.seccode-img{
+					width: 128px;
+					height: 100%;
+					vertical-align: middle;
+					cursor: pointer;
+				}
+				.c-button{
+					background-color: #2b7b7e;
+					width: 246px;
+					height: 33px;
+					line-height: 31px;
+				}
+				span.c-button{
+					display: inline-block;
+				}
+				.weixin-loginbox{
+					display: inline-block;
+					float: right;
+					position: relative;
+					top: 2px;
+					cursor: pointer;
+					span.iconfont{	
+						color: #38c562;
+						margin-right: 10px;
+						font-size: 25px;
+						vertical-align: middle;
+					}
+					span{
+						color: #E5E7E7;
+						font-size: 14px;
+					}
+				}
+			}
+			.lfr-body-tipbox{
+				width: 449px;
+				min-height: 38px;
+				
+				margin: 0 auto;
+				margin-top: 2px;
+				padding: 10px 0;
+
+			    text-align: center;
+			    color: #ed0649;
+			    background:rgba(2,0,0,0.5);
+			    font-size: 12px;
+
+			    label{
+			    	display: block;
+			    }
+			}
+		}
+	}
+	&.aboutpage{
+		height: 100%;
+		overflow-y: auto;
+		.aboutbox{
+			position: relative;
+			top: 70px;
+			width: 1000px;
+			margin: 0 auto;
+			border-radius: 7px;    
+			padding-bottom: 50px;
+			.titlebox{
+				text-align: center;
+				height: 66px;
+				line-height: 64px;
+				background-color: #1d9e9f;
+				border-radius: 8px 8px 0 0;
+				span{
+					font-size: 22px;
+					color: #fff;
+				}
+			}
+			.mainbox{
+				border-radius: 0 0 8px 8px;
+				background-color: rgba(2, 0, 0, 0.3);
+				min-height: 676px;
+				.contentbox{
+					text-align: left;
+					padding: 53px 28px 34px;
+					border-bottom: 1px solid #1d9e9f;
+					p{
+						font-size: 12px;
+						color: #e6e9e9;
+						line-height: 24px;
+						&.tit{
+							font-size: 16px;
+							padding-bottom: 24px;
+							color: #1d9e9f;
+						}
+					}
+					&.noborder{
+						border: none;
+					}
+					&:last-child {
+						border-bottom: none;
+					}
+				}
+			}
+		}
+	}
+}
+.minh {
+    min-height: 460px;
+}
+.loadingBox {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -210px;
+    margin-left: -34px;
+    min-height: 230px;
+	.loadingGif{
+		background: url(../img/loadingGif.gif);
+		width: 154px;
+		height: 154px;	
+		position: relative;
+		top: 0;
+	}
+	.loadingTxt{
+		position: relative;
+		top: 20px;
+		left: -40px;
+	}
+}

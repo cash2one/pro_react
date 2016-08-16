@@ -1,0 +1,28 @@
+// Main content
+section.content
+  .row
+    .col-xs-12
+      .box.box-primary
+        .box-body
+          button.btn.btn-block.btn-success.add(type='button', style='width:10%;float:right;', data-toggle='modal', data-target='#myModal',data-title='新建集团') #{modal_title}
+  .row.content_table
+    .col-md-12
+      .custom_size#target_list
+          #target #{loading}
+          script(type='text/x-tmpl-mustache',id='template_list')
+            | {{#syns}}
+            .info-box.bg-green
+              span.info-box-icon {{py}}
+                span(style='display:none;') {{py}}
+              .info-box-content
+                span.info-box-number {{name}}
+                .tools(style='margin:auto;float:right')
+                  i.fa.fa-edit.edit(style='margin:5px 10px;cursor:pointer;', data-toggle='modal', data-target='#myModal',data-title='编辑集团')
+                  i.fa.fa-trash-o.delete(tooltip='删除',style='margin:5px auto;cursor:pointer;')
+                span.info-box-text(syn_uuid="{{uuid}}") ID: {{uuid}}          超级运营员: {{supers}}
+                .progress
+                  .progress-bar(style='width: 100%')
+                span.progress-description
+                  | {{desc}}
+            | {{/syns}}
+      include ../../common_partials/pagination.pug

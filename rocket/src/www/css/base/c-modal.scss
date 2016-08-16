@@ -1,0 +1,236 @@
+/*----------- 弹窗 ------------ */
+.c-modal-box {
+	min-height: 160px;
+}
+.c-modal-backdrop {
+	opacity: .5;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: #fff;
+}
+.c-modal {
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    outline: 0;
+    z-index: 1010;
+    // min-height: 330px;
+    overflow-x: hidden;
+    overflow-y: auto;
+	.dialog {
+		.cont {
+		    position: relative;
+		    background-color: #fff;
+		    -webkit-background-clip: padding-box;
+		    background-clip: padding-box;
+		    border-radius: 4px;
+		    outline: 0;
+		    -webkit-box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+		    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+		    .header {
+		    	height: 39px;
+		    	line-height: 39px;
+		    	font-size: 16px;
+		    	background-color: #2abcb9;
+		    	border-radius: 4px 4px 0 0;
+		    	border-bottom: 1px solid #d2d2d2;
+		    	text-align: center;
+		    	color: #fff;
+		    }
+		    .body {
+		    	position: relative;
+		    	padding: 20px 44px 20px;
+		    	label {
+		    		display: block;
+		    		color: #3a678d;
+		    		font-size: 12px;
+		    		margin-bottom: 5px;
+		    		&.inline{
+		    			display: inline-block;
+		    		}
+		    	}
+		    	input {
+		    		display: block;
+		    		width: 100%;
+		    		height: 30px;
+		    		line-height: 28px;
+		    		border-radius: 2px;
+		    		border: 1px solid #dedede;
+		    		margin-bottom: 12px;
+		    		text-indent: 10px;
+            		&.error{
+        				outline: none;
+        				color: #212121;
+        				border: 1px solid #ff0000;
+            		}
+		    		&:-webkit-autofill {
+						-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+					}
+		    	}
+		    	span{
+					font-size: 12px;
+		    	}
+		    	.input-tip{
+		    		outline: none;
+		    		color: #212121;
+		    	    font-weight: bold;
+		    		border: 1px solid #ff0000;
+		    		box-shadow: 0 0 3px #ff0000;
+		    		background: url("../img/iconfont-cuowu.png") no-repeat right;
+		    		background-size: 10% 87%;
+		    		cursor: pointer;
+		    	}
+		    	.label-tip{
+		    		display: block;
+		    		margin-top: -10px;
+		    		color: #ff0000;
+		    		font-size: 14px;
+		    		font-weight: bold;
+		    		text-indent: 10px;
+		    	}
+		    	.m-warn{
+					font-size: 12px;
+					color: #FF0000;
+					margin-top: 20px;
+					text-align: left;
+					label.error {
+						color: #ff0000;
+					}
+		    	}
+		    	.m-tip{
+		    		text-align: center;
+		    		color: #212121;
+		    		&>.tipTxt2{
+						font-size: 14px;
+						color:#8c8c8c;
+						margin-top: 10px;
+		    		}
+		    		p{
+		    			margin-bottom: 10px;
+		    		}
+		    	}
+		    	form{
+		    		position: relative;
+		    	}
+		    	textarea{
+		    		display: block;
+		    		width: 100%;
+		    		border-radius: 2px;
+		    		border: 1px solid #dedede;
+		    		margin-bottom: 12px;
+		    		padding: 6px 10px;
+		    		line-height: 1.4;
+		    		padding: 5px 10px;
+		    		&.error{
+		    			outline: none;
+        				color: #212121;
+        				border: 1px solid #ff0000;
+		    		}
+		    	}
+		    	.m-dropdown{
+		    	    margin-bottom: 12px;
+		    	    .c-dropdown{
+		    	        width: 100%;
+		    	        .select{
+		    	            height: 30px;
+		    	            line-height: 28px;
+		    	            .txt{
+		    	                width: 90%;
+		    	                outline: none;
+		    	                border: 0px;
+		    	                margin-bottom: 0;
+		    	                font-size: 12px;
+		    	                height: 28px;
+		    	                line-height: 28px;
+		    	            }
+		    	            .icon-xiala{
+		    	                font-size: 26px;
+		    	            }
+		    	        }
+		    	        .option{
+		    	            li{
+		    	                height: 30px;
+		    	                line-height: 30px;
+		    	            }
+		    	        }
+		    	    }
+		    	}
+		    }
+		    .footer{
+		    	height: 40px;
+		    	line-height: 36px;
+		    	color: #505050;
+		    	border-top: 1px solid #dedede;
+		    	.btn{
+		    		float: left;
+		    		display: inline-block;
+		    		height: 100%;
+		    		width: 50%;
+		    		text-align: center;
+		    		cursor: pointer;
+		    		background: none;
+	    		    border-top-style: none;
+	    		    border-right-style: none;
+	    		    border-bottom-style: none;
+	    		    border-left-style: none;
+	    		    font-size: 14px;
+		    		&:hover{
+		    			background-color: #dedede;
+		    			color: #212121;
+		    		}
+		    		&:nth-child(1):hover{
+		    			border-radius: 0 0 0 4px;
+		    		}
+		    		&:nth-child(2):hover{
+		    			border-radius: 0 0 4px 0;
+		    		}
+		    		&:nth-child(1){
+		    			border-right: 1px solid #dedede;
+		    		}
+		    	}
+		    }
+		}
+	}
+}
+
+@media (min-width: 360px) {
+	.c-modal {
+		.dialog {
+		    width:358px;
+		    margin: 30px auto
+		}
+		.cont {
+		    -webkit-box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+		    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+		}
+		.sm {
+		    width: 358px;
+		}
+		.md {
+			width: 530px;
+		}
+		.lg {
+		    width:668px;
+		}
+	}
+}
+@media (min-width: 992px) {
+	.c-modal{
+		.dialog {
+		    width:358px;
+		    margin: 30px auto
+		}
+		.md {
+			width: 530px;
+		}
+		.lg {
+		    width:900px;
+		}
+	}
+}

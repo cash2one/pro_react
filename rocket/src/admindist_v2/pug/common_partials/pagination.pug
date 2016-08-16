@@ -1,0 +1,12 @@
+.box-footer.clearfix
+    ul.pagination.pagination-sm.no-margin.pull-right#target_paginate
+      script(type='text/x-tmpl-mustache',id='template_paginate')
+          li
+            a.forward(href='#') «
+          | {{#count}}
+          li.page.template_generated
+            a(href='{{page_link}}') {{page_num}}
+          | {{/count}}
+          li
+            a.backward.active(href='#') »
+          span.result_count 搜索结果 {{result_count}} 条

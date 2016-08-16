@@ -1,0 +1,128 @@
+// Main content
+
+section.content
+  .row
+    .col-xs-12
+      .box.box-primary
+        .box-body
+          form.bs-example.bs-example-form(role='form')
+            .input-group
+                input#search.form-control(type='text',placeholder="请输入搜索关键字")
+                | &#x9;&#x9
+                span.input-group-btn
+                    button#search_btn.btn.btn-default(type='button')
+                        | Search!
+        //button.btn.btn-default.add(type='button', style='width:10%;', data-toggle='modal', data-target='#myModal',data-title='选择分类') #{modal_title}
+        .form-group.platform
+          p 平台:
+          select.form-control
+            option 不限
+            option 微信
+            option 雪球
+            option 百度百家
+            option 今日头条
+            option 新浪微博
+            option 一点资讯
+        .form-group.create_way
+          p 创建方式:
+          select.form-control
+            option 不限
+            option 职业媒体
+            option 自媒体
+        .form-group.circulation_medium
+          p 传播媒体:
+          select.form-control
+            option 不限
+            option 纸媒
+            option 广播
+            option 电视
+            option 网站
+            option 移动互联网
+        .form-group.product_form
+          p 产品分类:
+          select.form-control
+            option 不限
+            option 门户
+            option 博客
+            option 播客
+            option 社交网络
+            option 论坛
+            option 贴吧
+            option 杂志
+            option 报纸
+            option 期刊
+            option 新闻客户端
+            option 微博
+            option 问答
+            option 直播秀
+        p(style='margin:0 0 0 15px') 请选择日期:
+          input.datetimepicker.datetimepicker1#datetimepicker_start(type='text')
+        p ~
+          input.datetimepicker.datetimepicker1#datetimepicker_end(type='text')
+        button#clear_btn.btn.btn-default(type='button') 清空
+  span.info-box-text(style='display:inline;') 搜索到
+  #target_online_count(style='display:inline;')
+    script(type='text/x-tmpl-mustache',id='template_online_count')
+      span.info-box-number(style='display:inline;') {{count}}
+  span.info-box-text(style='display:inline;') 条记录
+  .row.content_table(style='margin:20px 0px;')
+    .col-md-12
+      .custom_size#target_list
+          #target #{loading}
+          script(type='text/x-tmpl-mustache',id='template_list')
+            | {{#media}}
+            .info-box.white
+              .img
+                img(src="{{avater}}")
+                //span(style='display:none;') {{py}}
+              .influence
+                span.info-box-text(style = 'margin:0px 10px 5px 10px;') 影响力
+                span.influence_text.info-box-text(style = 'font-size:18px;') {{influence}}
+                span.info-box-text(style = 'margin:0px 10px 5px 10px;') 关注度
+                span.rank_text.info-box-text(style = 'font-size:18px;') {{rank}}
+              .info-box-content
+                .media_info
+                    .left_div(style='float:left; width:40%;')
+                        div
+                            span.name.info-box-number(style='display:inline;')
+                                a(target='_blank',href="{{url}}") {{name}}
+                            span.info-box-text.product_form(style='display:inline; margin:0 30px;') {{product_form}}
+                        div
+                            span.info-box-text.create_way(style='display:inline;') 创建方式: {{create_way}}
+                            //span.info-box-text.media(style='display:inline; margin:0 30px;') 媒体: {{media}}
+                            span.info-box-text.circulation_medium(style='display:inline;margin:0 0 0 30px;') 传播媒体: {{circulation_medium}}
+                        span.info-box-text(style='float:left;') 频道：
+                        | {{#channel}}
+                        .channel
+                            span.info-box-text(style='float:left; margin:0 10px 0 0;') {{channel_title}}
+                        | {{/channel}}
+                        span.info-box-text(style='clear:both;')
+                        | {{#platform}}
+                        span.platform.info-box-text(style='clear:both;') 平台: {{name}} {{mid}}
+                        | {{/platform}}
+                        span.info-box-text(style='float:left;') 标签：
+                        .tag
+                            | {{#tags}}
+                            span.info-box-text(style='float:left; margin:0 10px 0 0;') {{tag}}
+                            | {{/tags}}
+                    .medium_div(style='width:80%;')
+                        div
+                            span.info-box-text(style='display:inline; margin:0 30px;')
+                        div
+                            span.auth.info-box-text(style='display:inline; margin:0 30px;') 认证信息: {{auth}}
+                        div
+                            | {{#crawler}}
+                            span.crawler_at.info-box-text(style='display:inline; margin:0 30px;') 抓取时间: {{crawler_at}}
+                            span.crawler_status.info-box-text(style='display:inline; margin:0 30px;') 抓取状态： {{crawler_status}}
+                            | {{/crawler}}
+                        div
+                            span.info-box-text.code(style='display:inline; margin:0 30px;') code: {{code}}
+                            span.info-box-text.mid(style='display:inline; margin:0 30px;') mid: {{mid}}
+                        .tools(style='margin:auto;float:right')
+                          i.fa.fa-edit.edit(style='margin:5px 10px;cursor:pointer;', data-toggle='modal', data-target='#myModal',data-title='编辑媒体')
+                          i.fa.fa-trash-o.delete(tooltip='删除',style='margin:5px auto;cursor:pointer;')
+                .progress(style='clear:both; width: 80%;')
+                  .progress-bar(style='width: 100%; background-color:#3c8dbc;')
+                span.desc.progress-description(style='white-space:pre-wrap;') {{desc}}
+            | {{/media}}
+      include ../../common_partials/pagination.pug

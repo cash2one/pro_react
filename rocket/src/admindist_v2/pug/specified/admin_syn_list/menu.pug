@@ -1,0 +1,8 @@
+extends ../../common_partials/main_leftside_menu.pug
+include ../../mixins/utils.pug
+
+block menu
+  +menu_tree("fa-building-o",syn_management,menu_data.syn,true)
+  +menu_tree("fa-user",personnel_management,menu_data.per,false)
+  +menu_tree("fa-file-text-o",article_management,menu_data.article,false)
+  +menu_tree("fa-building-o",media_management,menu_data.media,false)

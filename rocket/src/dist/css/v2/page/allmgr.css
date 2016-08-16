@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/**
+ * edit by lxt
+ * 2016/07/14
+ * 运营员管理v2样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.all-manager .panel-body {
+  position: relative; }
+  .all-manager .panel-body .edit-form {
+    width: 400px;
+    margin: 25px auto 35px; }
+.all-manager .panel-footer .btnbox .btn + .btn {
+  margin-left: 8px; }
+.all-manager .panel-line {
+  border-top: 1px solid #eee;
+  position: absolute;
+  width: 100%;
+  margin-left: -22px; }
+.all-manager .fr-br-mid {
+  min-height: 52px;
+  padding: 10px 10px;
+  color: #444;
+  margin-left: -10px;
+  margin-right: -10px; }
+  .all-manager .fr-br-mid h5 {
+    display: inline-block;
+    position: absolute; }
+  .all-manager .fr-br-mid .all-manager-page-warn {
+    position: absolute;
+    width: 100%;
+    margin-top: 4px;
+    margin-left: -22px;
+    margin-bottom: -10px; }
+.all-manager .fr-br-main {
+  min-height: 300px;
+  margin-right: -22px; }
+  .all-manager .fr-br-main .com-role-container {
+    display: inline-block;
+    position: relative; }
+    .all-manager .fr-br-main .com-role-container .ic {
+      height: 28px;
+      line-height: 26px; }
+    .all-manager .fr-br-main .com-role-container .tag {
+      font-size: 14px;
+      display: inline-block;
+      border: 1px solid #dedede;
+      color: #444;
+      padding: 0px 11px;
+      margin-right: 20px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      min-width: 155.5px;
+      max-width: 155.5px;
+      min-height: 30px;
+      line-height: 28px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: center; }
+      .all-manager .fr-br-main .com-role-container .tag:hover {
+        background-color: #f4f4f4; }
+      .all-manager .fr-br-main .com-role-container .tag:last-child {
+        margin-right: 0; }
+      .all-manager .fr-br-main .com-role-container .tag.active {
+        background-color: #3a99d8;
+        color: #fff; }
+        .all-manager .fr-br-main .com-role-container .tag.active .ic.c-corner:after {
+          border-top: 6px #fff solid; }
+      .all-manager .fr-br-main .com-role-container .tag .icon-xiala {
+        font-size: 14px;
+        color: #999;
+        margin-left: 3px; }
+    .all-manager .fr-br-main .com-role-container .webui-popover {
+      display: block;
+      top: 30px;
+      width: auto;
+      border: 1px solid #dedede;
+      border-radius: 4px; }
+      .all-manager .fr-br-main .com-role-container .webui-popover .webui-popover-content {
+        padding: 0;
+        overflow: hidden; }
+      .all-manager .fr-br-main .com-role-container .webui-popover.bottom-right .arrow {
+        left: 21%; }
+      .all-manager .fr-br-main .com-role-container .webui-popover.none {
+        display: none; }
+.all-manager .tooltipbox {
+  color: #fff;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 4px;
+  position: relative;
+  min-width: 365px; }
+  .all-manager .tooltipbox .rolebox-top {
+    padding: 10px 20px;
+    max-width: 540px;
+    text-align: left;
+    margin-right: -10px; }
+    .all-manager .tooltipbox .rolebox-top .role {
+      display: inline-block;
+      min-width: 78px;
+      min-height: 30px;
+      line-height: 28px;
+      font-size: 14px !important;
+      color: #444;
+      text-align: center;
+      padding: 1px 10px;
+      cursor: pointer;
+      margin-bottom: 5px; }
+      .all-manager .tooltipbox .rolebox-top .role.active {
+        color: #444; }
+      .all-manager .tooltipbox .rolebox-top .role:last-child {
+        margin-right: 0; }
+      .all-manager .tooltipbox .rolebox-top .role .c-cb {
+        margin-right: 5px;
+        margin-top: -3px; }
+  .all-manager .tooltipbox .rolebox-bottom {
+    min-height: 40px;
+    background-color: #fafafa;
+    padding-right: 8px; }
+    .all-manager .tooltipbox .rolebox-bottom .btnbox {
+      color: #8c8c8c;
+      font-size: 14px;
+      line-height: 40px; }
+      .all-manager .tooltipbox .rolebox-bottom .btnbox .btn + .btn {
+        margin-left: 10px; }
+.all-manager .notebox {
+  text-align: center;
+  color: #999;
+  margin-top: 70px;
+  margin-bottom: -15px; }
+  .all-manager .notebox .warm {
+    min-width: 236px; }
+    .all-manager .notebox .warm .tit, .all-manager .notebox .warm .txt {
+      line-height: 24px; }
+    .all-manager .notebox .warm .tit {
+      vertical-align: top; }
+    .all-manager .notebox .warm .txt {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left; }
+
+.frame-body-v2 .frame-body-right .frame-body-container .fr-br-mid .page-error2 {
+  background: none; }
+
+.modal .modal-body .m-msg.fs14 {
+  font-size: 14px; }
+
+@media screen and (min-width: 1281px) {
+  .all-manager .fr-br-main .com-role-container:nth-child(6n-1) .bottom-right, .all-manager .fr-br-main .com-role-container:nth-child(6n) .bottom-right {
+    left: -213px; }
+    .all-manager .fr-br-main .com-role-container:nth-child(6n-1) .bottom-right .arrow, .all-manager .fr-br-main .com-role-container:nth-child(6n) .bottom-right .arrow {
+      left: 79%; } }
+@media screen and (min-width: 0px) and (max-width: 1280px) {
+  .all-manager .fr-br-main .com-role-container .tag {
+    min-width: 135.5px;
+    max-width: 135.5px; }
+
+  .all-manager .fr-br-main .com-role-container:nth-child(6n-1) .bottom-right, .all-manager .fr-br-main .com-role-container:nth-child(6n) .bottom-right {
+    left: -232px; }
+    .all-manager .fr-br-main .com-role-container:nth-child(6n-1) .bottom-right .arrow, .all-manager .fr-br-main .com-role-container:nth-child(6n) .bottom-right .arrow {
+      left: 79%; } }
+
+/*# sourceMappingURL=allmgr.css.map */

@@ -1,0 +1,33 @@
+.c-panel .c-panel-hd {
+  position: relative;
+  height: 52px;
+  line-height: 49px;
+  letter-spacing: 0.2px;
+  color: #999999;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0 8px;
+  background: #fafafa;
+  border: 1px solid #e2e2e2;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center; }
+  .c-panel .c-panel-hd .pull-left {
+    -webkit-box-flex: 1;
+    flex: 1; }
+  .c-panel .c-panel-hd .c-panel-hd-tit {
+    color: #3e4957; }
+  .c-panel .c-panel-hd + .c-panel-bd {
+    border-top: 0; }
+.c-panel .c-panel-bd {
+  background-color: #fff;
+  position: relative;
+  padding: 15px;
+  border: 1px solid #e2e2e2; }
+  .c-panel .c-panel-bd.pn {
+    padding: 0; }
+
+/*# sourceMappingURL=c-panel.css.map */

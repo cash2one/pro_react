@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/**
+ * create by lxt
+ * 2016/7/13
+ * 弹窗v2样式
+ */
+/**
+ * create by lxt
+ * 2016/07/11
+ * 样式变量名
+ */
+.modal .modal-body .m-tip {
+  text-align: center; }
+  .modal .modal-body .m-tip label {
+    color: #999; }
+.modal .modal-body .m-msg {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 18px; }
+.modal .modal-body .m-warn {
+  color: #e9573f; }
+
+/*# sourceMappingURL=modal.css.map */

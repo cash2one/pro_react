@@ -1,0 +1,216 @@
+/**
+ * edit by lxt
+ * 2016/07/14
+ * 运营员管理v2样式
+ */
+@import '../var';
+.all-manager {
+	.panel-body{
+		position: relative;
+		.edit-form{
+			width: 400px;
+		    margin: 25px auto 35px;
+		}
+	}
+	.panel-footer {
+		.btnbox {
+			.btn + .btn{
+				margin-left: 8px;
+			}
+		}
+	}
+	.panel-line {
+		border-top: 1px solid $border-color-light;
+	    position: absolute;
+	    width: 100%;
+	    margin-left: -22px;
+	}
+	.fr-br-mid {
+		min-height: 52px;
+		padding: 10px 10px;
+		color: $gray-darker;
+		margin-left: -10px;
+		margin-right: -10px;
+		h5 {
+			display: inline-block;
+		    position: absolute;	
+		}
+	    .all-manager-page-warn {
+	    	position: absolute;
+	    	width: 100%;
+	    	margin-top: 4px;
+	    	margin-left: -22px;
+	    	margin-bottom: -10px;
+	    }
+	}
+	.fr-br-main {
+		min-height: 300px;
+		margin-right: -22px;
+		.com-role-container {
+			display: inline-block;
+			position: relative;
+			.ic {
+				height: 28px;
+				line-height: 26px;
+			}
+			.tag {
+				font-size: 14px;
+			    display: inline-block;
+			    border: 1px solid #dedede;
+			    color: $gray-darker;
+			    padding: 0px 11px;
+			    margin-right: 20px;
+			    cursor: pointer;
+			    margin-bottom: 10px;
+			    min-width: 155.5px;
+			    max-width: 155.5px;
+			    min-height: 30px;
+			    line-height: 28px;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			    text-align: center;
+				&:hover {
+					background-color: $gray-lighter;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+				&.active {
+					background-color: $blue-light2;
+					color: #fff;
+					.ic.c-corner:after {
+						border-top: 6px #fff solid;
+					}
+				}
+				.icon-xiala {
+					font-size: 14px;
+					color: $gray-light;
+					margin-left: 3px;
+				}
+			}
+			.webui-popover{
+				display: block;
+				top: 30px;
+				width: auto;
+				border: 1px solid #dedede;
+				border-radius: 4px;
+				.webui-popover-content {
+					padding: 0;
+					overflow: hidden;
+				}
+				&.bottom-right{
+					.arrow {
+						left: 21%;
+					}
+				}
+				&.none {
+					display: none;
+				}
+			}
+		}
+	}
+    .tooltipbox {
+        color: #fff;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 4px;
+        position: relative;
+        min-width: 365px;
+        .rolebox-top {
+        	padding: 10px 20px;
+        	max-width: 540px;
+        	text-align: left;
+        	margin-right: -10px;
+        	.role {
+        		display: inline-block;
+			    min-width: 78px;
+			    min-height: 30px;
+			    line-height: 28px;
+			    font-size: 14px !important;
+			    color: $gray-darker;
+			    text-align: center;
+			    padding: 1px 10px;
+			    cursor: pointer;
+			    margin-bottom: 5px;
+				&.active {
+					color: $gray-darker;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+				.c-cb {
+					margin-right: 5px;
+					margin-top: -3px;
+				}
+        	}
+        }
+        .rolebox-bottom {
+        	min-height: 40px;
+        	background-color: $white-dark;
+        	padding-right: 8px;
+        	.btnbox {
+        		color: #8c8c8c;
+        		font-size: 14px;
+    		    line-height: 40px;
+				.btn + .btn {
+					margin-left: 10px;
+				}
+        	}
+        }
+    }
+    .notebox {
+    	text-align: center;
+    	color: $gray-light;
+    	margin-top: 70px;
+    	margin-bottom: -15px;
+	    .warm {
+			min-width: 236px;
+			.tit, .txt {
+				line-height: 24px;
+			}
+			.tit {
+				vertical-align: top;
+			}
+			.txt {
+				display: inline-block;
+				vertical-align: top;
+				text-align: left;
+			}
+		}
+    }
+}
+.frame-body-v2 .frame-body-right .frame-body-container .fr-br-mid .page-error2 {
+	background: none;
+}
+.modal .modal-body .m-msg.fs14 {
+	font-size: 14px;
+}
+@media screen and (min-width: 1281px) {
+	.all-manager .fr-br-main {
+		.com-role-container:nth-child(6n-1), .com-role-container:nth-child(6n) {
+			.bottom-right {
+				left: -213px;
+				.arrow {
+					left: 79%;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 0px) and (max-width: 1280px) {
+	.all-manager .fr-br-main .com-role-container .tag {
+		min-width: 135.5px;
+		max-width: 135.5px;	
+	}
+	.all-manager .fr-br-main {
+		.com-role-container:nth-child(6n-1), .com-role-container:nth-child(6n) {
+			.bottom-right {
+				left: -232px;
+				.arrow {
+					left: 79%;
+				}
+			}
+		}
+	}
+}

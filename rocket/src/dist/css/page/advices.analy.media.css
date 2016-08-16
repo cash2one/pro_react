@@ -1,0 +1,151 @@
+.advices-analy-media {
+  max-width: 1094px;
+  margin-left: auto;
+  margin-right: auto; }
+  .advices-analy-media.loading {
+    -webkit-filter: blur(20px);
+    filter: blur(20px); }
+  .advices-analy-media > .head {
+    height: 48px;
+    line-height: 40px;
+    border-top: 8px #6c86a4 solid;
+    background-color: #fff; }
+    .advices-analy-media > .head .tit {
+      padding-left: 20px;
+      font-size: 14px; }
+  .advices-analy-media .data-part {
+    display: -webkit-box;
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px; }
+    .advices-analy-media .data-part .item {
+      -webkit-box-flex: 1;
+      flex: 1;
+      margin-left: 15px;
+      margin-right: 15px; }
+  .advices-analy-media .media-container {
+    height: 250px;
+    background: #f6f6f6 url(/img/media-data-bg.png) 0 0 no-repeat;
+    background-size: contain;
+    text-align: center; }
+    .advices-analy-media .media-container .key {
+      font-size: 23px;
+      color: #f6f6f6;
+      line-height: 90px; }
+    .advices-analy-media .media-container .val {
+      font-size: 46px;
+      color: #27303b;
+      line-height: 164px;
+      font-family: sans-serif; }
+      .advices-analy-media .media-container .val.warn {
+        color: #ff000c; }
+  .advices-analy-media .grid2 {
+    display: -webkit-box;
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px; }
+    .advices-analy-media .grid2 .item {
+      -webkit-box-flex: 1;
+      flex: 1;
+      margin-left: 15px;
+      margin-right: 15px; }
+  .advices-analy-media .media-chart-container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    flex-direction: column; }
+    .advices-analy-media .media-chart-container .hd {
+      background: #6c86a4 url(/img/media-hd.png) left center no-repeat;
+      height: 35px;
+      line-height: 35px;
+      padding-left: 37px; }
+      .advices-analy-media .media-chart-container .hd .tit {
+        font-size: 14px;
+        color: #fff;
+        font-family: arial; }
+    .advices-analy-media .media-chart-container .bd {
+      background-color: #f5f5f5;
+      -webkit-box-flex: 1;
+      flex: 1;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: vertical;
+      flex-direction: column; }
+      .advices-analy-media .media-chart-container .bd .chart {
+        -webkit-box-flex: 1;
+        flex: 1; }
+  .advices-analy-media .emot-charts .navis {
+    overflow: hidden; }
+    .advices-analy-media .emot-charts .navis .item {
+      float: left;
+      width: 90px;
+      height: 34px;
+      border: 1px #eee solid;
+      line-height: 34px;
+      text-align: center;
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+      margin-right: -1px;
+      cursor: pointer;
+      -webkit-transition-property: background;
+      -webkit-transition-duration: 0.1s;
+      -webkit-transition-timing-function: ease;
+      -webkit-transition-delay: 0;
+      -moz-transition-property: background;
+      -moz-transition-duration: 0.1s;
+      -moz-transition-timing-function: ease;
+      -moz-transition-delay: 0;
+      -o-transition-property: background;
+      -o-transition-duration: 0.1s;
+      -o-transition-timing-function: ease;
+      -o-transition-delay: 0;
+      -ms-transition-property: background;
+      -ms-transition-duration: 0.1s;
+      -ms-transition-timing-function: ease;
+      -ms-transition-delay: 0;
+      transition-property: background;
+      transition-duration: 0.1s;
+      transition-timing-function: ease;
+      transition-delay: 0; }
+      .advices-analy-media .emot-charts .navis .item:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: -2px;
+        left: 0;
+        height: 2px;
+        background-color: #ffcc67;
+        -webkit-transition-property: bottom;
+        -webkit-transition-duration: 0.4s;
+        -webkit-transition-timing-function: ease;
+        -webkit-transition-delay: 0;
+        -moz-transition-property: bottom;
+        -moz-transition-duration: 0.4s;
+        -moz-transition-timing-function: ease;
+        -moz-transition-delay: 0;
+        -o-transition-property: bottom;
+        -o-transition-duration: 0.4s;
+        -o-transition-timing-function: ease;
+        -o-transition-delay: 0;
+        -ms-transition-property: bottom;
+        -ms-transition-duration: 0.4s;
+        -ms-transition-timing-function: ease;
+        -ms-transition-delay: 0;
+        transition-property: bottom;
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+        transition-delay: 0; }
+      .advices-analy-media .emot-charts .navis .item .txt {
+        color: #7f7f7f;
+        font-size: 16px; }
+      .advices-analy-media .emot-charts .navis .item:hover, .advices-analy-media .emot-charts .navis .item.active {
+        background-color: #6c86a4; }
+        .advices-analy-media .emot-charts .navis .item:hover .txt, .advices-analy-media .emot-charts .navis .item.active .txt {
+          color: #fff; }
+        .advices-analy-media .emot-charts .navis .item:hover:after, .advices-analy-media .emot-charts .navis .item.active:after {
+          bottom: 0; }
+  .advices-analy-media .emot-charts .chart {
+    background-color: #f5f5f5; }
+
+/*# sourceMappingURL=advices.analy.media.css.map */

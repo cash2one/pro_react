@@ -1,0 +1,13 @@
+{
+  "name": "star-lord-ex",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cache-breaker": "^2.0.1"
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "index" : {
+        "analysis" : {
+            "analyzer" : {
+                "pinyin_analyzer" : {
+                    "tokenizer" : "my_pinyin",
+                    "filter" : ["word_delimiter","nGram"]
+                },
+                 "whole_tokenizer": {
+                      "type": "custom",
+                      "tokenizer": "whole_tokenizer"
+                }
+            },
+            "tokenizer" : {
+                "my_pinyin" : {
+                    "type" : "pinyin",
+                    "first_letter" : "prefix",
+                    "padding_char" : " "
+                },
+                "whole_tokenizer": {
+                    "type": "pattern",
+                    "group": 0,
+                    "pattern": "(.*)"
+                 }
+            }
+        }
+    }
+}

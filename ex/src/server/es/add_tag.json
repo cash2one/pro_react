@@ -1,0 +1,8 @@
+{
+    "script" : {
+        "inline": "ctx._source.tags -= tag",
+        "params" : {
+            "tag" :  "IT"
+        }
+    }
+}

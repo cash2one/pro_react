@@ -1,0 +1,20 @@
+
+{
+	"fields":["result_tags","link_title"],
+	"filter":{
+		"and":[{
+			"range" : {
+                        "crawler_at" : {
+                            "from" : "now-3M"
+                        }
+                    }
+		},
+		{
+            "term" : { "result_tags":"_warn_"  }
+        },
+        {
+        	"term" : {"result_tags":"_evt_19" }
+        }
+		]
+	}
+}

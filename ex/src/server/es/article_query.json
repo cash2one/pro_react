@@ -1,0 +1,17 @@
+{
+	"query":{
+		"multi_match":{
+			"query":"后福",
+			"fields":["link_title","content"]
+			}
+	},
+	"filter":{
+		"and":[{
+			"range":{
+				"crawler_at":{
+					"from":"now-7d"
+					}
+			}
+		}]
+	}
+}

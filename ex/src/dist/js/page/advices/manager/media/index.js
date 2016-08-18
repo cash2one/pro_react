@@ -89,12 +89,12 @@ define(['mods', paths.ex.page + '/advices/manager/media/rank.js', paths.rcn.util
 			var _this4 = this;
 
 			$('.frame-body-right').scrollTop(0);
-			this.setState({ page: page - 1 });
+			this.setState({ page: page - 1, loading: 1 });
 			rest.media.read('search', {
 				query: this.state.input,
 				page: page - 1
 			}).done(function (data) {
-				_this4.setState({ list: parse(data) });
+				_this4.setState({ list: parse(data), loading: 0 });
 			});
 		},
 		renderList: function renderList() {
@@ -113,6 +113,7 @@ define(['mods', paths.ex.page + '/advices/manager/media/rank.js', paths.rcn.util
 			var replace_r = new RegExp(this.state.input, 'gi');
 
 			function replace(str, key) {
+				return str;
 				if (!str || key == '') return str;
 				var reg = new RegExp(key, 'gi');
 				str = str.replace(reg, function (match) {
@@ -281,7 +282,7 @@ define(['mods', paths.ex.page + '/advices/manager/media/rank.js', paths.rcn.util
 					),
 					pagin()
 				),
-				React.createElement(Loader, { show: this.state.loading })
+				React.createElement(Loader, { fix: true, show: this.state.loading })
 			);
 		}
 	});

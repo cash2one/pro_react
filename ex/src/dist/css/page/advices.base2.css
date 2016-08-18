@@ -823,7 +823,7 @@
       position: absolute;
       right: 0;
       top: 0;
-      color: #dedede;
+      color: #999;
       cursor: pointer;
       display: none; }
       .art-list-item .content .oper-del:hover {

@@ -233,6 +233,7 @@ define(['mods'], function(mods){
 							<div className="infos">
 								<span className="info">{(data.publish_at || '').replace(/\:\d+$/, '')}</span>
 								<span className="info">{(data.from.platform_name && data.from.platform_name != '待定' && data.from.platform_name != '' ? data.from.platform_name + '：' : '') + data.from.media}</span>
+								<span className="info">{'相同文章：' + (data.similar_count || 0) + '篇'}</span>
 							</div>	
 							{this.renderOpers()}
 						</div>

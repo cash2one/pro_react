@@ -260,7 +260,7 @@ define([paths.rcn.util + '/rest.js', 'mods'], function(R, mods){
 				if(data.result == true){
 					dispatch({
 						type: SET_ARTICLES_COUNT,
-						count: data.count
+						count: query['uniq'] ? data.uniq_count : data.count
 					})
 				}
 			})
@@ -574,7 +574,8 @@ define([paths.rcn.util + '/rest.js', 'mods'], function(R, mods){
 					arts = getState()[prefix]['articles'];
 				if(uuid){
 					restEx.articles.update('depend', {
-						uuids: [uuid]
+						uuids: [uuid],
+						title_sign: arts[uuid].title_sign
 					}).done(data => {
 						dispatch(dependModalTog(false, ''));
 						if(data.result){

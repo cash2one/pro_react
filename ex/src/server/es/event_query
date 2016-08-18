@@ -1,0 +1,16 @@
+
+{
+	"filter":{
+		"and":[{
+			"range" : {
+                        "crawler_at" : {
+                            "from" : "now-3M"
+                        }
+                    }
+		},
+		{
+            "term" : { "result_tags":"_warn_"  }
+        }
+		]
+	}
+}

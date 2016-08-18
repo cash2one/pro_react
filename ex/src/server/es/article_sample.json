@@ -1,0 +1,25 @@
+{"index":{"_index":"co_mi_xiaomitv","_type":"article","_id":"3834263132809752236"}}
+{
+	"uuid":"3834263132809752236",
+	"url":"http://baiming.baijia.baidu.com/article/402885",
+	"hostname":"baiming.baijia.baidu.com",
+	"domain":"baidu.com",
+	"link_title":"华为妄言全球第一，然国内高端市场或面临滑铁卢",
+	"content":"以大嘴著称的华为消费者CEO余承东强调将在5年内成为全球第一大品牌，然而今年华为可能将在高端市场面临滑铁卢，原因是华为在营销和技术上均面临着三星<br /> ",
+	"slug":"以大嘴著",
+	"from":{
+		"media":"柏铭007",
+		"mid":"030100000007",
+		"tags":["互联网","科技","财经","经济","_cat_new"]
+	},
+	"author":"柏铭007",
+	"crawler_at":"2016-04-11 17:30:00",
+	"publish_at":"2016-04-11 17:03:00",
+	"emotion":{
+		"positive":0.4,
+		"negative":0.63
+		},
+	"title_sign":"xxxx-xxx-xx-xx",
+	"tags":["华为","三星","互联网"],
+	"result_tags":["_emo_negative"]
+}

@@ -1,0 +1,8 @@
+{
+	"query":{
+		"multi_match":{
+			"query":"日报",
+			"fields":["auth"]
+			}
+	}
+}

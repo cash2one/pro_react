@@ -4,7 +4,7 @@ define(function(){
 		'app': 'text',
 		// parse
 		'm': 10,
-		'uniq': false,
+		'uniq': true,
 		'result': 'all',
 		'ct': 1,
 		// not all

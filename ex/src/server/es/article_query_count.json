@@ -1,0 +1,16 @@
+{
+
+	"filter":{
+		"and":[{
+			"range" : {
+                        "crawler_at" : {
+                            "from" : "now-3M"
+                        }
+                    }
+		},
+		{
+            "term" : { "from.tags":"_cat_tv"  }
+        }
+		]
+	}
+}

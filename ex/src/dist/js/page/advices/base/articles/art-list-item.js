@@ -363,6 +363,11 @@ define(['mods'], function (mods) {
 								'span',
 								{ className: 'info' },
 								(data.from.platform_name && data.from.platform_name != '待定' && data.from.platform_name != '' ? data.from.platform_name + '：' : '') + data.from.media
+							),
+							React.createElement(
+								'span',
+								{ className: 'info' },
+								'相同文章：' + (data.similar_count || 0) + '篇'
 							)
 						),
 						this.renderOpers()

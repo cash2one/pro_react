@@ -82,12 +82,12 @@ define([
 		},
 		pageChangeHandler: function(page){
 			$('.frame-body-right').scrollTop(0);
-			this.setState({page: page - 1});
+			this.setState({page: page - 1, loading: 1});
 			rest.media.read('search', {
 				query: this.state.input,
 				page: page - 1
 			}).done(data => {
-				this.setState({list: parse(data)})
+				this.setState({list: parse(data), loading: 0})
 			});
 		},
 		renderList: function(){
@@ -101,6 +101,7 @@ define([
 			var replace_r = new RegExp(this.state.input, 'gi');
 
 			function replace(str, key){
+				return str;
 				if(!str || key == '') return str;
 				var reg = new RegExp(key, 'gi');
 				str = str.replace(reg, match => "<em>" + match + "</em>");
@@ -187,7 +188,7 @@ define([
 						</div>
 						{pagin()}
 					</div>
-					<Loader show={this.state.loading} />
+					<Loader fix show={this.state.loading} />
 				</div>
 			)
 		}

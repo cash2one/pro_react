@@ -1,0 +1,3 @@
+{
+	"script":"if( ctx._source.containsKey(\"reship\") ){ ctx._source.reship += 1; } else { ctx._source.reship = 1; }"
+}

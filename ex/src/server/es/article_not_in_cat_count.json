@@ -1,0 +1,14 @@
+{
+  "size":1000,
+  "filter":{
+      "bool":{
+      "must_not":{
+      "terms":
+        {
+          "from.tags":["_cat_network","_cat_print","_cat_new","_cat_weixin","_cat_weibo"]
+        }
+      }
+      }
+    }
+  
+}

@@ -1,0 +1,71 @@
+{
+    "media" : {
+        "properties" : {
+            "name" : {
+                "type" : "string",
+                "analyzer" : "ik_smart",
+                "fields" : {
+                  "primitive" : {
+                    "term_vector" : "with_positions_offsets",
+                    "analyzer" : "pinyin_analyzer",
+                    "type" : "string",
+                    "store" : true
+                  }
+                }
+            },
+            "mid" : {
+                "type" : "string",
+                "index":"not_analyzed"
+            },
+            "rank" : {
+                "type" : "long"
+            },
+            "influence" : {
+              "type" : "long"
+            },
+            "tags" : {            
+                "type" : "string",
+                "index":"not_analyzed"
+            },
+            "channel" : {            
+                "type" : "string",
+                "index":"not_analyzed"
+            },
+            "desc" : {
+                "type" : "string",
+                "analyzer" : "ik_smart"
+            },
+            "auth" : {
+                "type" : "string",
+                "analyzer" : "ik_smart"
+            },
+            "url" : {
+                "type" : "string",
+                "index":"not_analyzed"
+            },
+            "avater":{
+                "type" : "string",
+                "index":"not_analyzed"
+            },
+             "channel" : {            
+                "type" : "string",
+                "index":"not_analyzed"
+            },
+            "crawler" : {
+              "type":"object",
+              "properties" : {
+                "crawler_at" : {
+                    "index":"not_analyzed",
+                    "type":"date",
+                    "include_in_all":false,
+                    "format" : "yyyy-MM-dd HH:mm:ss"
+                  },
+                "crawler_status" : {
+                  "type" : "long",
+                  "include_in_all":false
+                }
+              }
+          }
+        }
+    }
+}

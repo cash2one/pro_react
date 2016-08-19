@@ -16,12 +16,12 @@ define(['mods', paths.ex.page + '/advices/base/articles/art-list-item.js'], func
 			$(this.refs.main).parents('.list-part').off('scroll');
 		},
 		render(){
-			const {data, reportSelectData, eventSelectData, queryParams, modifyEmotion, addWarn, ignoreWarn, addReport, removeReport, addEvent, removeEvent, putDepend} = this.props;
+			const {data, reportSelectData, eventSelectData, queryParams, modifyEmotion, addWarn, ignoreWarn, addReport, removeReport, addEvent, removeEvent, putDepend, togMore} = this.props;
 			return (
 				<ul className={"list-wrap" + (data.length > 0 ? '' : ' blank')} ref="main">
 					{
 						data.length > 0 ? data.map((dat, idx) => {
-							return <Item data={dat} key={idx} queryParams={queryParams} reportSelectData={reportSelectData} eventSelectData={eventSelectData} modifyEmotion={(emotion) => {modifyEmotion(dat.uuid, emotion)}} addWarn={addWarn} ignoreWarn={ignoreWarn} addReport={addReport} removeReport={removeReport} addEvent={addEvent} removeEvent={removeEvent} putDepend={putDepend} />
+							return <Item data={dat} key={idx} queryParams={queryParams} reportSelectData={reportSelectData} eventSelectData={eventSelectData} modifyEmotion={(emotion) => {modifyEmotion(dat.uuid, emotion)}} addWarn={addWarn} ignoreWarn={ignoreWarn} addReport={addReport} removeReport={removeReport} addEvent={addEvent} removeEvent={removeEvent} putDepend={putDepend} togMore={togMore} />
 						})
 						: <li className="list-blank-holder"><span>暂无数据</span></li>
 					}

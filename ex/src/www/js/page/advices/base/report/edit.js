@@ -246,6 +246,7 @@ define([
 						days: 30,
 						from: save.end_at
 					}).done(dat => {
+						dat = dat.data || {}
 						let company = {};
 
 						for(let k in dat){
@@ -334,7 +335,7 @@ define([
 					this.context.router.replace(loc);
 				}
 				this.context.router.push({
-					pathname: 'report/view',
+					pathname: '/co/' + paths.links.getCn() + '/reports/show',
 					query: {
 						uuid: data.uuid
 					}

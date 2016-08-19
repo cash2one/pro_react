@@ -2,7 +2,7 @@
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-define(['mods', paths.rcn.util + '/rest.js', paths.ex.page + '/advices/base/articles/actions.js', paths.ex.page + '/advices/base/articles/filters.js', paths.ex.page + '/advices/base/articles/while.js', paths.ex.page + '/advices/base/articles/order.js', paths.ex.page + '/advices/base/articles/article-list.js', paths.ex.page + '/advices/base/articles/search.js', paths.ex.page + '/advices/base/articles/cur-filter.js', paths.ex.page + '/advices/base/articles/time-filter.js', paths.rcn.comps + '/modal.js', paths.rcn.comps + '/loader.js', paths.rcn.lib + '/bootstrap.min.js'], function (mods, R, Actions, Filters, While, Order, ArtList, Search, CurFilter, Timefilter, Modal, Loader) {
+define(['mods', paths.rcn.util + '/rest.js', paths.ex.page + '/advices/base/articles/actions.js', paths.ex.page + '/advices/base/articles/filters.js', paths.ex.page + '/advices/base/articles/while.js', paths.ex.page + '/advices/base/articles/order.js', paths.ex.page + '/advices/base/articles/article-list.js', paths.ex.page + '/advices/base/articles/search.js', paths.ex.page + '/advices/base/articles/cur-filter.js', paths.ex.page + '/advices/base/articles/time-filter.js', paths.ex.page + '/advices/base/articles/more.js', paths.rcn.comps + '/modal.js', paths.rcn.comps + '/loader.js', paths.rcn.lib + '/bootstrap.min.js'], function (mods, R, Actions, Filters, While, Order, ArtList, Search, CurFilter, Timefilter, More, Modal, Loader) {
 	var React = mods.ReactPack.default;
 	var Pagination = mods.Pagination;
 	var connect = mods.ReactReduxPack.connect;
@@ -217,7 +217,8 @@ define(['mods', paths.rcn.util + '/rest.js', paths.ex.page + '/advices/base/arti
 							},
 							putDepend: function putDepend(uuid) {
 								$('#tipModal').modal('show');dispatch(dependModalTog(true, uuid));
-							} }),
+							},
+							togMore: this.props.togMore }),
 						React.createElement(
 							'div',
 							{ className: 'tc pagin-part' },
@@ -308,7 +309,7 @@ define(['mods', paths.rcn.util + '/rest.js', paths.ex.page + '/advices/base/arti
 			}),
 			reportSelectData: state.reportSelectData,
 			eventSelectData: state.eventSelectData,
-			articlesCount: state.articlesCount,
+			articlesCount: state.queryParams.uniq ? state.articlesUniqCount : state.articlesCount,
 			dependModalShow: state.dependModalShow,
 			loading: state.loading
 		};

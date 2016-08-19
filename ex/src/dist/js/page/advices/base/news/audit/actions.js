@@ -63,7 +63,8 @@ define([paths.rcn.util + '/rest.js', paths.ex.page + '/advices/base/articles/act
 			return rest.article.data.read('audit', $.extend({}, params, { count: true })).done(function (data) {
 				if (data.result) dispatch({
 					type: SET_ARTICLES_COUNT,
-					count: data.count
+					count: data.count,
+					uniqCount: data.uniq_count
 				});
 			});
 		}

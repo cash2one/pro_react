@@ -912,6 +912,11 @@
 				color: #ec6f5a;
 			}
 		}
+		.oper-yichu{
+			&:hover{
+				color: $blue-light2;
+			}
+		}
 	}
 }
 
@@ -1065,6 +1070,10 @@
 			.info{
 				display: inline-block;
 				margin-right: 30px;
+				&.link{
+					color: $blue-light;
+					cursor: pointer;
+				}
 			}
 		}
 		.opers{
@@ -1078,6 +1087,25 @@
 			font-size: 12px;
 			line-height: 1.7;
 			width: 101px;
+		}
+	}
+}
+
+.advices-base-more{
+	.con{
+		max-width: 1080px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.panel-bd{
+		padding-bottom: 70px;
+	}
+	.pagin-part{
+		padding-top: 30px;
+		.txt{
+			margin-left: 10px;
+			color: #c3c4c4;
+			font-size: 14px;
 		}
 	}
 }

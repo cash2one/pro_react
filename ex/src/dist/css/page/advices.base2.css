@@ -783,6 +783,8 @@
       color: #37bc9b; }
   .article-opers .oper .oper-warn.active, .article-opers .oper .oper-warn:hover {
     color: #ec6f5a; }
+  .article-opers .oper .oper-yichu:hover {
+    color: #3a99d8; }
 
 .art-list-item {
   background-color: #fff;
@@ -904,6 +906,9 @@
       .art-list-item .content .infos .info {
         display: inline-block;
         margin-right: 30px; }
+        .art-list-item .content .infos .info.link {
+          color: #2c97de;
+          cursor: pointer; }
     .art-list-item .content .opers {
       float: right;
       margin-top: -4px;
@@ -914,3 +919,18 @@
       font-size: 12px;
       line-height: 1.7;
       width: 101px; }
+
+.advices-base-more .con {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.advices-base-more .panel-bd {
+  padding-bottom: 70px; }
+
+.advices-base-more .pagin-part {
+  padding-top: 30px; }
+  .advices-base-more .pagin-part .txt {
+    margin-left: 10px;
+    color: #c3c4c4;
+    font-size: 14px; }

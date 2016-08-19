@@ -100,7 +100,7 @@ define(function(){
 		}
 	}
 
-	var v2path = '/manager#/allmgr|manager#/company|manager#/manager|manager#/viewer|setting/personal|analy#/profile|analy#/media|analy#/event|manager-tag#/tag|manager-mid#/media|base#/event|base#/warn|base#/news/audit|base#/report|base#/article|index-base#/info|/big-data#/brand';
+	var v2path = '/manager#/allmgr|manager#/company|manager#/manager|manager#/viewer|setting/personal|analy#/profile|analy#/media|analy#/event|manager-tag#/tag|manager-mid#/media|base#|index-base#/info|/big-data#/brand';
 
 	function bread(path){
 		var res = [], cur = map[path];

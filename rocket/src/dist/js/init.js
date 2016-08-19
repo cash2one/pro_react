@@ -31,7 +31,7 @@
 //加载字体文件
 ;(function () {
 	var link = $('<link></link>', {
-		href: 'http://at.alicdn.com/t/font_1470213061_1239262.css',
+		href: 'http://at.alicdn.com/t/font_1471419673_5847943.css',
 		rel: 'stylesheet'
 	});
 	var fav = $('<link></link>', {

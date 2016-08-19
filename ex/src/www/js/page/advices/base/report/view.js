@@ -225,6 +225,7 @@ define([
 						days: 30,
 						from: save.end_at
 					}).done(dat => {
+						dat = dat.data || {};
 						let company = {};
 
 						for(let k in dat){

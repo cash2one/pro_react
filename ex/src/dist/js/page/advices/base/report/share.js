@@ -255,6 +255,7 @@ require(['mods', paths.ex.util + '/parse.js', paths.ex.page + '/advices/base/rep
 							from: save.end_at,
 							code: code
 						}).done(function (dat) {
+							dat = dat.data || {};
 							var company = {};
 
 							for (var k in dat) {

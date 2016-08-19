@@ -14,6 +14,7 @@ define([paths.ex.page + '/advices/base/articles/reducers.js'], function(gen){
 			reportSelectData: R.reportSelectData(state.reportSelectData, action),
 			eventSelectData: R.eventSelectData(state.eventSelectData, action),
 			articlesCount: R.articlesCount(state.articlesCount, action),
+			articlesUniqCount: R.articlesUniqCount(state.articlesUniqCount, action),
 			dependModalShow: R.dependModalShow(state.dependModalShow, action),
 			dependUuid: R.dependUuid(state.dependUuid, action),
 			loading: R.loading(state.loading, action)

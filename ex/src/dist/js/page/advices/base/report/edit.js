@@ -275,6 +275,7 @@ define(['mods', paths.rcn.util + '/rest.js', paths.ex.page + '/advices/base/repo
 							days: 30,
 							from: save.end_at
 						}).done(function (dat) {
+							dat = dat.data || {};
 							var company = {};
 
 							for (var k in dat) {
@@ -369,7 +370,7 @@ define(['mods', paths.rcn.util + '/rest.js', paths.ex.page + '/advices/base/repo
 					_this4.context.router.replace(loc);
 				}
 				_this4.context.router.push({
-					pathname: 'report/view',
+					pathname: '/co/' + paths.links.getCn() + '/reports/show',
 					query: {
 						uuid: data.uuid
 					}

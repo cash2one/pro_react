@@ -132,9 +132,31 @@ define(['mods'], function(mods){
 				return <span className="tag tag-warn"><span>预警文章</span><span className="cancel" onClick={this.ignoreWarn} /></span>
 		},
 		renderOpers(){
-			const {data, reportSelectData, eventSelectData, queryParams, auditMode} = this.props;
+			const {data, reportSelectData, eventSelectData, queryParams, auditMode, moreMode} = this.props;
 			var node;
-			if(!auditMode){
+			if(auditMode){
+				node = (
+					<div className="opers article-opers">
+						<div className="oper" onClick={() => this.props.modifyEmotion('positive')} >
+							<span className={"iconfont icon-xiaolian pos" + (data.emotion == 'manual_positive' ? ' manual' : '')} title="正面"></span>
+						</div>
+						<div className="oper" onClick={() => this.props.modifyEmotion('neutral')} >
+							<span className={"iconfont icon-wugan neu" + (data.emotion == 'manual_neutral' ? ' manual' : '')} title="中立"></span>
+						</div>
+						<div className="oper" onClick={() => this.props.modifyEmotion('negative')} >
+							<span className={"iconfont icon-bumanyi01 neg" + (data.emotion == 'manual_negative' ? ' manual' : '')} title="负面"></span>
+						</div>
+					</div>
+				)
+			} else if(moreMode){
+				node = (
+					<div className="opers article-opers">
+						<div className="oper" onClick={this.props.clickYichu}>
+							<span className="iconfont icon-yichu2 oper-yichu"></span>
+						</div>
+					</div>
+				)
+			} else {
 				node = (
 					<div className="opers article-opers">
 						<div className="oper">
@@ -184,25 +206,11 @@ define(['mods'], function(mods){
 						</div>
 					</div>
 				)
-			} else {
-				node = (
-					<div className="opers article-opers">
-						<div className="oper" onClick={() => this.props.modifyEmotion('positive')} >
-							<span className={"iconfont icon-xiaolian pos" + (data.emotion == 'manual_positive' ? ' manual' : '')} title="正面"></span>
-						</div>
-						<div className="oper" onClick={() => this.props.modifyEmotion('neutral')} >
-							<span className={"iconfont icon-wugan neu" + (data.emotion == 'manual_neutral' ? ' manual' : '')} title="中立"></span>
-						</div>
-						<div className="oper" onClick={() => this.props.modifyEmotion('negative')} >
-							<span className={"iconfont icon-bumanyi01 neg" + (data.emotion == 'manual_negative' ? ' manual' : '')} title="负面"></span>
-						</div>
-					</div>
-				)
 			}
 			return node
 		},
 		render(){
-			const {data, reportSelectData, eventSelectData, queryParams} = this.props;
+			const {data, reportSelectData, eventSelectData, queryParams, togMore, moreMode} = this.props;
 			return (
 				<li className={"art-list-item has-img"}>
 					{
@@ -233,7 +241,11 @@ define(['mods'], function(mods){
 							<div className="infos">
 								<span className="info">{(data.publish_at || '').replace(/\:\d+$/, '')}</span>
 								<span className="info">{(data.from.platform_name && data.from.platform_name != '待定' && data.from.platform_name != '' ? data.from.platform_name + '：' : '') + data.from.media}</span>
-								<span className="info">{'相同文章：' + (data.similar_count || 0) + '篇'}</span>
+								{
+									data.similar_count == 1 || moreMode ? null : (
+										<span className={"info" + (togMore ? ' link' : '')} onClick={() => togMore && togMore(data.title_sign, queryParams)}>{'相同文章：' + +data.similar_count + '篇'}</span>
+									)
+								}
 							</div>	
 							{this.renderOpers()}
 						</div>

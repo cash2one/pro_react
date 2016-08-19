@@ -29,6 +29,7 @@ define(['mods', paths.ex.page + '/advices/base/articles/art-list-item.js'], func
 			var addEvent = _props.addEvent;
 			var removeEvent = _props.removeEvent;
 			var putDepend = _props.putDepend;
+			var togMore = _props.togMore;
 
 			return React.createElement(
 				'ul',
@@ -36,7 +37,7 @@ define(['mods', paths.ex.page + '/advices/base/articles/art-list-item.js'], func
 				data.length > 0 ? data.map(function (dat, idx) {
 					return React.createElement(Item, { data: dat, key: idx, queryParams: queryParams, reportSelectData: reportSelectData, eventSelectData: eventSelectData, modifyEmotion: function modifyEmotion(emotion) {
 							_modifyEmotion(dat.uuid, emotion);
-						}, addWarn: addWarn, ignoreWarn: ignoreWarn, addReport: addReport, removeReport: removeReport, addEvent: addEvent, removeEvent: removeEvent, putDepend: putDepend });
+						}, addWarn: addWarn, ignoreWarn: ignoreWarn, addReport: addReport, removeReport: removeReport, addEvent: addEvent, removeEvent: removeEvent, putDepend: putDepend, togMore: togMore });
 				}) : React.createElement(
 					'li',
 					{ className: 'list-blank-holder' },

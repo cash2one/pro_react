@@ -1,5 +1,9 @@
 'use strict';
 
+/**
+ * 移动端指数信息展示页
+ */
+
 $(function () {
 
 	$('.progressbar').css('width', '10%');

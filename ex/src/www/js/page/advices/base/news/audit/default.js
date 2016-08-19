@@ -1,6 +1,6 @@
 define(function(){
 	return {
-		date: 'all',
+		date: 'yesterday',
 		beg: 0,
 		m: 10,
 		audit: false

@@ -14,6 +14,7 @@ define([paths.ex.page + '/advices/base/articles/reducers.js', paths.ex.page + '/
 			defaultParams: R.defaultParams(state.defaultParams, action),
 			articles: R.articles(state.articles, action),
 			articlesCount: R.articlesCount(state.articlesCount, action),
+			articlesUniqCount: R.articlesUniqCount(state.articlesUniqCount, action),
 			loading: R.loading(state.loading, action),
 			dependUuid: R.dependUuid(state.dependUuid, action)
 		};

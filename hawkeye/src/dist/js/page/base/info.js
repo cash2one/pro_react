@@ -171,65 +171,71 @@
 				k: ids,
 				days: days
 			};
-			rest.keywords.read('data', opt).done(function (keysTimeData) {
+			rest.keywords.read('data', opt).done(function (data) {
 
-				var mark_num_day = 0;
+				if (data.result) {
 
-				$.each(keysTimeData, function (index, el) {
-					if (el.day !== '') {
-						mark_num_day++;
+					var keysTimeData = data.data;
+					// var mark_num_day = 0;
+
+					// $.each(keysTimeData,function(index, el) {
+					// 	if(el.day !== '') {
+					// 		mark_num_day++;
+					// 	}
+					// });
+
+					if (keysTimeData == null) {
+						//所选关键字都无数据
+
+						_this2.setState({ noData: 1 });
+					} else {
+
+						_this2.setState({ noData: 2 });
+
+						_this2.firstRenderChartData();
+
+						var temp, keyId;
+
+						var keysCheckData = [];
+
+						for (var i = 0; i < ids.length; i++) {
+							keyId = ids[i];
+
+							var key_name = _this2.state.keyIdMapName[keyId];
+
+							temp = {
+								id: keyId,
+								color: cols[i],
+								keyword: key_name,
+								baidu: keysTimeData[keyId].baidu,
+								data_360: keysTimeData[keyId].data_360,
+								sina: keysTimeData[keyId].sina,
+								youku: keysTimeData[keyId].youku,
+								day: keysTimeData[keyId].day
+							};
+
+							if (!keysTimeData[keyId].baidu) {
+								temp.baidu = [];
+							}
+							if (!keysTimeData[keyId].data_360) {
+								temp.data_360 = [];
+							}
+							if (!keysTimeData[keyId].sina) {
+								temp.sina = [];
+							}
+							if (!keysTimeData[keyId].youku) {
+								temp.youku = [];
+							}
+
+							keysCheckData[i] = temp;
+						}
+
+						_this2.setState({ keysCheckData: keysCheckData, keysTimeData: keysTimeData, loadingIn: false });
+
+						_this2.renderChartData(keysCheckData, days);
 					}
-				});
-
-				if (mark_num_day == 0) {
-					//所选关键字都无数据
-
-					_this2.setState({ noData: 1 });
 				} else {
-
-					_this2.setState({ noData: 2 });
-
-					_this2.firstRenderChartData();
-
-					var temp, keyId;
-
-					var keysCheckData = [];
-
-					for (var i = 0; i < ids.length; i++) {
-						keyId = ids[i];
-
-						var key_name = _this2.state.keyIdMapName[keyId];
-
-						temp = {
-							id: keyId,
-							color: cols[i],
-							keyword: key_name,
-							baidu: keysTimeData[keyId].baidu,
-							data_360: keysTimeData[keyId].data_360,
-							sina: keysTimeData[keyId].sina,
-							youku: keysTimeData[keyId].youku,
-							day: keysTimeData[keyId].day
-						};
-
-						if (!keysTimeData[keyId].baidu) {
-							temp.baidu = [];
-						}
-						if (!keysTimeData[keyId].data_360) {
-							temp.data_360 = [];
-						}
-						if (!keysTimeData[keyId].sina) {
-							temp.sina = [];
-						}
-						if (!keysTimeData[keyId].youku) {
-							temp.youku = [];
-						}
-
-						keysCheckData[i] = temp;
-					}
-
-					_this2.setState({ keysCheckData: keysCheckData, keysTimeData: keysTimeData, loadingIn: false });
-
-					_this2.renderChartData(keysCheckData, days);
+					console.log(keysTimeData.msg);
 				}
 			});
 		},
@@ -292,7 +298,7 @@
 		},
 
 		renderChartData_: function renderChartData_(chartsTit, legend_arr, color_arr, chartXData, chartData, chartId, i) {
-
+			// debugger
 			var self = this;
 
 			var myChart = 'myChart' + (i + 1);
@@ -335,6 +341,7 @@
 				color: color_arr,
 				xAxis: {
 					boundaryGap: false,
+					// data: ["2016-07-20", "2016-07-21", "2016-07-22", "2016-07-23", "2016-07-24", "2016-07-25", "2016-07-26", "2016-07-27", "2016-07-28", "2016-07-29", "2016-07-30", "2016-07-31", "2016-08-01", "2016-08-02", "2016-08-03", "2016-08-04", "2016-08-05", "2016-08-06", "2016-08-07", "2016-08-08", "2016-08-09", "2016-08-10", "2016-08-11", "2016-08-12", "2016-08-13", "2016-08-14", "2016-08-15", "2016-08-16", "2016-08-17", "2016-08-18"],
 					data: chartXData,
 					axisLine: {
 						lineStyle: {
@@ -390,10 +397,10 @@
 						inside: false
 					}
 				},
-				series: []
+				series: chartData
 			};
 
-			option.series = chartData;
+			// option.series = chartData;
 
 			self[myChart].setOption(option);
 
@@ -408,13 +415,18 @@
 			var ydata_temp,
 			    ydata_arr = [];
 
-			for (var z = 0; z < keysCheckData.day.length; z++) {
+			if (keysCheckData.day !== '') {
+				for (var z = 0; z < keysCheckData.day.length; z++) {
 
-				ydata_temp = keysCheckData[dataTypeItem][z];
+					ydata_temp = keysCheckData[dataTypeItem][z];
 
-				ydata_arr.push(ydata_temp);
+					ydata_arr.push(ydata_temp);
+				}
+			} else {
+				ydata_arr = [];
 			}
 
+			console.log(ydata_arr);
 			return ydata_arr;
 		},
 
@@ -544,40 +556,48 @@
 			};
 			var keyword_name = this.state.keyIdMapName[keyId];
 
-			rest.keywords.read('data', opt).done(function (keysTimeData) {
-				_this3.setState({ keysTimeData: keysTimeData });
+			rest.keywords.read('data', opt).done(function (data) {
 
-				var mark_num_day = 0;
+				if (data.result) {
 
-				$.each(keysTimeData, function (index, el) {
-					if (el.day !== '') {
-						mark_num_day++;
+					var keysTimeData = data.data;
+
+					_this3.setState({ keysTimeData: keysTimeData });
+
+					var mark_num_day = 0;
+
+					$.each(keysTimeData, function (index, el) {
+						if (el.day !== '') {
+							mark_num_day++;
+						}
+					});
+
+					if (mark_num_day == 0) {
+						//所选关键字都无数据
+
+						_this3.setState({ noData: 1 });
+					} else {
+
+						_this3.setState({ noData: 2 });
+
+						var keyCheck_temp = {
+							id: keyId,
+							color: col_temp,
+							keyword: keyword_name,
+							baidu: keysTimeData[keyId].baidu,
+							data_360: keysTimeData[keyId].data_360,
+							sina: keysTimeData[keyId].sina,
+							youku: keysTimeData[keyId].youku,
+							day: keysTimeData[keyId].day
+						};
+
+						keysCheckData.push(keyCheck_temp);
+						_this3.setState({ keysCheckData: keysCheckData });
+
+						_this3.renderChartData(keysCheckData, days);
 					}
-				});
-
-				if (mark_num_day == 0) {
-					//所选关键字都无数据
-
-					_this3.setState({ noData: 1 });
 				} else {
-
-					_this3.setState({ noData: 2 });
-
-					var keyCheck_temp = {
-						id: keyId,
-						color: col_temp,
-						keyword: keyword_name,
-						baidu: keysTimeData[keyId].baidu,
-						data_360: keysTimeData[keyId].data_360,
-						sina: keysTimeData[keyId].sina,
-						youku: keysTimeData[keyId].youku,
-						day: keysTimeData[keyId].day
-					};
-
-					keysCheckData.push(keyCheck_temp);
-					_this3.setState({ keysCheckData: keysCheckData });
-
-					_this3.renderChartData(keysCheckData, days);
+					console.log(data.msg);
 				}
 			});
 		},

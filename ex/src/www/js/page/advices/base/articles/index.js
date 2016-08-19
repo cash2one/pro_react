@@ -9,10 +9,11 @@ define([
 	paths.ex.page + '/advices/base/articles/search.js',
 	paths.ex.page + '/advices/base/articles/cur-filter.js',
 	paths.ex.page + '/advices/base/articles/time-filter.js',
+	paths.ex.page + '/advices/base/articles/more.js',
 	paths.rcn.comps + '/modal.js',
 	paths.rcn.comps + '/loader.js',
 	paths.rcn.lib + '/bootstrap.min.js'
-], function(mods, R, Actions, Filters, While, Order, ArtList, Search, CurFilter, Timefilter, Modal, Loader){
+], function(mods, R, Actions, Filters, While, Order, ArtList, Search, CurFilter, Timefilter, More, Modal, Loader){
 	var React = mods.ReactPack.default,
 		Pagination = mods.Pagination,
 		{connect} = mods.ReactReduxPack,
@@ -147,7 +148,8 @@ define([
 								removeReport={(uuid, reportId) => dispatch(removeReport(uuid, reportId))}
 								addEvent={(uuid, event) => dispatch(addEvent(uuid, event))}
 								removeEvent={(uuid, eventId) => dispatch(removeEvent(uuid, eventId))}
-								putDepend={uuid => {$('#tipModal').modal('show');dispatch(dependModalTog(true, uuid))}} />
+								putDepend={uuid => {$('#tipModal').modal('show');dispatch(dependModalTog(true, uuid))}}
+								togMore={this.props.togMore} />
 							<div className="tc pagin-part">
 								{
 									articlesCount > queryParams.m ? <Pagination current={Math.floor(+queryParams.beg / +queryParams.m) + 1} total={articlesCount > 99 * +queryParams.m ? 99 * +queryParams.m : articlesCount} pageSize={queryParams.m} className={"v2 ib vm mb5"} onChange={page => syncPage(page)} /> : null
@@ -201,7 +203,7 @@ define([
 			articles: Object.keys(state.articles).map(key => state.articles[key]).sort((a, b) => a['__i'] - b['__i']),
 			reportSelectData: state.reportSelectData,
 			eventSelectData: state.eventSelectData,
-			articlesCount: state.articlesCount,
+			articlesCount: state.queryParams.uniq ? state.articlesUniqCount : state.articlesCount,
 			dependModalShow: state.dependModalShow,
 			loading: state.loading
 		}

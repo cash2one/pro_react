@@ -247,6 +247,20 @@ define([paths.ex.page + '/advices/base/articles/actions.js', paths.ex.page + '/a
 			}
 		}
 
+		function articlesUniqCount() {
+			var state = arguments.length <= 0 || arguments[0] === undefined ? 0 : arguments[0];
+			var action = arguments[1];
+
+			switch (action.type) {
+				case SET_ARTICLES_COUNT:
+					return action.uniqCount || 0;
+				case DELETE_ARTICLE:
+					return state - 1;
+				default:
+					return state;
+			}
+		}
+
 		function dependModalShow() {
 			var state = arguments.length <= 0 || arguments[0] === undefined ? false : arguments[0];
 			var action = arguments[1];
@@ -294,6 +308,7 @@ define([paths.ex.page + '/advices/base/articles/actions.js', paths.ex.page + '/a
 			defaultParams: defaultParams,
 			articles: articles,
 			articlesCount: articlesCount,
+			articlesUniqCount: articlesUniqCount,
 			reportSelectData: reportSelectData,
 			eventSelectData: eventSelectData,
 			dependModalShow: dependModalShow,

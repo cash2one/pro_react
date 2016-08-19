@@ -163,9 +163,46 @@ define(['mods'], function (mods) {
 			var eventSelectData = _props.eventSelectData;
 			var queryParams = _props.queryParams;
 			var auditMode = _props.auditMode;
+			var moreMode = _props.moreMode;
 
 			var node;
-			if (!auditMode) {
+			if (auditMode) {
+				node = React.createElement(
+					'div',
+					{ className: 'opers article-opers' },
+					React.createElement(
+						'div',
+						{ className: 'oper', onClick: function onClick() {
+								return _this3.props.modifyEmotion('positive');
+							} },
+						React.createElement('span', { className: "iconfont icon-xiaolian pos" + (data.emotion == 'manual_positive' ? ' manual' : ''), title: '正面' })
+					),
+					React.createElement(
+						'div',
+						{ className: 'oper', onClick: function onClick() {
+								return _this3.props.modifyEmotion('neutral');
+							} },
+						React.createElement('span', { className: "iconfont icon-wugan neu" + (data.emotion == 'manual_neutral' ? ' manual' : ''), title: '中立' })
+					),
+					React.createElement(
+						'div',
+						{ className: 'oper', onClick: function onClick() {
+								return _this3.props.modifyEmotion('negative');
+							} },
+						React.createElement('span', { className: "iconfont icon-bumanyi01 neg" + (data.emotion == 'manual_negative' ? ' manual' : ''), title: '负面' })
+					)
+				);
+			} else if (moreMode) {
+				node = React.createElement(
+					'div',
+					{ className: 'opers article-opers' },
+					React.createElement(
+						'div',
+						{ className: 'oper', onClick: this.props.clickYichu },
+						React.createElement('span', { className: 'iconfont icon-yichu2 oper-yichu' })
+					)
+				);
+			} else {
 				node = React.createElement(
 					'div',
 					{ className: 'opers article-opers' },
@@ -269,32 +306,6 @@ define(['mods'], function (mods) {
 						React.createElement('span', { className: "iconfont icon-jinjimoshi oper-warn" + (data.warn != 'none' && data.warn != '' && data.warn ? ' active' : ''), title: '添加预警', onClick: this.addWarn })
 					)
 				);
-			} else {
-				node = React.createElement(
-					'div',
-					{ className: 'opers article-opers' },
-					React.createElement(
-						'div',
-						{ className: 'oper', onClick: function onClick() {
-								return _this3.props.modifyEmotion('positive');
-							} },
-						React.createElement('span', { className: "iconfont icon-xiaolian pos" + (data.emotion == 'manual_positive' ? ' manual' : ''), title: '正面' })
-					),
-					React.createElement(
-						'div',
-						{ className: 'oper', onClick: function onClick() {
-								return _this3.props.modifyEmotion('neutral');
-							} },
-						React.createElement('span', { className: "iconfont icon-wugan neu" + (data.emotion == 'manual_neutral' ? ' manual' : ''), title: '中立' })
-					),
-					React.createElement(
-						'div',
-						{ className: 'oper', onClick: function onClick() {
-								return _this3.props.modifyEmotion('negative');
-							} },
-						React.createElement('span', { className: "iconfont icon-bumanyi01 neg" + (data.emotion == 'manual_negative' ? ' manual' : ''), title: '负面' })
-					)
-				);
 			}
 			return node;
 		},
@@ -306,6 +317,8 @@ define(['mods'], function (mods) {
 			var reportSelectData = _props2.reportSelectData;
 			var eventSelectData = _props2.eventSelectData;
 			var queryParams = _props2.queryParams;
+			var togMore = _props2.togMore;
+			var moreMode = _props2.moreMode;
 
 			return React.createElement(
 				'li',
@@ -364,10 +377,12 @@ define(['mods'], function (mods) {
 								{ className: 'info' },
 								(data.from.platform_name && data.from.platform_name != '待定' && data.from.platform_name != '' ? data.from.platform_name + '：' : '') + data.from.media
 							),
-							React.createElement(
+							data.similar_count == 1 || moreMode ? null : React.createElement(
 								'span',
-								{ className: 'info' },
-								'相同文章：' + (data.similar_count || 0) + '篇'
+								{ className: "info" + (togMore ? ' link' : ''), onClick: function onClick() {
+										return togMore && togMore(data.title_sign, queryParams);
+									} },
+								'相同文章：' + +data.similar_count + '篇'
 							)
 						),
 						this.renderOpers()

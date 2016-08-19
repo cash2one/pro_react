@@ -60,7 +60,8 @@ define([paths.rcn.util + '/rest.js', paths.ex.page + '/advices/base/articles/act
 				if(data.result)
 					dispatch({
 						type: SET_ARTICLES_COUNT,
-						count: data.count
+						count: data.count,
+						uniqCount: data.uniq_count
 					})
 			})
 		}

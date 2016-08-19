@@ -198,6 +198,17 @@ define([paths.ex.page + '/advices/base/articles/actions.js', paths.ex.page + '/a
 			}
 		}
 
+		function articlesUniqCount(state = 0, action){
+			switch(action.type){
+				case SET_ARTICLES_COUNT:
+					return action.uniqCount || 0;
+				case DELETE_ARTICLE:
+					return state - 1;
+				default:
+					return state
+			}
+		}
+
 		function dependModalShow(state = false, action){
 			switch(action.type){
 				case DEPEND_MODAL_SHOW:
@@ -236,6 +247,7 @@ define([paths.ex.page + '/advices/base/articles/actions.js', paths.ex.page + '/a
 			defaultParams,
 			articles,
 			articlesCount,
+			articlesUniqCount,
 			reportSelectData,
 			eventSelectData,
 			dependModalShow,

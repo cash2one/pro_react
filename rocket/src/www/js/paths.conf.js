@@ -53,6 +53,11 @@
 		relink: {
 			login: rcn_web + '/login',
 			company: rcn_web + '/manager#/company'
+		},
+		links: {
+			allArticles: rcn_web + '/base#/news/all',
+			warn: rcn_web + '/base#/warn/store',
+			eventDetail: rcn_web + '/base#/event/detail'
 		}
 	}
 })();

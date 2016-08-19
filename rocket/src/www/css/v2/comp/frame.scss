@@ -25,6 +25,15 @@
 			margin-left: 7px;
 			margin-right: 16px;
 		}
+		&:after{
+			content: "";
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 100%;
+			height: 4px;
+			background-image:linear-gradient(to top, rgba(0, 0, 0, 0), #212a33);
+		}
 	}
 	.frame-header-right{
 		z-index: 10;

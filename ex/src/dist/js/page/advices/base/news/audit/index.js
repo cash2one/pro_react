@@ -2,7 +2,7 @@
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-define(['mods', paths.rcn.util + '/rest.js', paths.rcn.comps + '/modal.js', paths.rcn.comps + '/loader.js', paths.ex.page + '/advices/base/news/audit/link.js', paths.ex.page + '/advices/base/news/audit/actions.js', paths.ex.page + '/advices/base/report/select.js', paths.ex.page + '/advices/base/articles/art-list-item.js'], function (mods, Rest, Modal, Loader, L, Actions, Select, Item) {
+define(['mods', paths.rcn.util + '/rest.js', paths.rcn.comps + '/modal.js', paths.rcn.comps + '/loader.js', paths.ex.page + '/advices/base/news/audit/link.js', paths.ex.page + '/advices/base/news/audit/actions.js', paths.ex.page + '/advices/base/report/select.js', paths.ex.page + '/advices/base/articles/art-list-item.js', paths.ex.page + '/advices/base/articles/more.js'], function (mods, Rest, Modal, Loader, L, Actions, Select, Item, More) {
 	var React = mods.ReactPack.default;
 	var Pagination = mods.Pagination;
 	var connect = mods.ReactReduxPack.connect;
@@ -31,6 +31,7 @@ define(['mods', paths.rcn.util + '/rest.js', paths.rcn.comps + '/modal.js', path
 			var articles = _props.articles;
 			var queryParams = _props.queryParams;
 			var dispatch = _props.dispatch;
+			var togMore = _props.togMore;
 
 			var node;
 			node = articles.length > 0 ? React.createElement(
@@ -39,7 +40,7 @@ define(['mods', paths.rcn.util + '/rest.js', paths.rcn.comps + '/modal.js', path
 				articles.map(function (data, idx) {
 					return React.createElement(Item, { auditMode: true, modifyEmotion: function modifyEmotion(emot) {
 							return dispatch(_modifyEmotion(data.uuid, emot));
-						}, data: data, queryParams: queryParams, putDepend: function putDepend(uuid) {
+						}, data: data, queryParams: queryParams, togMore: togMore, putDepend: function putDepend(uuid) {
 							$('#tipModal').modal('show');dispatch(setDependUuid(uuid));
 						} });
 				})
@@ -161,6 +162,7 @@ define(['mods', paths.rcn.util + '/rest.js', paths.rcn.comps + '/modal.js', path
 			var defaultParams = _props5.defaultParams;
 			var dispatch = _props5.dispatch;
 			var loading = _props5.loading;
+			var articlesUniqCount = _props5.articlesUniqCount;
 
 			return React.createElement(
 				'div',
@@ -224,7 +226,7 @@ define(['mods', paths.rcn.util + '/rest.js', paths.rcn.comps + '/modal.js', path
 						React.createElement(
 							'div',
 							{ className: 'tc pagin-part' },
-							articlesCount > queryParams.m ? React.createElement(Pagination, { current: Math.floor(+queryParams.beg / +queryParams.m) + 1, total: articlesCount > 99 * +queryParams.m ? 99 * +queryParams.m : articlesCount, pageSize: queryParams.m, className: "v2 ib vm mb5", onChange: function onChange(page) {
+							articlesUniqCount > queryParams.m ? React.createElement(Pagination, { current: Math.floor(+queryParams.beg / +queryParams.m) + 1, total: articlesUniqCount > 99 * +queryParams.m ? 99 * +queryParams.m : articlesUniqCount, pageSize: queryParams.m, className: "v2 ib vm mb5", onChange: function onChange(page) {
 									return _this3.syncPage(page);
 								} }) : null
 						)
@@ -262,6 +264,7 @@ define(['mods', paths.rcn.util + '/rest.js', paths.rcn.comps + '/modal.js', path
 				return a['__i'] - b['__i'];
 			}),
 			articlesCount: state.articlesCount,
+			articlesUniqCount: state.articlesUniqCount,
 			loading: state.loading
 		};
 	}

@@ -11,6 +11,7 @@ use App\Http\Api;
 
 use Exception;
 use Elasticsearch\Common\Exceptions\ServerErrorResponseException;
+use Illuminate\Support\Facades\Log;
 
 class ArticleController extends Controller
 {
@@ -1394,6 +1395,52 @@ class ArticleController extends Controller
 
         $result['result'] = true;
         $result['data'] = $data;
+
+        return response()->json($result);
+
+    }
+
+    //移除相同文章
+    public function putSameData(){
+
+        $uuids = Input::get('uuids');
+        $title_sign = Input::get('title_sign');
+
+        if(!is_array($uuids) || empty($title_sign)){
+            $result['result'] = false;
+            $result['msg'] = '参数错误';
+            return response()->json($result);
+        }
+
+        foreach ($uuids as $uuid){
+            $es_bulk_params['body'][] = [
+                'update' => [
+                    '_index' => Api::getCompanyIndex(),
+                    '_type' => 'article',
+                    '_id' => $uuid
+                ]
+            ];
+
+            $es_bulk_params['body'][] = [
+                'doc' => [
+                    'title_sign' => 'm_'.$title_sign
+                ]
+            ];
+        }
+
+        $hosts = [config('app.esUrl')];
+        $client = ClientBuilder::create()->setHosts($hosts)->build();
+
+        $response = $client->bulk($es_bulk_params);
+
+        if($response['errors'] == 'true'){
+            $result['result'] = false;
+            $result['msg'] = $response['items'];
+        }else{
+            $result['result'] = true;
+        }
+
+        Log::info('Remove the same article:[companyUuid:'.Api::getCompanyIndex().'] [uuid:'.Api::getCreatorId().'] [articleId:'.implode(',',$uuids).'] [title_sign:'.$title_sign.'] [result:'.json_encode($result).']');
 
         return response()->json($result);
 

@@ -127,19 +127,51 @@ class IndexController extends Controller {
 
 			}
 
+			if(count($data) == 0){
+				$result_data['result'] = true;
+				$result_data['data'] = null;
+				return json_encode($result_data);
+			}
+
 			$keywords_id = explode(',',$keywords_id);
 			foreach ($keywords_id as $value){
 				if(!isset($data[$value])){
-					$data[$value]['day'] = '' ;
+					//$data[$value]['day'] = '' ;
+					$data_days = array();
+					$data_sina = array();
+					$data_baidu = array();
+					$data_data_360 = array();
+					$data_youku = array();
+
+					for ($d = $days - 1; $d >= 0; $d--) {
+						unset($days_d);
+						$days_d = date('Y-m-d', (strtotime($from)) - 3600 * 24 * $d);	//近一周日期
+						array_push($data_days,$days_d);
+						array_push($data_sina,null);
+						array_push($data_baidu,null);
+						array_push($data_data_360,null);
+						array_push($data_youku,null);
+					}
+
+					$data[$value]['day'] = $data_days;
+					$data[$value]['sina'] = $data_sina;
+					$data[$value]['baidu'] = $data_baidu;
+					$data[$value]['data_360'] = $data_data_360;
+					$data[$value]['youku'] = $data_youku;
+
 				}
 			}
+
+			$result_data['result'] = true;
+			$result_data['data'] 	= $data;
+
+			return json_encode($result_data);
 
 		}else{
 			$data['result'] = false;
 			$data['msg'] 	= '关键字不存在或未启用！';
+			return json_encode($data);
 		}
-
-		return json_encode($data);
 
 	}
 

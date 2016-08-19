@@ -6,8 +6,9 @@ define([
 	paths.ex.page + '/advices/base/news/audit/link.js',
 	paths.ex.page + '/advices/base/news/audit/actions.js',
 	paths.ex.page + '/advices/base/report/select.js',
-	paths.ex.page + '/advices/base/articles/art-list-item.js'
-], function(mods, Rest, Modal, Loader, L, Actions, Select, Item){
+	paths.ex.page + '/advices/base/articles/art-list-item.js',
+	paths.ex.page + '/advices/base/articles/more.js',
+], function(mods, Rest, Modal, Loader, L, Actions, Select, Item, More){
 	const React = mods.ReactPack.default;
 	const Pagination = mods.Pagination;
 	const {connect} = mods.ReactReduxPack;
@@ -21,13 +22,13 @@ define([
 			dispatch(fetchData())
 		},
 		renderList(){
-			const {articles, queryParams, dispatch} = this.props;
+			const {articles, queryParams, dispatch, togMore} = this.props;
 			var node;
 			node = articles.length > 0 ? (
 				<ul className="list-part">
 					{
 						articles.map((data, idx) => {
-							return <Item auditMode modifyEmotion={emot => dispatch(modifyEmotion(data.uuid, emot))} data={data} queryParams={queryParams} putDepend={uuid => {$('#tipModal').modal('show');dispatch(setDependUuid(uuid))}} />
+							return <Item auditMode modifyEmotion={emot => dispatch(modifyEmotion(data.uuid, emot))} data={data} queryParams={queryParams} togMore={togMore} putDepend={uuid => {$('#tipModal').modal('show');dispatch(setDependUuid(uuid))}} />
 						})
 					}
 				</ul>
@@ -95,7 +96,7 @@ define([
 			this.sync('beg', page * defaultParams.m);
 		},
 		render(){
-			const {articles, articlesCount, queryParams, location, defaultParams, dispatch, loading} = this.props;
+			const {articles, articlesCount, queryParams, location, defaultParams, dispatch, loading, articlesUniqCount} = this.props;
 			return (
 				<div className="advices-base-audit">
 					<div className="con">
@@ -120,7 +121,7 @@ define([
 							{this.renderList()}
 							<div className="tc pagin-part">
 								{
-									articlesCount > queryParams.m ? <Pagination current={Math.floor(+queryParams.beg / +queryParams.m) + 1} total={articlesCount > 99 * +queryParams.m ? 99 * +queryParams.m : articlesCount} pageSize={queryParams.m} className={"v2 ib vm mb5"} onChange={page => this.syncPage(page)} /> : null
+									articlesUniqCount > queryParams.m ? <Pagination current={Math.floor(+queryParams.beg / +queryParams.m) + 1} total={articlesUniqCount > 99 * +queryParams.m ? 99 * +queryParams.m : articlesUniqCount} pageSize={queryParams.m} className={"v2 ib vm mb5"} onChange={page => this.syncPage(page)} /> : null
 								}
 							</div>
 						</div>
@@ -144,6 +145,7 @@ define([
 			defaultParams: state.defaultParams,
 			articles: Object.keys(state.articles).map(key => state.articles[key]).sort((a, b) => a['__i'] - b['__i']),
 			articlesCount: state.articlesCount,
+			articlesUniqCount: state.articlesUniqCount,
 			loading: state.loading
 		}
 	}

@@ -252,6 +252,7 @@ define(['mods', paths.rcn.util + '/rest.js', paths.ex.page + '/advices/base/repo
 							days: 30,
 							from: save.end_at
 						}).done(function (dat) {
+							dat = dat.data || {};
 							var company = {};
 
 							for (var k in dat) {

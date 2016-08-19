@@ -231,6 +231,7 @@ require([
 						from: save.end_at,
 						code
 					}).done(dat => {
+						dat = dat.data || {};
 						let company = {};
 
 						for(let k in dat){

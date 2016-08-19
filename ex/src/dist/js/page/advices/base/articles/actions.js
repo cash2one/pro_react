@@ -276,7 +276,8 @@ define([paths.rcn.util + '/rest.js', 'mods'], function (R, mods) {
 				if (data.result == true) {
 					dispatch({
 						type: SET_ARTICLES_COUNT,
-						count: query['uniq'] ? data.uniq_count : data.count
+						count: data.count,
+						uniqCount: data.uniq_count
 					});
 				}
 			});
